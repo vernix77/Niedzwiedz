@@ -1,0 +1,313 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?yhxok7");
+  src: url("../fonts/icomoon.eot?yhxok7#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?yhxok7") format("truetype"), url("../fonts/icomoon.woff?yhxok7") format("woff"), url("../fonts/icomoon.svg?yhxok7#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-],
+[class*=" icon-"] {
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: Metropolis-Black;
+  src: url("../fonts/Metropolis-Black.otf");
+}
+@font-face {
+  font-family: Metropolis-BlackItalic;
+  src: url("../fonts/Metropolis-BlackItalic.otf");
+}
+@font-face {
+  font-family: Metropolis-Bold;
+  src: url("../fonts/Metropolis-Bold.otf");
+}
+@font-face {
+  font-family: Metropolis-BoldItalic;
+  src: url("../fonts/Metropolis-BoldItalic.otf");
+}
+@font-face {
+  font-family: Metropolis-ExtraBold;
+  src: url("../fonts/Metropolis-ExtraBold.otf");
+}
+@font-face {
+  font-family: Metropolis-ExtraBoldItalic;
+  src: url("../fonts/Metropolis-ExtraBoldItalic");
+}
+@font-face {
+  font-family: Metropolis-ExtraLight;
+  src: url("../fonts/Metropolis-ExtraLight");
+}
+@font-face {
+  font-family: Metropolis-ExtraLightItalic;
+  src: url("../fonts/Metropolis-ExtraLightItalic");
+}
+@font-face {
+  font-family: Metropolis-Light;
+  src: url("../fonts/Metropolis-Light");
+}
+@font-face {
+  font-family: Metropolis-LightItalic;
+  src: url("../fonts/Metropolis-LightItalic");
+}
+@font-face {
+  font-family: Metropolis-Medium;
+  src: url("../fonts/Metropolis-Medium");
+}
+@font-face {
+  font-family: Metropolis-MediumItalic;
+  src: url("../fonts/Metropolis-MediumItalic");
+}
+@font-face {
+  font-family: Metropolis-Regular;
+  src: url("../fonts/Metropolis-Regular");
+}
+@font-face {
+  font-family: Metropolis-RegularItalic;
+  src: url("../fonts/Metropolis-RegularItalic");
+}
+@font-face {
+  font-family: Metropolis-SemiBold;
+  src: url("../fonts/Metropolis-SemiBold");
+}
+@font-face {
+  font-family: Metropolis-SemiBoldItalic;
+  src: url("../fonts/Metropolis-SemiBoldItalic");
+}
+@font-face {
+  font-family: Metropolis-Thin;
+  src: url("../fonts/Metropolis-Thin");
+}
+@font-face {
+  font-family: Metropolis-ThinItalic;
+  src: url("../fonts/Metropolis-ThinItalic");
+}
+.icon-box:before {
+  content: "\e900";
+}
+
+.icon-01:before {
+  content: "\e901";
+}
+
+.icon-02:before {
+  content: "\e902";
+}
+
+.icon-03:before {
+  content: "\e903";
+}
+
+.icon-04:before {
+  content: "\e904";
+}
+
+.icon-05:before {
+  content: "\e905";
+}
+
+.icon-06:before {
+  content: "\e906";
+}
+
+.icon-play:before {
+  content: "\e907";
+}
+
+.icon-widok_01:before {
+  content: "\e908";
+}
+
+.icon-widok_02:before {
+  content: "\e909";
+}
+
+.icon-wysylka:before {
+  content: "\e90a";
+}
+
+.icon-x:before {
+  content: "\e90b";
+}
+
+.footer {
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 1;
+  width: 100%;
+  background-color: #22262c;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 2rem;
+  gap: 3rem;
+  color: white;
+}
+.footer .footer__section {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+.footer .footer__section h3 {
+  width: 100%;
+  border-bottom: 1px solid #777777;
+  position: relative;
+  padding-bottom: 2rem;
+}
+.footer .footer__section h3 .orange_mark {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  z-index: 2;
+  width: 30px;
+  height: 1px;
+  color: orangered;
+  background-color: orangered;
+}
+.footer .footer__section a {
+  display: grid;
+  gap: 2rem;
+  text-decoration: none;
+  padding: 0;
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: rgb(184, 180, 180);
+}
+
+.footer__cpr {
+  position: absolute;
+  bottom: 0rem;
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__cpr .cr_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__cpr .fac_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 992px) {
+  .footer {
+    position: absolute;
+    width: 100%;
+    background-color: #22262c;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 2rem;
+    gap: 3rem;
+    color: white;
+  }
+  .footer .footer__section {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+  }
+  .footer .footer__section h3 {
+    width: 100%;
+    border-bottom: 1px solid #777777;
+    position: relative;
+    padding-bottom: 2rem;
+  }
+  .footer .footer__section h3 .orange_mark {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    z-index: 2;
+    width: 30px;
+    height: 1px;
+    color: orangered;
+    background-color: orangered;
+  }
+  .footer .footer__section a {
+    display: grid;
+    gap: 2rem;
+    padding: 0;
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    color: rgb(184, 180, 180);
+  }
+  .footer .footer__section a:hover {
+    color: royalblue;
+  }
+}
+@media screen and (width < 860px) {
+  .footer {
+    grid: none;
+    bottom: 1;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .ArrowRotate span {
+    rotate: 180deg;
+    top: 20px;
+  }
+  .footer__section span {
+    position: absolute;
+    right: 0;
+    font-size: 40px;
+    transform: rotate(-180deg);
+    transition: 0s;
+  }
+  a {
+    z-index: 10;
+  }
+}
+.footer__list {
+  list-style: none;
+}
+.footer__list li {
+  display: none;
+}
+.footer__list h3 {
+  cursor: pointer;
+}
+
+.ShowPop li {
+  display: flex;
+  -webkit-animation: 1.5s linear both slide;
+          animation: 1.5s linear both slide;
+}
+
+@-webkit-keyframes slide {
+  from {
+    max-height: 0%;
+  }
+  to {
+    max-height: 100%;
+  }
+}
+
+@keyframes slide {
+  from {
+    max-height: 0%;
+  }
+  to {
+    max-height: 100%;
+  }
+}
+.footer__list span {
+  display: none;
+}
+
+@media screen and (min-width: 862px) {
+  h3 span {
+    display: none;
+  }
+}/*# sourceMappingURL=footer.css.map */
