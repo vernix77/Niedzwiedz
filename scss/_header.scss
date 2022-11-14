@@ -322,6 +322,12 @@ nav {
 	}
 }
 
+@media screen and (width > 600px) {
+	.header_menu {
+		display: none;
+	}
+}
+
 @media screen and (width < 600px) {
 	.header_item {
 		font-family: Metropolis-Light;
