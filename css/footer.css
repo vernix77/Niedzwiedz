@@ -139,9 +139,8 @@
 }
 
 .footer {
-  position: absolute;
+  display: grid;
   box-sizing: border-box;
-  bottom: 1;
   width: 100%;
   background-color: #22262c;
   display: grid;
@@ -153,6 +152,7 @@
 .footer .footer__section {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   margin-right: 4rem;
 }
 .footer .footer__section h3 {
@@ -182,8 +182,8 @@
 }
 
 .footer__cpr {
-  position: absolute;
-  bottom: 0rem;
+  display: grid;
+  box-sizing: border-box;
   width: 100%;
   height: 40px;
   background-color: white;
@@ -203,10 +203,12 @@
   align-items: center;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 830px) {
   .footer {
     position: absolute;
-    width: 100%;
+    box-sizing: border-box;
+    bottom: 0rem;
+    max-width: 100%;
     background-color: #22262c;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -244,15 +246,13 @@
     color: rgb(184, 180, 180);
   }
   .footer .footer__section a:hover {
-    color: royalblue;
+    color: rgb(16, 241, 46);
   }
 }
 @media screen and (width < 860px) {
   .footer {
     grid: none;
-    bottom: 1;
-    flex-direction: column;
-    box-sizing: border-box;
+    max-width: 100%;
   }
   .ArrowRotate span {
     rotate: 180deg;
@@ -263,7 +263,7 @@
     right: 0;
     font-size: 40px;
     transform: rotate(-180deg);
-    transition: 0s;
+    transition: 0.6s;
   }
   a {
     z-index: 10;
@@ -281,17 +281,7 @@
 
 .ShowPop li {
   display: flex;
-  -webkit-animation: 1.5s linear both slide;
-          animation: 1.5s linear both slide;
-}
-
-@-webkit-keyframes slide {
-  from {
-    max-height: 0%;
-  }
-  to {
-    max-height: 100%;
-  }
+  animation: 1.5s linear both slide;
 }
 
 @keyframes slide {
@@ -306,8 +296,10 @@
   display: none;
 }
 
-@media screen and (min-width: 862px) {
+@media screen and (min-width: 835px) {
   h3 span {
     display: none;
   }
-}/*# sourceMappingURL=footer.css.map */
+}
+
+/*# sourceMappingURL=footer.css.map */
