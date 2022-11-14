@@ -1,0 +1,152 @@
+.sprawdź__dlaczego__my {
+    height: 595px;
+    width: 100%;
+    .bg__dlaczego__my {
+        background-image: url("../photos/img_07.jpg");
+        background-attachment: fixed;
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 595px;
+        width: 100%;
+        .dlaczego__my {
+            font-family: "Metropolis__bold";
+            font-size: 44px;
+            color: white;
+            text-align: center;
+            padding-top: 70px;
+            padding-bottom: 20px;
+        }
+        .linia__cz {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: 1px;
+            width: 100%;
+            background-color: #e1e2e8;
+            .linia__sz {
+                height: 3px;
+                width: 60px;
+                background-color: #f74137;
+                border-radius: 25px;
+            }
+        }
+
+        .dlaczego__my2 {
+            font-family: "Metropolis__regular";
+            font-size: 18px;
+            color: white;
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 15px;
+            padding-left: 448px;
+            padding-right: 448px;
+        }
+        .banery {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-content: space-evenly;
+            padding-bottom: 21px;
+            .szybka__wysyłka {
+                height: 153px;
+                width: 310px;
+                padding-top: 20px;
+                border: 1px solid #ffffff85;
+                .zdjęcie1 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                    }
+                }
+                .paragraf1 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: -30px;
+                    p {
+                        font-family: "Metropolis__bold";
+                        font-size: 14px;
+                        color: white;
+                        margin-top: 50px;
+                    }
+                }
+            }
+            .szeroki__asortyment {
+                height: 153px;
+                width: 310px;
+                padding-top: 20px;
+                border: 1px solid #ffffff85;
+                .zdjęcie2 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                    }
+                }
+                .paragraf2 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: -30px;
+                    p {
+                        font-family: "Metropolis__bold";
+                        font-size: 14px;
+                        color: white;
+                        margin-top: 50px;
+                    }
+                }
+            }
+            .bezpieczne__zwroty {
+                height: 153px;
+                width: 310px;
+                padding-top: 20px;
+                border: 1px solid #ffffff85;
+                .zdjęcie3 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                    }
+                }
+                .paragraf3 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: -30px;
+                    p {
+                        font-family: "Metropolis__bold";
+                        font-size: 14px;
+                        color: white;
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+        .informacje__o__firmie {
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            .prosokąt__informacje__o__firmie {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 55px;
+                width: 246px;
+                background-color: #f74137;
+                opacity: 0.94;
+                cursor: pointer;
+                transition: 0.5s;
+                p {
+                    font-family: "Metropolis__bold";
+                    color: white;
+                }
+            }
+            .prosokąt__informacje__o__firmie:hover {
+                // opacity: 1;
+                opacity: 1;
+            }
+        }
+    }
+}
