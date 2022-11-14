@@ -5,17 +5,9 @@
 	color: c.$hover_text_color;
 }
 
-footer {
-	font-family: Metropolis-Regular;
-	position: relative;
-	a {
-		text-decoration: none;
-	}
-}
-
 .footer {
 	position: absolute;
-	bottom: 0%;
+	bottom: 100px;
 	width: 100%;
 	background-color: c.$footer_bgc;
 	display: grid;
@@ -23,7 +15,7 @@ footer {
 	padding: 2rem;
 	gap: 3rem;
 	color: white;
-	.footer__section {
+	.footer_section {
 		display: flex;
 		flex-direction: column;
 		margin-right: 4rem;
@@ -32,7 +24,7 @@ footer {
 			border-bottom: 1px solid c.$h3_border_color;
 			position: relative;
 			padding-bottom: 2rem;
-			.orange__mark {
+			.orange_mark {
 				position: absolute;
 				left: 0;
 				bottom: -1px;
@@ -53,7 +45,7 @@ footer {
 		}
 	}
 }
-.footer__end {
+.footer_end {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -63,12 +55,12 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	.cr__text {
+	.cr_text {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
-	.fac__text {
+	.fac_text {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -86,7 +78,7 @@ footer {
 		padding: 2rem;
 		gap: 3rem;
 		color: white;
-		.footer__section {
+		.footer_section {
 			display: flex;
 			flex-direction: column;
 			margin-right: 4rem;
@@ -95,7 +87,7 @@ footer {
 				border-bottom: 1px solid c.$h3_border_color;
 				position: relative;
 				padding-bottom: 2rem;
-				.orange__mark {
+				.orange_mark {
 					position: absolute;
 					left: 0;
 					bottom: -1px;
@@ -129,7 +121,7 @@ footer {
 		rotate: 180deg;
 		top: 20px;
 	}
-	.footer__section span {
+	.footer_section span {
 		position: absolute;
 		right: 0;
 		font-size: 40px;

@@ -1,0 +1,351 @@
+@use "./color" as c;
+@use "./fonts" as f;
+
+.header_contact {
+	z-index: 100;
+}
+.header_favorite {
+	z-index: 100;
+}
+.header_accont {
+	z-index: 100;
+}
+.header {
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	justify-content: auto;
+	width: 100%;
+	max-width: 100vw;
+	height: 100px;
+	border-top: 1px solid c.$main_color_text;
+	border-bottom: 1px solid c.$main_color_text;
+	flex-wrap: wrap;
+	background-color: c.$header_bg;
+	z-index: 1500;
+}
+
+.header__icon--move {
+	width: fit-content;
+}
+
+.cart__amount {
+	background-color: #9bcb3b;
+	position: absolute;
+	top: 0.45rem;
+	right: 0.7rem;
+	color: white;
+	font-size: 0.6rem;
+	padding: 0.15rem;
+}
+
+.header_logo-mobile {
+	margin: 1rem;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	opacity: 1;
+	background-color: c.$header_bg;
+}
+
+.header_item {
+	letter-spacing: -0.28px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: nowrap;
+	text-transform: uppercase;
+	.header_logo {
+		position: absolute;
+		opacity: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 2rem;
+	}
+	.header_accont {
+		padding-right: 1rem;
+	}
+	.header_basket {
+		display: flex;
+		cursor: pointer;
+		position: relative;
+		.header_basket-box {
+			display: flex;
+			justify-content: center;
+			padding: 1rem;
+			align-items: center;
+		}
+	}
+	.header_box-left {
+		display: flex;
+		align-self: center;
+	}
+	.header_box-right {
+		position: absolute;
+		display: flex;
+		align-self: center;
+		opacity: 0;
+	}
+	.icon {
+		color: c.$main_color_text;
+		font-size: 30px;
+		padding: 1rem;
+	}
+	.header_icon {
+		font-size: 30px;
+		padding: 0.1rem;
+	}
+	.cart__amount {
+		background-color: c.$basket_color;
+		position: absolute;
+		top: 0.8rem;
+		right: 12.7rem;
+		color: white;
+		font-size: 0.6rem;
+		padding: 0.15rem;
+	}
+	.icon-card {
+		border-right: 1px solid c.$main_color_text;
+	}
+	.icon-right_arrow {
+		width: 1px;
+		border-left: 1px solid c.$main_color_text;
+		background-color: #9bcb3b;
+	}
+}
+
+.nav_logo {
+	position: relative;
+	width: 100%;
+	height: 140px;
+	background-color: c.$header_bg;
+	border-bottom: 1px solid c.$line_color;
+	border-top: 1px solid c.$line_color;
+	opacity: 1;
+}
+.nav_logo-second {
+	position: relative;
+	width: 100%;
+	height: 80px;
+	border-bottom: 2px solid c.$line_color;
+	opacity: 1;
+}
+
+nav {
+	position: relative;
+	bottom: 0;
+	display: flex;
+	width: 100%;
+	height: 60px;
+	border-top: 1px solid c.$line_color;
+	border-bottom: 1px solid c.$line_color;
+	flex-wrap: wrap;
+	background-color: c.$header_bg;
+}
+.nav_items {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0.2rem;
+	flex-wrap: nowrap;
+	text-transform: uppercase;
+	.nav_item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 0.7rem;
+		padding: 0 1rem;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.header_logo-mobile {
+		opacity: 0;
+	}
+	.nav_logo {
+		width: 100%;
+		height: 80px;
+		border: 2px solid c.$line_color;
+		border: none;
+		opacity: 1;
+	}
+	nav {
+		position: relative;
+		display: flex;
+		width: 100%;
+		height: 60px;
+		border-top: 1px solid c.$line_color;
+		border-bottom: 1px solid c.$line_color;
+		flex-wrap: nowrap;
+		background-color: c.$header_bg;
+	}
+	.nav_items {
+		position: absolute;
+		top: 20%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-items: auto;
+		flex-wrap: nowrap;
+		text-transform: uppercase;
+		opacity: 1;
+	}
+	.nav_item {
+		z-index: 100;
+	}
+	.header {
+		z-index: 1500;
+		display: flex;
+		width: 100%;
+		height: 140px;
+		display: flex;
+		border-bottom: 1px solid c.$line_color;
+		border-top: 1px solid c.$line_color;
+		position: sticky;
+		top: 0%;
+		width: 100%;
+		height: 100px;
+		flex-wrap: nowrap;
+		background-color: c.$header_bg;
+	}
+
+	.header_item {
+		z-index: 20;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		flex-wrap: nowrap;
+		.header_logo {
+			position: relative;
+			opacity: 1;
+			display: flex;
+			justify-content: left;
+			align-items: center;
+			margin: 2rem;
+		}
+		.header_accont {
+			padding-right: 1rem;
+		}
+		.header_basket {
+			display: flex;
+			border: 1px solid c.$main_color_text;
+			cursor: pointer;
+			.header_basket-box {
+				display: flex;
+				justify-content: center;
+				padding: 1rem;
+				align-items: center;
+			}
+		}
+		.header_box-left {
+			display: flex;
+			align-self: center;
+		}
+		.header_box-right {
+			position: relative;
+			display: flex;
+			align-self: center;
+			opacity: 1;
+		}
+		.icon {
+			color: c.$main_color_text;
+			font-size: 30px;
+			padding: 1.5rem;
+		}
+		.icon-card {
+			border-right: 1px solid c.$main_color_text;
+		}
+		.icon-right_arrow {
+			border-left: 1px solid c.$main_color_text;
+			background-color: c.$basket_color;
+		}
+	}
+}
+
+@media screen and (890px > width) {
+	.nav_items {
+		padding: 0.2rem;
+		font-family: Metropolis-Regular;
+		font-size: 15px;
+		.nav_item {
+			margin-top: 0.7rem;
+			padding: 0 0.5rem;
+		}
+	}
+}
+
+@media screen and (550px < width < 721px) {
+	.header_item .icon {
+		color: c.$main_color_text;
+		font-size: 20px;
+	}
+	.header_item .header_icon {
+		color: c.$main_color_text;
+		font-size: 20px;
+	}
+	.header_item {
+		font-family: Metropolis-Light;
+		font-size: 15px;
+	}
+	.nav_item {
+		font-family: Metropolis-Light;
+		font-size: 12px;
+	}
+}
+
+@media screen and (500px < width < 549px) {
+	.header_item .icon {
+		color: c.$main_color_text;
+		font-size: 15px;
+	}
+	.header_item .header_icon {
+		color: c.$main_color_text;
+		font-size: 15px;
+	}
+	.header_item {
+		font-family: Metropolis-Light;
+		font-size: 13px;
+	}
+	.nav_item {
+		font-family: Metropolis-Light;
+		font-size: 10px;
+		padding: 0.5rem;
+		flex-wrap: nowrap;
+	}
+}
+
+@media screen and (width < 500px) {
+	.header_item {
+		font-family: Metropolis-Light;
+		font-size: 11px;
+	}
+	.nav_item {
+		font-family: Metropolis-Light;
+		font-size: 0px;
+		flex-wrap: nowrap;
+		opacity: 0;
+	}
+	.header_item {
+		font-size: 0px;
+		.icon {
+			border: none;
+			color: c.$main_color_text;
+			font-size: 30px;
+			opacity: 100;
+		}
+		.header_icon {
+			border: none;
+			color: c.$main_color_text;
+			font-size: 30px;
+			opacity: 100;
+		}
+	}
+}

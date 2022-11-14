@@ -1,271 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <title>Document</title>
 
+    <link rel="stylesheet" href="./css/main.css">
 
-    <title>Praktyki</title>
+    <script src="https://kit.fontawesome.com/e71e3662a8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav>
-        <div class="nav__baner">
-            <img src="./photos/logo.png" alt="baner">
-        </div>
-        <div class="nav__action">
-            <a href="#" class="nav__action-item">
-                <i class="icon-01"></i>
-                <p>KONTAKT</p>
-            </a>
-            <a href="#" class="nav__action-item">
-                <i class="icon-02"></i>
-                <p>ULUBIONE</p>
-            </a>
-            <a href="#" class="nav__action-item">
-                <i class="icon-03"></i>
-                <p>MOJE KONTO</p>
-            </a>
-            <div class="nav__baner-cart">
-                <div class="wraper">
-                    <div class="nav__baner-cart-icon">
-                        <i class="icon-06"></i>
-                        <div class="cart__amount">342</div>
+    <header>
+        <div class="header">
+            <div class="header_item">
+                <h1 class="header_logo"><a href="#home"><img src="./photos/logo.png" alt="logo / banner firmowy"></a>
+                </h1>
+                <a href="#javascript:void(0)">
+                    <div class="header_contact"><i class="header_icon icon-phone"></i>Kontakt</div>
+                </a>
+                <a href="#javascript:void(0)">
+                    <div class="header_favorite"><i class="header_icon icon-star"></i>Ulubione
                     </div>
-                    <div class="nav__baner-cart-info">
-                        <p>TWÓJ KOSZYK</p>
-                        <p style="margin: 0">3456,00 zł</p>
+                </a>
+                <a href="#javascript:void(0)">
+                    <div class="header_accont"><i class="header_icon icon-person"></i>Konto
                     </div>
-                </div>
-                <div class="nav__baner-cart-arrow">
-                    <div class="white__logo"></div>
+                </a>
+                <div class="header_basket">
+                    <div class="header_box-left"><i class="icon icon-card"></i></div>
+                    <div class="cart__amount">342</div>
+                    <a href="#javascript:void(0)">
+                        <div class="header_basket-box">Twój Koszyk<br>3456,00zł</div>
+                    </a>
+                    <div class="header_box-right"><i class="icon icon-right_arrow"></i></div>
                 </div>
             </div>
         </div>
-        <div class="nav__logo">
-            <h1 class="header__logo-mobile"><a href="#home"><img src="./photos/logo.png"
-                        alt="logo / banner firmowy"><a>
-            </h1>
-            <div class="nav_logo-second"></div>
-    </nav>
+        <nav>
+            <div class="nav_logo">
+                <h1 class="header_logo-mobile"><a href="#home"><img src="./photos/logo.png"
+                            alt="logo / banner firmowy"><a>
+                </h1>
+                <div class="nav_logo-second"></div>
+                <div class="nav_items">
+                    <a href="#javascript:void(0)">
+                        <div class="nav_item">ŹRÓDŁA ŚWIATŁA</div>
+                    </a>
+                    <a href="#javascript:void(0)">
+                        <div class="nav_item">GNIAZDKA, WYŁĄCZNIKI</div>
+                    </a>
+                    <a href="#javascript:void(0)">
+                        <div class="nav_item">OŚWIETLENIE WEWNĘTRZNE</div>
+                    </a>
+                    <a href="#javascript:void(0)">
+                        <div class="nav_item">AUTOMATYKA, STEROWANIE</div>
+                    </a>
+                    <a href="#javascript:void(0)">
+                        <div class="nav_item">ROZDZIELNIE I APARATURA</div>
+                    </a>
+                    <a href="#javascript:void(0)">
+                        <div class="nav_item">MATERIAŁY INSTALACYJNE</div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <main>
-        <div class="nav__options">
-            <a href="#">ŻRÓDŁA ŚWIATŁA</a>
-            <a href="#">OŚWIETLENIE ZEWNĘTRZNE</a>
-            <a href="#">GNIAZDKA, WYŁĄCZNIKI</a>
-            <a href="#">AUTOMATYKA, STEROWANIE</a>
-            <a href="#">ROZDZIELNIE I APARATURA</a>
-            <a href="#">MATERIAŁY INSTALACYJNE</a>
-        </div>
-        <div class="main__banner">
-            <div class="banner__wraper">
-                <img src="./photos/img_01.jpg" alt="">
-                <div class="main__banner-img-cover">
-                    <p>Poznaj SEDNA</p>
-                    <p>Schneider Electric</p>
-                    <p>Sedna to osprzęt elektroinstalacyjny o wyraźistym krztałcie oraz unikalnej formie</p>
-                    <div class="main__banner-img-cover-button"><button>ZOBACZ WIĘCEJ</button></div>
-                </div>
-                <div class="banner__left-controll">
-                    <img src="./icons/icon_05.svg" alt="">
-                </div>
-                <div class="banner__right-controll">
-                    <img src="./icons/icon_04.svg" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="quick__helpers">
-            <div class="quick__helpers-option">
-                <div class="quick__helpers-photo-cover">
-                    <p>Pomoc eksperta</p>
-                    <p>Doradzamy</p>
-                    <button>ZOBACZ WIĘCEJ</button>
-                </div>
-            </div>
-            <div class="quick__helpers-option">
-                <div class="quick__helpers-photo-cover">
-                    <p>Szukaj wygodnie</p>
-                    <p>Elhurt Plus</p>
-                    <button>ZOBACZ WIĘCEJ</button>
-                </div>
-            </div>
-            <div class="quick__helpers-option">
-                <div class="quick__helpers-photo-cover">
-                    <p>Seria Unica</p>
-                    <p>Wyjątkowy wzór</p>
-                    <button>ZOBACZ WIĘCEJ</button>
-                </div>
-            </div>
-        </div>
-        <div class="recomendations">
-            <h1>
-                Polecane produkty
-                <div class="orange__markup"></div>
-            </h1>
-            <div class="recomendations__products">
-                <div class="recomendations__products-prod">
-                    <img src="./photos/img_06.jpg" alt="">
-                    <div class="recomendations__products-prod-info">
-                        <p>ŁĄCZNIK JEDNOBIEGUNOWY</p>
-                        <p>Kod produktu: CW1.01/11</p>
+        <section>
+            <div class="main_banner">
+                <div class="banner_container">
+                    <img class="main_img" src="./photos/img_01.jpg" alt="Zdjęcie kuchni">
+                    <img class="main_img_second saw" src="./photos/img_08.png" alt="Zdjęcie kuchni">
+                    <div class="main_banner-img">
+                        <p id="main_p">Poznaj SEDNA</p>
+                        <p id="main_p_second">Schneider Electric</p>
+                        <p id="main_p_third">Sedna to osprzęt elektroinstalacyjny o wyraźistym krztałcie oraz unikalnej
+                            formie</p>
+                        <button>ZOBACZ WIĘCEJ</button>
                     </div>
-                    <div class="recomendations__products-prod-price">
-                        <s>656,65 zł</s>
-                        <p>442,85 zł</p>
+                    <div class="banner_control-left">
+                        <i class="icon-left_arrow"></i>
                     </div>
-                </div>
-                <div class="recomendations__products-prod">
-                    <img src="./photos/img_06.jpg" alt="">
-                    <div class="recomendations__products-prod-info">
-                        <p>ŁĄCZNIK JEDNOBIEGUNOWY</p>
-                        <p>Kod produktu: CW1.01/11</p>
-                    </div>
-                    <div class="recomendations__products-prod-price">
-                        <s>656,65 zł</s>
-                        <p>442,85 zł</p>
-                    </div>
-                </div>
-                <div class="recomendations__products-prod">
-                    <img src="./photos/img_06.jpg" alt="">
-                    <div class="recomendations__products-prod-info">
-                        <p>ŁĄCZNIK JEDNOBIEGUNOWY</p>
-                        <p>Kod produktu: CW1.01/11</p>
-                    </div>
-                    <div class="recomendations__products-prod-price">
-                        <s>656,65 zł</s>
-                        <p>442,85 zł</p>
-                    </div>
-                </div>
-                <div class="recomendations__products-prod">
-                    <img src="./photos/img_06.jpg" alt="">
-                    <div class="recomendations__products-prod-info">
-                        <p>ŁĄCZNIK JEDNOBIEGUNOWY</p>
-                        <p>Kod produktu: CW1.01/11</p>
-                    </div>
-                    <div class="recomendations__products-prod-price">
-                        <s>656,65 zł</s>
-                        <p>442,85 zł</p>
-                    </div>
-                </div>
-                <div class="recomendations__products-prod">
-                    <img src="./photos/img_06.jpg" alt="">
-                    <div class="recomendations__products-prod-info">
-                        <p>ŁĄCZNIK JEDNOBIEGUNOWY</p>
-                        <p>Kod produktu: CW1.01/11</p>
-                    </div>
-                    <div class="recomendations__products-prod-price">
-                        <s>656,65 zł</s>
-                        <p>442,85 zł</p>
-                    </div>
-                </div>
-                <div class="recomendations__products-prod">
-                    <img src="./photos/img_06.jpg" alt="">
-                    <div class="recomendations__products-prod-info">
-                        <p>ŁĄCZNIK JEDNOBIEGUNOWY</p>
-                        <p>Kod produktu: CW1.01/11</p>
-                    </div>
-                    <div class="recomendations__products-prod-price">
-                        <s>656,65 zł</s>
-                        <p>442,85 zł</p>
-                    </div>
-                </div>
-                <div class="recomendations__products-prod">
-                    <img src="./photos/img_06.jpg" alt="">
-                    <div class="recomendations__products-prod-info">
-                        <p>ŁĄCZNIK JEDNOBIEGUNOWY</p>
-                        <p>Kod produktu: CW1.01/11</p>
-                    </div>
-                    <div class="recomendations__products-prod-price">
-                        <s>656,65 zł</s>
-                        <p>442,85 zł</p>
-                    </div>
-                </div>
-                <div class="recomendations__products-prod">
-                    <img src="./photos/img_06.jpg" alt="">
-                    <div class="recomendations__products-prod-info">
-                        <p>ŁĄCZNIK JEDNOBIEGUNOWY</p>
-                        <p>Kod produktu: CW1.01/11</p>
-                    </div>
-                    <div class="recomendations__products-prod-price">
-                        <s>656,65 zł</s>
-                        <p>442,85 zł</p>
-                    </div>
-                </div>
-                <div class="recomendations__products-prod">
-                    <img src="./photos/img_06.jpg" alt="">
-                    <div class="recomendations__products-prod-info">
-                        <p>ŁĄCZNIK JEDNOBIEGUNOWY</p>
-                        <p>Kod produktu: CW1.01/11</p>
-                    </div>
-                    <div class="recomendations__products-prod-price">
-                        <s>656,65 zł</s>
-                        <p>442,85 zł</p>
-                    </div>
-                </div>
-                <div class="recomendations__products-prod">
-                    <img src="./photos/img_06.jpg" alt="">
-                    <div class="recomendations__products-prod-info">
-                        <p>ŁĄCZNIK JEDNOBIEGUNOWY</p>
-                        <p>Kod produktu: CW1.01/11</p>
-                    </div>
-                    <div class="recomendations__products-prod-price">
-                        <s>656,65 zł</s>
-                        <p>442,85 zł</p>
-                    </div>
-                </div>
-                <div class="recomendations__products-prod">
-                    <img src="./photos/img_06.jpg" alt="">
-                    <div class="recomendations__products-prod-info">
-                        <p>ŁĄCZNIK JEDNOBIEGUNOWY</p>
-                        <p>Kod produktu: CW1.01/11</p>
-                    </div>
-                    <div class="recomendations__products-prod-price">
-                        <s>656,65 zł</s>
-                        <p>442,85 zł</p>
+                    <div class="banner_control-right">
+                        <i class="icon-right_arrow"></i>
                     </div>
                 </div>
             </div>
-            <div class="insp__wrapper">
-                <button class="inspiration__btn">ZOBACZ WSZYSTKIE INSPIRACJE</button>
-            </div>
-            <div class="why__us">
-                <div class="why__us-cover">
-                    <h1>
-                        Sprawdź dlaczego my
-                        <div class="orange__markup"></div>
-                    </h1>
-                    <p>Początki działalności to rok 2002r i otwarcie hurtowni elektrycznej, oferującej podstawowe
-                        produkty
-                        do instalacji elektrycznych jak i również materiały używane w przemyśle wydobywczym. Firma
-                        dostarczała produkty trudno dostępne do kopalń, zakładów przemysłowych. </p>
-                    <div class="advantages__container">
-                        <div class="advantages__op">
-                            <img src="./icons/icon_07.png" alt="">
-                            <p>SZYBKA WYSYŁKA</p>
-                        </div>
-                        <div class="advantages__op">
-                            <img src="./icons/icon_08.png" alt="">
-                            <p>SZEROKI ASORTYMENT</p>
-                        </div>
-                        <div class="advantages__op">
-                            <img src="./icons/icon_09.png" alt="">
-                            <p>BEZPIECZNE ZWROTY</p>
-                        </div>
-                    </div class="insp__wrapper">
-                    <button class="inspiration__btn">INFORMACJE O FIRMIE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
     </main>
+
     <footer>
         <div class="footer">
-            <div class="footer__section">
+            <div class="footer_section">
                 <h3 class="js__sliderclick--info1">
                     INFORMACJE <span>^</span>
                     <div class="orange_mark"></div>
@@ -279,7 +109,7 @@
                     <li><a href="#javascript:void(0)">Informacje o sklepie</a></li>
                 </ul>
             </div>
-            <div class="footer__section">
+            <div class="footer_section">
                 <h3 class="js__sliderclick--info2">
                     INFORMACJE <span>^</span>
                     <div class="orange_mark"></div>
@@ -293,7 +123,7 @@
                     <li><a href="#javascript:void(0)">Informacje o sklepie</a></li>
                 </ul>
             </div>
-            <div class="footer__section">
+            <div class="footer_section">
                 <h3 class="js__sliderclick--info3">
                     MOJE KONTO <span>^</span>
                     <div class="orange_mark"></div>
@@ -307,7 +137,7 @@
                     <li><a href="#javascript:void(0)">Schowek</a></li>
                 </ul>
             </div>
-            <div class="footer__section">
+            <div class="footer_section">
                 <h3 class="js__sliderclick--info4">
                     INFORMACJE <span>^</span>
                     <div class="orange_mark"></div>
@@ -321,14 +151,15 @@
                     <li><a href="#javascript:void(0)">Informacje o sklepie</a></li>
                 </ul>
             </div>
-            <div class="footer__cpr">
-                <p class="cr_text">Copyright 2022. Wszystkie prawa zastrzeżone</p>
-                <p class="fac_text">Agencja interaktywna [ti] Powered by 2ClickShop</p>
-            </div>
+        </div>
+        <div class="footer_end">
+            <p class="cr_text">Copyright 2022. Wszystkie prawa zastrzeżone</p>
+            <p class="fac_text">Agencja interaktywna [ti] Powered by 2ClickShop</p>
         </div>
     </footer>
+
     <script src="./js/main.js"></script>
-    <script src="./js/footer.js"></script>
+    <script src="./js/footerscript.js"></script>
 </body>
 
 </html>
