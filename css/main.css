@@ -281,7 +281,17 @@
 
 .ShowPop li {
   display: flex;
-  animation: 1.5s linear both slide;
+  -webkit-animation: 1.5s linear both slide;
+          animation: 1.5s linear both slide;
+}
+
+@-webkit-keyframes slide {
+  from {
+    max-height: 0%;
+  }
+  to {
+    max-height: 100%;
+  }
 }
 
 @keyframes slide {
@@ -329,6 +339,8 @@
 }
 
 .header__icon--move {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -513,6 +525,7 @@ nav {
     display: flex;
     border-bottom: 1px solid #E1E2E8;
     border-top: 1px solid #E1E2E8;
+    position: -webkit-sticky;
     position: sticky;
     top: 0%;
     width: 100%;
@@ -622,7 +635,7 @@ nav {
     flex-wrap: nowrap;
   }
 }
-@media screen and (width < 500px) {
+@media screen and (width < 600px) {
   .header_item {
     font-family: Metropolis-Light;
     font-size: 11px;
@@ -641,12 +654,26 @@ nav {
     color: #111111;
     font-size: 30px;
     opacity: 100;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
   }
   .header_item .header_icon {
     border: none;
     color: #111111;
     font-size: 30px;
     opacity: 100;
+  }
+  .header_item .icon-right_arrow {
+    display: none;
+  }
+  .header_basket-box {
+    display: none;
+  }
+}
+@media screen and (width < 992px) {
+  .cart__amount {
+    display: none;
   }
 }
 * {
@@ -738,7 +765,11 @@ a:hover {
 
 .banner_control-left {
   z-index: 30;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 1rem 1.5rem;
   position: absolute;
@@ -754,7 +785,11 @@ a:hover {
 
 .banner_control-right {
   z-index: 30;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 1rem 1.5rem;
   position: absolute;
@@ -773,6 +808,8 @@ a:hover {
   padding: 1rem 2.5rem;
   color: white;
   border: none;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   margin-left: 10rem;
   cursor: pointer;
@@ -831,6 +868,8 @@ a:hover {
     padding: 0.5rem 0.5rem;
     color: white;
     border: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -861,6 +900,8 @@ a:hover {
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -888,6 +929,8 @@ a:hover {
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     margin-bottom: 1px;
@@ -916,12 +959,12 @@ a:hover {
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     margin-bottom: 1px;
     cursor: pointer;
     transition: 0.4s;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

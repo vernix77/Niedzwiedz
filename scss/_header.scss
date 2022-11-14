@@ -322,7 +322,7 @@ nav {
 	}
 }
 
-@media screen and (width < 500px) {
+@media screen and (width < 600px) {
 	.header_item {
 		font-family: Metropolis-Light;
 		font-size: 11px;
@@ -340,6 +340,9 @@ nav {
 			color: c.$main_color_text;
 			font-size: 30px;
 			opacity: 100;
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: space-evenly;
 		}
 		.header_icon {
 			border: none;
@@ -347,5 +350,17 @@ nav {
 			font-size: 30px;
 			opacity: 100;
 		}
+		.icon-right_arrow {
+			display: none;
+		}
+	}
+	.header_basket-box {
+		display: none;
+	}
+}
+
+@media screen and (width < 992px) {
+	.cart__amount {
+		display: none;
 	}
 }
