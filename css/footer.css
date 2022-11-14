@@ -161,18 +161,18 @@ footer a {
   gap: 3rem;
   color: white;
 }
-.footer .footer_section {
+.footer .footer__section {
   display: flex;
   flex-direction: column;
   margin-right: 4rem;
 }
-.footer .footer_section h3 {
+.footer .footer__section h3 {
   width: 100%;
   border-bottom: 1px solid #777777;
   position: relative;
   padding-bottom: 2rem;
 }
-.footer .footer_section h3 .orange_mark {
+.footer .footer__section h3 .orange__mark {
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -182,7 +182,7 @@ footer a {
   color: orangered;
   background-color: orangered;
 }
-.footer .footer_section a {
+.footer .footer__section a {
   display: grid;
   gap: 2rem;
   padding: 0;
@@ -191,7 +191,7 @@ footer a {
   color: rgb(184, 180, 180);
 }
 
-.footer_end {
+.footer__end {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -202,12 +202,12 @@ footer a {
   justify-content: space-between;
   align-items: center;
 }
-.footer_end .cr_text {
+.footer__end .cr__text {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.footer_end .fac_text {
+.footer__end .fac__text {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -225,18 +225,18 @@ footer a {
     gap: 3rem;
     color: white;
   }
-  .footer .footer_section {
+  .footer .footer__section {
     display: flex;
     flex-direction: column;
     margin-right: 4rem;
   }
-  .footer .footer_section h3 {
+  .footer .footer__section h3 {
     width: 100%;
     border-bottom: 1px solid #777777;
     position: relative;
     padding-bottom: 2rem;
   }
-  .footer .footer_section h3 .orange_mark {
+  .footer .footer__section h3 .orange__mark {
     position: absolute;
     left: 0;
     bottom: -1px;
@@ -246,7 +246,7 @@ footer a {
     color: orangered;
     background-color: orangered;
   }
-  .footer .footer_section a {
+  .footer .footer__section a {
     display: grid;
     gap: 2rem;
     padding: 0;
@@ -254,7 +254,7 @@ footer a {
     font-size: 0.8rem;
     color: rgb(184, 180, 180);
   }
-  .footer .footer_section a:hover {
+  .footer .footer__section a:hover {
     color: rgb(16, 241, 46);
   }
 }
@@ -266,7 +266,7 @@ footer a {
     rotate: 180deg;
     top: 20px;
   }
-  .footer_section span {
+  .footer__section span {
     position: absolute;
     right: 0;
     font-size: 40px;
