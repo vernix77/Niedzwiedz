@@ -1,6 +1,6 @@
 const burgerbtn = document.querySelector(".header_menu");
 const hamburger = document.querySelector(".nav_items");
-const WindowSize = window.matchMedia("(max-width: 600px)");
+const WindowSize1 = window.matchMedia("(max-width: 600px)");
 
 function Menu() {
 	if (WindowSize.matches) {
@@ -13,7 +13,7 @@ function Menu() {
 }
 
 function NavWindow() {
-	if (WindowSize.matches) {
+	if (WindowSize1.matches) {
 		console.log(`wok`);
 	} else {
 		hamburger.classList.remove("active");
@@ -23,5 +23,5 @@ function NavWindow() {
 
 burgerbtn.addEventListener("click", Menu);
 
-NavWindow(WindowSize);
-WindowSize.addListener(NavWindow);
+NavWindow(WindowSize1);
+WindowSize1.addListener(NavWindow);
