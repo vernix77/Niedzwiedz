@@ -1,76 +1,4 @@
 @font-face {
-  font-family: Metropolis-Black;
-  src: url("../fonts/Metropolis-Black.otf");
-}
-@font-face {
-  font-family: Metropolis-BlackItalic;
-  src: url("../fonts/Metropolis-BlackItalic.otf");
-}
-@font-face {
-  font-family: Metropolis-Bold;
-  src: url("../fonts/Metropolis-Bold.otf");
-}
-@font-face {
-  font-family: Metropolis-BoldItalic;
-  src: url("../fonts/Metropolis-BoldItalic.otf");
-}
-@font-face {
-  font-family: Metropolis-ExtraBold;
-  src: url("../fonts/Metropolis-ExtraBold.otf");
-}
-@font-face {
-  font-family: Metropolis-ExtraBoldItalic;
-  src: ult("../fonts/Metropolis-ExtraBoldItalic");
-}
-@font-face {
-  font-family: Metropolis-ExtraLight;
-  src: ult("../fonts/Metropolis-ExtraLight");
-}
-@font-face {
-  font-family: Metropolis-ExtraLightItalic;
-  src: ult("../fonts/Metropolis-ExtraLightItalic");
-}
-@font-face {
-  font-family: Metropolis-Light;
-  src: ult("../fonts/Metropolis-Light");
-}
-@font-face {
-  font-family: Metropolis-LightItalic;
-  src: ult("../fonts/Metropolis-LightItalic");
-}
-@font-face {
-  font-family: Metropolis-Medium;
-  src: ult("../fonts/Metropolis-Medium");
-}
-@font-face {
-  font-family: Metropolis-MediumItalic;
-  src: ult("../fonts/Metropolis-MediumItalic");
-}
-@font-face {
-  font-family: Metropolis-Regular;
-  src: ult("../fonts/Metropolis-Regular");
-}
-@font-face {
-  font-family: Metropolis-RegularItalic;
-  src: ult("../fonts/Metropolis-RegularItalic");
-}
-@font-face {
-  font-family: Metropolis-SemiBold;
-  src: ult("../fonts/Metropolis-SemiBold");
-}
-@font-face {
-  font-family: Metropolis-SemiBoldItalic;
-  src: ult("../fonts/Metropolis-SemiBoldItalic");
-}
-@font-face {
-  font-family: Metropolis-Thin;
-  src: ult("../fonts/Metropolis-Thin");
-}
-@font-face {
-  font-family: Metropolis-ThinItalic;
-  src: ult("../fonts/Metropolis-ThinItalic");
-}
-@font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon.eot?eyslk1");
   src: url("../fonts/icomoon.eot?eyslk1#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?eyslk1") format("truetype"), url("../fonts/icomoon.woff?eyslk1") format("woff"), url("../fonts/icomoon.svg?eyslk1#icomoon") format("svg");
@@ -139,6 +67,78 @@
   content: "\e90b";
 }
 
+@font-face {
+  font-family: Metropolis-Black;
+  src: url("../fonts/Metropolis-Black.otf");
+}
+@font-face {
+  font-family: Metropolis-BlackItalic;
+  src: url("../fonts/Metropolis-BlackItalic.otf");
+}
+@font-face {
+  font-family: Metropolis-Bold;
+  src: url("../fonts/Metropolis-Bold.otf");
+}
+@font-face {
+  font-family: Metropolis-BoldItalic;
+  src: url("../fonts/Metropolis-BoldItalic.otf");
+}
+@font-face {
+  font-family: Metropolis-ExtraBold;
+  src: url("../fonts/Metropolis-ExtraBold.otf");
+}
+@font-face {
+  font-family: Metropolis-ExtraBoldItalic;
+  src: url("../fonts/Metropolis-ExtraBoldItalic");
+}
+@font-face {
+  font-family: Metropolis-ExtraLight;
+  src: url("../fonts/Metropolis-ExtraLight");
+}
+@font-face {
+  font-family: Metropolis-ExtraLightItalic;
+  src: url("../fonts/Metropolis-ExtraLightItalic");
+}
+@font-face {
+  font-family: Metropolis-Light;
+  src: url("../fonts/Metropolis-Light.otf");
+}
+@font-face {
+  font-family: Metropolis-LightItalic;
+  src: url("../fonts/Metropolis-LightItalic");
+}
+@font-face {
+  font-family: Metropolis-Medium;
+  src: url("../fonts/Metropolis-Medium");
+}
+@font-face {
+  font-family: Metropolis-MediumItalic;
+  src: url("../fonts/Metropolis-MediumItalic");
+}
+@font-face {
+  font-family: Metropolis-Regular;
+  src: url("../fonts/Metropolis-Regular");
+}
+@font-face {
+  font-family: Metropolis-RegularItalic;
+  src: url("../fonts/Metropolis-RegularItalic");
+}
+@font-face {
+  font-family: Metropolis-SemiBold;
+  src: url("../fonts/Metropolis-SemiBold");
+}
+@font-face {
+  font-family: Metropolis-SemiBoldItalic;
+  src: url("../fonts/Metropolis-SemiBoldItalic");
+}
+@font-face {
+  font-family: Metropolis-Thin;
+  src: url("../fonts/Metropolis-Thin");
+}
+@font-face {
+  font-family: Metropolis-ThinItalic;
+  src: url("../fonts/Metropolis-ThinItalic");
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -430,11 +430,7 @@ nav {
 
 .banner_control-left {
   z-index: 30;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   padding: 1rem 1.5rem;
   position: absolute;
@@ -450,11 +446,7 @@ nav {
 
 .banner_control-right {
   z-index: 30;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   padding: 1rem 1.5rem;
   position: absolute;
@@ -473,8 +465,6 @@ nav {
   padding: 1rem 2.5rem;
   color: white;
   border: none;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   margin-left: 10rem;
   cursor: pointer;
@@ -504,8 +494,6 @@ nav {
   position: absolute;
   opacity: 0%;
 }
-
-@-webkit-keyframes slide {}
 
 @keyframes slide {}
 @media screen and (min-width: 862px) {
@@ -556,7 +544,6 @@ nav {
     display: flex;
     border-bottom: 1px solid #E1E2E8;
     border-top: 1px solid #E1E2E8;
-    position: -webkit-sticky;
     position: sticky;
     top: 0%;
     width: 100%;
@@ -733,8 +720,6 @@ nav {
     padding: 0.5rem 0.5rem;
     color: white;
     border: none;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -783,8 +768,6 @@ nav {
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -837,8 +820,6 @@ nav {
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     margin-bottom: 1px;
@@ -871,8 +852,6 @@ nav {
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     margin-bottom: 1px;
@@ -892,8 +871,7 @@ nav {
 
 .ShowPop li {
   display: flex;
-  -webkit-animation: 1.5s linear both slide;
-          animation: 1.5s linear both slide;
+  animation: 1.5s linear both slide;
 }
 
 @keyframes slide {
@@ -906,4 +884,6 @@ nav {
 }
 .footer__list span {
   display: none;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,76 +1,4 @@
 @font-face {
-  font-family: Metropolis-Black;
-  src: url("../fonts/Metropolis-Black.otf");
-}
-@font-face {
-  font-family: Metropolis-BlackItalic;
-  src: url("../fonts/Metropolis-BlackItalic.otf");
-}
-@font-face {
-  font-family: Metropolis-Bold;
-  src: url("../fonts/Metropolis-Bold.otf");
-}
-@font-face {
-  font-family: Metropolis-BoldItalic;
-  src: url("../fonts/Metropolis-BoldItalic.otf");
-}
-@font-face {
-  font-family: Metropolis-ExtraBold;
-  src: url("../fonts/Metropolis-ExtraBold.otf");
-}
-@font-face {
-  font-family: Metropolis-ExtraBoldItalic;
-  src: ult("../fonts/Metropolis-ExtraBoldItalic");
-}
-@font-face {
-  font-family: Metropolis-ExtraLight;
-  src: ult("../fonts/Metropolis-ExtraLight");
-}
-@font-face {
-  font-family: Metropolis-ExtraLightItalic;
-  src: ult("../fonts/Metropolis-ExtraLightItalic");
-}
-@font-face {
-  font-family: Metropolis-Light;
-  src: ult("../fonts/Metropolis-Light");
-}
-@font-face {
-  font-family: Metropolis-LightItalic;
-  src: ult("../fonts/Metropolis-LightItalic");
-}
-@font-face {
-  font-family: Metropolis-Medium;
-  src: ult("../fonts/Metropolis-Medium");
-}
-@font-face {
-  font-family: Metropolis-MediumItalic;
-  src: ult("../fonts/Metropolis-MediumItalic");
-}
-@font-face {
-  font-family: Metropolis-Regular;
-  src: ult("../fonts/Metropolis-Regular");
-}
-@font-face {
-  font-family: Metropolis-RegularItalic;
-  src: ult("../fonts/Metropolis-RegularItalic");
-}
-@font-face {
-  font-family: Metropolis-SemiBold;
-  src: ult("../fonts/Metropolis-SemiBold");
-}
-@font-face {
-  font-family: Metropolis-SemiBoldItalic;
-  src: ult("../fonts/Metropolis-SemiBoldItalic");
-}
-@font-face {
-  font-family: Metropolis-Thin;
-  src: ult("../fonts/Metropolis-Thin");
-}
-@font-face {
-  font-family: Metropolis-ThinItalic;
-  src: ult("../fonts/Metropolis-ThinItalic");
-}
-@font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon.eot?eyslk1");
   src: url("../fonts/icomoon.eot?eyslk1#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?eyslk1") format("truetype"), url("../fonts/icomoon.woff?eyslk1") format("woff"), url("../fonts/icomoon.svg?eyslk1#icomoon") format("svg");
@@ -139,6 +67,78 @@
   content: "\e90b";
 }
 
+@font-face {
+  font-family: Metropolis-Black;
+  src: url("../fonts/Metropolis-Black.otf");
+}
+@font-face {
+  font-family: Metropolis-BlackItalic;
+  src: url("../fonts/Metropolis-BlackItalic.otf");
+}
+@font-face {
+  font-family: Metropolis-Bold;
+  src: url("../fonts/Metropolis-Bold.otf");
+}
+@font-face {
+  font-family: Metropolis-BoldItalic;
+  src: url("../fonts/Metropolis-BoldItalic.otf");
+}
+@font-face {
+  font-family: Metropolis-ExtraBold;
+  src: url("../fonts/Metropolis-ExtraBold.otf");
+}
+@font-face {
+  font-family: Metropolis-ExtraBoldItalic;
+  src: url("../fonts/Metropolis-ExtraBoldItalic");
+}
+@font-face {
+  font-family: Metropolis-ExtraLight;
+  src: url("../fonts/Metropolis-ExtraLight");
+}
+@font-face {
+  font-family: Metropolis-ExtraLightItalic;
+  src: url("../fonts/Metropolis-ExtraLightItalic");
+}
+@font-face {
+  font-family: Metropolis-Light;
+  src: url("../fonts/Metropolis-Light.otf");
+}
+@font-face {
+  font-family: Metropolis-LightItalic;
+  src: url("../fonts/Metropolis-LightItalic");
+}
+@font-face {
+  font-family: Metropolis-Medium;
+  src: url("../fonts/Metropolis-Medium");
+}
+@font-face {
+  font-family: Metropolis-MediumItalic;
+  src: url("../fonts/Metropolis-MediumItalic");
+}
+@font-face {
+  font-family: Metropolis-Regular;
+  src: url("../fonts/Metropolis-Regular");
+}
+@font-face {
+  font-family: Metropolis-RegularItalic;
+  src: url("../fonts/Metropolis-RegularItalic");
+}
+@font-face {
+  font-family: Metropolis-SemiBold;
+  src: url("../fonts/Metropolis-SemiBold");
+}
+@font-face {
+  font-family: Metropolis-SemiBoldItalic;
+  src: url("../fonts/Metropolis-SemiBoldItalic");
+}
+@font-face {
+  font-family: Metropolis-Thin;
+  src: url("../fonts/Metropolis-Thin");
+}
+@font-face {
+  font-family: Metropolis-ThinItalic;
+  src: url("../fonts/Metropolis-ThinItalic");
+}
 .footer-section a:hover {
   color: #9bcb3b;
 }
@@ -281,17 +281,7 @@
 
 .ShowPop li {
   display: flex;
-  -webkit-animation: 1.5s linear both slide;
-          animation: 1.5s linear both slide;
-}
-
-@-webkit-keyframes slide {
-  from {
-    max-height: 0%;
-  }
-  to {
-    max-height: 100%;
-  }
+  animation: 1.5s linear both slide;
 }
 
 @keyframes slide {
@@ -339,8 +329,6 @@
 }
 
 .header__icon--move {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -530,7 +518,6 @@ nav {
     display: flex;
     border-bottom: 1px solid #E1E2E8;
     border-top: 1px solid #E1E2E8;
-    position: -webkit-sticky;
     position: sticky;
     top: 0%;
     width: 100%;
@@ -780,11 +767,7 @@ a:hover {
 
 .banner_control-left {
   z-index: 30;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   padding: 1.3rem 1.3rem;
   position: absolute;
@@ -800,11 +783,7 @@ a:hover {
 
 .banner_control-right {
   z-index: 30;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   padding: 1.3rem 1.3rem;
   position: absolute;
@@ -823,8 +802,6 @@ a:hover {
   padding: 1rem 2.5rem;
   color: white;
   border: none;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   margin-left: 8rem;
   cursor: pointer;
@@ -883,8 +860,6 @@ a:hover {
     padding: 0.5rem 0.5rem;
     color: white;
     border: none;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -915,40 +890,38 @@ a:hover {
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
     transition: 0.4s;
   }
 }
-@media screen and (width < 500px) {
+@media screen and (548px < width < 551px) {
   .main_banner-img p:first-of-type {
-    font-size: 15px;
+    font-family: Metropolis-Bold;
+    font-size: 1.5rem;
   }
   .main_banner-img p:nth-of-type(2) {
     font-family: Metropolis-Light;
-    font-size: 15px;
+    font-size: 1.5rem;
   }
   .main_banner-img p:nth-of-type(3) {
-    font-size: 0px;
+    font-family: Metropolis-Regular;
+    font-size: 0.5rem;
+    max-width: 20rem;
+    margin: 0.5rem 0;
   }
   .main_banner-img p {
     margin: 0;
     padding-left: 5rem;
   }
   .main_banner-img button {
-    font-size: 12px;
     background-color: #f74137;
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
-    margin-bottom: 1px;
     cursor: pointer;
     transition: 0.4s;
   }
@@ -974,8 +947,6 @@ a:hover {
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     margin-bottom: 1px;
@@ -983,8 +954,13 @@ a:hover {
     transition: 0.4s;
   }
 }
+.secondary__banner__section {
+  display: flex;
+  justify-content: space-around;
+}
+
 .secondary__banner {
-  display: grid;
+  display: inline-flex;
   box-sizing: border-box;
   flex-wrap: wrap;
   grid-template-columns: 1fr 1fr 1fr;
@@ -996,7 +972,7 @@ a:hover {
   transition: 0.4s;
 }
 
-.secondary__banner__container {
+.secondary__banner__container__1, .secondary__banner__container__2, .secondary__banner__container__3 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -1019,46 +995,47 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 0 0 2rem;
 }
 
 .quick__helpers__option > p {
   margin: 0;
+  padding-bottom: 1rem;
   padding-left: 2rem;
 }
 
 .secondary__banner__container__1 {
   background-image: url("../photos/img_02.jpg");
+  background-position: right;
   display: flex;
+  align-self: center;
   flex-wrap: wrap;
   position: relative;
   justify-content: center;
-  background-size: cover;
-  width: 350px;
-  height: 150px;
+  width: 600px;
+  height: 400px;
   transition: 0.4s;
 }
 
 .secondary__banner__container__2 {
   background-image: url("../photos/img_03.jpg");
-  display: flex;
-  flex-wrap: wrap;
   position: relative;
-  justify-content: center;
-  background-size: cover;
-  width: 350px;
-  height: 150px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 600px;
+  height: 400px;
   transition: 0.4s;
 }
 
 .secondary__banner__container__3 {
   background-image: url("../photos/img_05.jpg");
   display: flex;
+  align-self: center;
   flex-wrap: wrap;
   position: relative;
   justify-content: center;
-  background-size: cover;
-  width: 350px;
-  height: 150px;
+  width: 600px;
+  height: 400px;
   transition: 0.4s;
 }
 
@@ -1079,8 +1056,6 @@ a:hover {
   color: white;
   border: 1px solid white;
   padding: 1rem 2rem;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   margin-left: 2rem;
   margin-top: 1.5rem;
@@ -1092,4 +1067,22 @@ a:hover {
 }
 .quick__helpers__option button:hover {
   background-color: #f74137;
-}/*# sourceMappingURL=main.css.map */
+}
+.quick__helpers__option p {
+  padding-bottom: auto auto 5rem auto;
+  font-size: 1.5rem;
+}
+.quick__helpers__option p:first-of-type {
+  font-family: Metropolis-Bold;
+  letter-spacing: 0.5px;
+  font-size: 2rem;
+  padding: 0 0 0 2rem;
+}
+.quick__helpers__option p:last-of-type {
+  font-family: Metropolis-Light;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  padding: 0 0 0 2rem;
+}
+
+/*# sourceMappingURL=main.css.map */

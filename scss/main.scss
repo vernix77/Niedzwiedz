@@ -230,36 +230,37 @@ a:hover {
 	}
 }
 
-@media screen and (width < 500px) {
-	.main_banner-img p:first-of-type {
-		font-size: 15px;
-	}
+@media screen and (548px < width < 551px) {
+    .main_banner-img p:first-of-type {
+        font-family: Metropolis-Bold;
+        font-size: 1.5rem;
+    }
 
-	.main_banner-img p:nth-of-type(2) {
-		font-family: Metropolis-Light;
-		font-size: 15px;
-	}
-	.main_banner-img p:nth-of-type(3) {
-		font-size: 0px;
-	}
-	.main_banner-img p {
-		margin: 0;
-		padding-left: 5rem;
-	}
-	.main_banner-img button {
-		font-size: 12px;
-		background-color: #f74137;
-		padding: 0.3rem 0.3rem;
-		color: white;
-		border: none;
-		max-width: fit-content;
-		margin-left: 5rem;
-		margin-bottom: 1px;
-		cursor: pointer;
-		transition: 0.4s;
-	}
+    .main_banner-img p:nth-of-type(2) {
+        font-family: Metropolis-Light;
+        font-size: 1.5rem;
+    }
+    .main_banner-img p:nth-of-type(3) {
+        font-family: Metropolis-Regular;
+        font-size: 0.5rem;
+        max-width: 20rem;
+        margin: 0.5rem 0;
+    }
+    .main_banner-img p {
+        margin: 0;
+        padding-left: 5rem;
+    }
+    .main_banner-img button {
+        background-color: #f74137;
+        padding: 0.3rem 0.3rem;
+        color: white;
+        border: none;
+        max-width: fit-content;
+        margin-left: 5rem;
+        cursor: pointer;
+        transition: 0.4s;
+    }
 }
-
 @media screen and (width < 375px) {
 	.main_banner-img p:first-of-type {
 		font-size: 0px;
@@ -289,8 +290,12 @@ a:hover {
 		transition: 0.4s;
 	}
 }
+.secondary__banner__section{
+	display: flex;
+	justify-content: space-around;
+}
 .secondary__banner {
-	display: grid;
+	display: inline-flex;
 	box-sizing: border-box;
 	flex-wrap: wrap;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -301,7 +306,7 @@ a:hover {
 	overflow: hidden;
 	transition: 0.4s;
 }
-.secondary__banner__container {
+.secondary__banner__container__1,.secondary__banner__container__2,.secondary__banner__container__3 {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -323,45 +328,56 @@ a:hover {
 	flex-direction: column;
 	justify-content: center;
 	flex-wrap: wrap;
+	padding: 0 0 2rem;
 }
 .quick__helpers__option > p {
 	margin: 0;
+	padding-bottom: 01rem;
 	padding-left: 2rem;
 }
 .secondary__banner__container__1 {
 	background-image: url("../photos/img_02.jpg");
+	background-position: right;
 	display: flex;
+	align-self: center;
 	flex-wrap: wrap;
 	// flex-direction: row;
 	position: relative;
 	justify-content: center;
-	background-size: cover;
-	width: 350px;
-	height: 150px;
+	// background-size: cover;
+	width: 600px;
+	height: 400px;
 	transition: 0.4s;
 }
 .secondary__banner__container__2 {
 	background-image: url("../photos/img_03.jpg");
-	display: flex;
-	flex-wrap: wrap;
-	// flex-direction: row;
-	position: relative; 
-	justify-content: center;
-	background-size: cover;
-	width: 350px;
-	height: 150px;
+	position: relative;
+	// display: flex;
+	// align-self: center;
+	// flex-wrap: wrap;
+	// background-attachment: fixed;
+	background-repeat: no-repeat;
+	// background-size: cover;
+	background-position: bottom;
+	// // flex-direction: row;
+	// position: relative; 
+	// justify-content: center;
+	// // background-size: cover;
+	width: 600px;
+	height: 400px;
 	transition: 0.4s;
 }
 .secondary__banner__container__3 {
 	background-image: url("../photos/img_05.jpg");
 	display: flex;
+	align-self: center;
 	flex-wrap: wrap;
 	// flex-direction: row;
 	position: relative; 
 	justify-content: center;
-	background-size: cover;
-	width: 350px;
-	height: 150px;
+	// background-size: cover;
+	width: 600px;
+	height: 400px;
 	transition: 0.4s;
 }
 .secondary__banner__container__1:hover {
@@ -390,5 +406,21 @@ a:hover {
 	}
 	button:hover{
 		background-color: #f74137;
+	}
+	p{
+		padding-bottom: auto auto 5rem auto;
+		font-size: 1.5rem;
+	}
+	p:first-of-type{
+		font-family: Metropolis-Bold;
+		letter-spacing: 0.5px;
+		font-size: 2rem;
+		padding: 0 0 0 2rem;
+	}
+	p:last-of-type{
+		font-family: Metropolis-Light;
+		font-size: 1.75rem;
+		letter-spacing: 1px;
+		padding: 0 0 0 2rem;
 	}
 }
