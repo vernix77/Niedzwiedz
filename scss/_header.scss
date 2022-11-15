@@ -71,14 +71,14 @@
 			align-items: center;
 			font-size: 14px;
 			background-color: #ffffff;
-			p{
+			p {
 				display: flex;
 				justify-content: center;
 				align-items: center;
 				color: #161616;
 			}
-			.price{
-				color: #A3A3A3;
+			.price {
+				color: #a3a3a3;
 			}
 		}
 	}
@@ -250,7 +250,6 @@ nav {
 				padding-left: 1rem;
 				padding-right: 1rem;
 				align-items: center;
-				
 			}
 		}
 		.header_box-left {
@@ -331,51 +330,61 @@ nav {
 }
 
 @media screen and (width > 600px) {
-
-    .header_menu {
-        display: none;
-    }
+	.header_menu {
+		display: none;
+	}
 }
 
 @media screen and (width < 600px) {
-    .header_item {
-        font-family: Metropolis-Light;
-        font-size: 11px;
-    }
-    .nav_item {
-        font-family: Metropolis-Light;
-        font-size: 0px;
-        flex-wrap: nowrap;
-        opacity: 0;
-    }
-    .header_item {
-        font-size: 0px;
-        .header_icon {
-            border: none;
-            color: c.$main_color_text;
-            font-size: 30px;
-            opacity: 100;
-        }
-        .icon-right_arrow {
-            display: none;
-        }
-        .header_box-left {
-            display: none;
-        }
-        .icon {
-            border: none;
-            color: c.$main_color_text;
-            font-size: 30px;
-            opacity: 100;
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-evenly;
-        }
-    }
+	.header_item {
+		font-family: Metropolis-Light;
+		font-size: 11px;
+	}
+	.nav_item {
+		font-family: Metropolis-Light;
+		font-size: 0px;
+		flex-wrap: nowrap;
+		opacity: 0;
+	}
+	.header_item {
+		font-size: 0px;
+		margin: 0;
+		padding: 0;
+		.header_icon {
+			border: none;
+			color: c.$main_color_text;
+			font-size: 30px;
+			opacity: 100;
+		}
+		.header_box-left {
+			display: flex;
+			padding: 0;
+			margin: 0;
+		}
+		.header_basket a {
+			display: none;
+			font-size: 0px;
+		}
+		.icon {
+			border: none;
+			color: c.$main_color_text;
+			font-size: 30px;
+			opacity: 100;
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: space-evenly;
+		}
+	}
 }
 
 @media screen and (width < 992px) {
 	.cart__amount {
 		display: none;
 	}
+}
+
+.nav_items .active > .nav_item{
+	position: relative;
+	flex-wrap: nowrap;
+	flex-direction: column;
 }
