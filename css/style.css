@@ -161,7 +161,7 @@ a {
 }
 
 a:hover {
-  color: rgb(16, 241, 46);
+  color: #9bcb3b;
   transition: color 0.3s;
 }
 
@@ -430,7 +430,11 @@ nav {
 
 .banner_control-left {
   z-index: 30;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 1rem 1.5rem;
   position: absolute;
@@ -446,7 +450,11 @@ nav {
 
 .banner_control-right {
   z-index: 30;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 1rem 1.5rem;
   position: absolute;
@@ -465,6 +473,8 @@ nav {
   padding: 1rem 2.5rem;
   color: white;
   border: none;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   margin-left: 10rem;
   cursor: pointer;
@@ -494,6 +504,8 @@ nav {
   position: absolute;
   opacity: 0%;
 }
+
+@-webkit-keyframes slide {}
 
 @keyframes slide {}
 @media screen and (min-width: 862px) {
@@ -544,6 +556,7 @@ nav {
     display: flex;
     border-bottom: 1px solid #E1E2E8;
     border-top: 1px solid #E1E2E8;
+    position: -webkit-sticky;
     position: sticky;
     top: 0%;
     width: 100%;
@@ -644,7 +657,7 @@ nav {
     color: rgb(184, 180, 180);
   }
   .footer .footer_section a:hover {
-    color: rgb(16, 241, 46);
+    color: #9bcb3b;
   }
   .main_banner {
     margin-top: 1.7rem;
@@ -720,6 +733,8 @@ nav {
     padding: 0.5rem 0.5rem;
     color: white;
     border: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -768,6 +783,8 @@ nav {
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -820,6 +837,8 @@ nav {
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     margin-bottom: 1px;
@@ -828,7 +847,7 @@ nav {
   }
 }
 .footer-section a:hover {
-  color: rgb(16, 241, 46);
+  color: #9bcb3b;
 }
 
 @media screen and (width < 375px) {
@@ -852,6 +871,8 @@ nav {
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     margin-bottom: 1px;
@@ -871,7 +892,8 @@ nav {
 
 .ShowPop li {
   display: flex;
-  animation: 1.5s linear both slide;
+  -webkit-animation: 1.5s linear both slide;
+          animation: 1.5s linear both slide;
 }
 
 @keyframes slide {
@@ -884,6 +906,4 @@ nav {
 }
 .footer__list span {
   display: none;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
