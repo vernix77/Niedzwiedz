@@ -132,6 +132,25 @@
 	}
 }
 
+@media screen and (width = 860px) {
+	.footer {
+		grid: none;
+	}
+	.ArrowRotate span {
+		rotate: 180deg;
+		top: 20px;
+	}
+	.footer__section span {
+		position: absolute;
+		right: 0;
+		font-size: 40px;
+		transform: rotate(-180deg);
+	}
+	a {
+		z-index: 10;
+	}
+}
+
 .footer__list {
 	list-style: none;
 	li {
@@ -162,7 +181,7 @@
 	display: none;
 }
 
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 861px) {
 	h3 span {
 		display: none;
 	}
