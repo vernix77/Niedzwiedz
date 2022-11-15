@@ -342,9 +342,7 @@ nav {
 	}
 	.nav_item {
 		font-family: Metropolis-Light;
-		font-size: 0px;
 		flex-wrap: nowrap;
-		opacity: 0;
 	}
 	.header_item {
 		font-size: 0px;
@@ -383,8 +381,18 @@ nav {
 	}
 }
 
-.nav_items .active > .nav_item{
-	position: relative;
-	flex-wrap: nowrap;
+.active {
+	position: fixed;
+	display: flex;
 	flex-direction: column;
+	left: -30%;
+	opacity: 100;
+	z-index: 1000;
+	font-size: 12px;
+	background-color: #fff;
+}
+
+.deactive {
+	display: none;
+	font-size: 0px;
 }

@@ -1,12 +1,27 @@
-// hamburger menu
+const burgerbtn = document.querySelector(".header_menu");
+const hamburger = document.querySelector(".nav_items");
+const WindowSize = window.matchMedia("(max-width: 600px)");
 
-const mobileNav = document.querySelector('.nav_items');
-const burgerIcon = document.querySelector('.burger');
+function Menu() {
+	if (WindowSize.matches) {
+		hamburger.classList.toggle("active");
+		hamburger.classList.toggle("deactive");
+	} else {
+		hamburger.classList.remove("active");
+		hamburger.classList.remove("deactive");
+	}
+}
 
+function NavWindow() {
+	if (WindowSize.matches) {
+		console.log(`wok`);
+	} else {
+		hamburger.classList.remove("active");
+		hamburger.classList.remove("deactive");
+	}
+}
 
+burgerbtn.addEventListener("click", Menu);
 
-burgerIcon.addEventListener('click', function(){
-    mobileNav.classList.toggle('active');
-    burgerIcon.classList.toggle('active'); 
-   
-})
+NavWindow(WindowSize);
+WindowSize.addListener(NavWindow);
