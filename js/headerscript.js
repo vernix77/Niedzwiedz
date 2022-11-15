@@ -14,7 +14,7 @@ function Menu() {
 
 function NavWindow() {
 	if (WindowSize1.matches) {
-		console.log(`wok`);
+		hamburger.classList.add("deactive");
 	} else {
 		hamburger.classList.remove("active");
 		hamburger.classList.remove("deactive");
