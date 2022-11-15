@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon.eot?eyslk1");
@@ -727,7 +728,7 @@ body {
   font-family: Metropolis-Bold;
   background-color: #F2F3F4;
   color: #fff;
-  height: 3122px;
+  height: 300vh;
 }
 
 a {
@@ -843,6 +844,186 @@ a:hover {
   margin-left: 8rem;
   cursor: pointer;
   transition: 0.4s;
+}
+
+.sprawdź__dlaczego__my {
+  height: 595px;
+  width: 100%;
+}
+.sprawdź__dlaczego__my .bg__dlaczego__my {
+  background-image: url("../photos/img_07.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 595px;
+  width: 100%;
+}
+.sprawdź__dlaczego__my .bg__dlaczego__my .dlaczego__my {
+  font-family: Metropolis-Bold;
+  font-size: 44px;
+  color: white;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+.sprawdź__dlaczego__my .bg__dlaczego__my .linia__cz {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 1px;
+  width: 100%;
+  background-color: #e1e2e8;
+}
+.sprawdź__dlaczego__my .bg__dlaczego__my .linia__cz .linia__sz {
+  height: 3px;
+  width: 60px;
+  background-color: #f74137;
+  border-radius: 25px;
+}
+.sprawdź__dlaczego__my .bg__dlaczego__my .dlaczego__my2 {
+  font-family: Metropolis_Regular;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding-top: 3.3rem;
+  padding-bottom: 0.99rem;
+  padding-left: 448px;
+  padding-right: 448px;
+}
+.sprawdź__dlaczego__my .bg__dlaczego__my .banery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.sprawdź__dlaczego__my .bg__dlaczego__my .banery .szybka__wysyłka {
+  height: 153px;
+  width: 310px;
+  padding-top: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.5215686275);
+}
+.sprawdź__dlaczego__my .bg__dlaczego__my .banery .szybka__wysyłka .zdjęcie1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.8rem;
+}
+.sprawdź__dlaczego__my .bg__dlaczego__my .banery .szybka__wysyłka .zdjęcie1 img {
+  height: 4rem;
+}
+.sprawdź__dlaczego__my .bg__dlaczego__my .banery .szybka__wysyłka .paragraf1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2rem;
+}
+.sprawdź__dlaczego__my .bg__dlaczego__my .banery .szybka__wysyłka .paragraf1 p {
+  font-family: Metropolis-Bold;
+  font-size: 14px;
+  color: white;
+  margin-top: 3.4rem;
+}
+.sprawdź__dlaczego__my .bg__dlaczego__my .banery .szeroki__asortyment {
+  height: 153px;
+  width: 310px;
+  padding-top: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.5215686275);
+}
+.sprawdź__dlaczego__my .bg__dlaczego__my .banery .szeroki__asortyment .zdjęcie2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.8rem;
+}
+.sprawdź__dlaczego__my .bg__dlaczego__my .banery .szeroki__asortyment .zdjęcie2 img {
+  height: 4rem;
+}
+.sprawdź__dlaczego__my .bg__dlaczego__my .banery .szeroki__asortyment .paragraf2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2rem;
+}
+.sprawdź__dlaczego__my .bg__dlaczego__my .banery .szeroki__asortyment .paragraf2 p {
+  font-family: Metropolis-Bold;
+  font-size: 14px;
+  color: white;
+  margin-top: 3.4rem;
+}
+.sprawdź__dlaczego__my .bg__dlaczego__my .banery .bezpieczne__zwroty {
+  height: 153px;
+  width: 310px;
+  padding-top: 0.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.5215686275);
+}
+.sprawdź__dlaczego__my .bg__dlaczego__my .banery .bezpieczne__zwroty .zdjęcie3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.8rem;
+}
+.sprawdź__dlaczego__my .bg__dlaczego__my .banery .bezpieczne__zwroty .zdjęcie3 img {
+  height: 4.6rem;
+}
+.sprawdź__dlaczego__my .bg__dlaczego__my .banery .bezpieczne__zwroty .paragraf3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2rem;
+}
+.sprawdź__dlaczego__my .bg__dlaczego__my .banery .bezpieczne__zwroty .paragraf3 p {
+  font-family: Metropolis-Bold;
+  font-size: 14px;
+  color: white;
+  margin-top: 3.4rem;
+}
+.sprawdź__dlaczego__my .bg__dlaczego__my .informacje__o__firmie {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 2rem;
+}
+.sprawdź__dlaczego__my .bg__dlaczego__my .informacje__o__firmie .prosokąt__informacje__o__firmie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 246px;
+  background-color: #f74137;
+  opacity: 0.94;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.sprawdź__dlaczego__my .bg__dlaczego__my .informacje__o__firmie .prosokąt__informacje__o__firmie p {
+  font-family: Metropolis-Bold;
+  color: white;
+}
+.sprawdź__dlaczego__my .bg__dlaczego__my .informacje__o__firmie .prosokąt__informacje__o__firmie:hover {
+  opacity: 1;
+}
+
+.prostokąt__inspiracje {
+  display: flex;
+  justify-content: center;
+  padding-top: 2.77rem;
+}
+.prostokąt__inspiracje .zobacz__wszystkie__inspiracje {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 318px;
+  margin-bottom: 30px;
+  background-color: #f74137;
+  opacity: 0.94;
+  cursor: pointer;
+}
+.prostokąt__inspiracje .zobacz__wszystkie__inspiracje p {
+  font-family: Metropolis-Bold;
+  color: #ffffff;
+  font-size: 14px;
 }
 
 .main_banner-img button:hover {

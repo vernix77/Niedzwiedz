@@ -18,7 +18,7 @@ body {
 	font-family: Metropolis-Bold;
 	background-color: #F2F3F4;
 	color: c.$header_bg;
-	height: 3122px;
+	height: 300vh;
 }
 
 a {
@@ -133,6 +133,188 @@ a:hover {
 	margin-left: 8rem;
 	cursor: pointer;
 	transition: 0.4s;
+}
+
+.sprawdź__dlaczego__my {
+	height: 595px;
+	width: 100%;
+	.bg__dlaczego__my {
+		background-image: url("../photos/img_07.jpg");
+		background-attachment: fixed;
+		background-size:cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 595px;
+		width: 100%;
+		.dlaczego__my {
+			font-family: Metropolis-Bold;
+			font-size: 44px;
+			color: white;
+			text-align: center;
+			padding-top: 70px;
+			padding-bottom: 20px;
+		}
+		.linia__cz {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			height: 1px;
+			width: 100%;
+			background-color: #e1e2e8;
+			.linia__sz {
+				height: 3px;
+				width: 60px;
+				background-color: #f74137;
+				border-radius: 25px;
+			}
+		}
+
+		.dlaczego__my2 {
+			font-family: Metropolis_Regular;
+			font-size: 18px;
+			color: white;
+			text-align: center;
+			padding-top: 3.3rem;
+			padding-bottom: 0.99rem;
+			padding-left: 448px;
+			padding-right: 448px;
+		}
+		.banery {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			justify-content: space-evenly;
+			.szybka__wysyłka {
+				height: 153px;
+				width: 310px;
+				padding-top: 0.8rem;
+				border: 1px solid #ffffff85;
+				.zdjęcie1 {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					padding-top: 0.8rem;
+					img {
+						height: 4rem;
+						
+					}
+				}
+				.paragraf1 {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin-top: -2rem;
+					p {
+						font-family: Metropolis-Bold;
+						font-size: 14px;
+						color: white;
+						margin-top: 3.4rem;
+					}
+				}
+			}
+			.szeroki__asortyment {
+				height: 153px;
+				width: 310px;
+				padding-top: 0.8rem;
+				border: 1px solid #ffffff85;
+				.zdjęcie2 {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					padding-top: 0.8rem;
+					img {
+						height: 4rem;
+					}
+				}
+				.paragraf2 {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin-top: -2rem;
+					p {
+						font-family: Metropolis-Bold;
+						font-size: 14px;
+						color: white;
+						margin-top: 3.4rem;
+					}
+				}
+			}
+			.bezpieczne__zwroty {
+				height: 153px;
+				width: 310px;
+				padding-top: 0.2rem;
+				border: 1px solid #ffffff85;
+				.zdjęcie3 {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					padding-top: 0.8rem;
+					img {
+						height: 4.6rem;
+					}
+				}
+				.paragraf3 {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin-top: -2rem;
+					p {
+						font-family: Metropolis-Bold;
+						font-size: 14px;
+						color: white;
+						margin-top: 3.4rem;
+					}
+				}
+			}
+		}
+		.informacje__o__firmie {
+			display: flex;
+			justify-content: center;
+			justify-items: center;
+			padding-top: 2rem;
+			.prosokąt__informacje__o__firmie {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 55px;
+				width: 246px;
+				background-color: #f74137;
+				opacity: 0.94;
+				cursor: pointer;
+				transition: 0.5s;
+				p {
+					font-family: Metropolis-Bold;
+					color: white;
+				}
+			}
+			.prosokąt__informacje__o__firmie:hover {
+				// opacity: 1;
+				opacity: 1;
+			}
+		}
+	}
+}
+.prostokąt__inspiracje {
+	display: flex;
+	justify-content: center;
+	padding-top: 2.77rem;
+	.zobacz__wszystkie__inspiracje {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		height: 55px;
+		width: 318px;
+		margin-bottom: 30px;
+		background-color: #f74137;
+		opacity: 0.94;
+		cursor: pointer;
+		p {
+			font-family: Metropolis-Bold;
+			color: #ffffff;
+			font-size: 14px;
+		}
+	}
 }
 
 .main_banner-img button:hover {
