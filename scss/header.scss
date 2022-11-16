@@ -213,6 +213,7 @@ nav {
 		text-transform: uppercase;
 		opacity: 1;
 		z-index: 1300;
+		font-family: Metropolis-Bold;
 	}
 	.nav_item {
 		z-index: 1300;
@@ -287,6 +288,12 @@ nav {
 			border-left: 1px solid c.$main_color_text;
 			background-color: c.$basket_color;
 		}
+	}
+}
+
+@media screen and (890 < width) {
+	.nav-items {
+		font-family: Metropolis-Bold;
 	}
 }
 
