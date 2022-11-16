@@ -299,17 +299,7 @@
 
 .ShowPop li {
   display: flex;
-  -webkit-animation: 1.5s linear both slide;
-          animation: 1.5s linear both slide;
-}
-
-@-webkit-keyframes slide {
-  from {
-    max-height: 0%;
-  }
-  to {
-    max-height: 100%;
-  }
+  animation: 1.5s linear both slide;
 }
 
 @keyframes slide {
@@ -357,8 +347,6 @@
 }
 
 .header__icon--move {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -548,7 +536,6 @@ nav {
     display: flex;
     border-bottom: 1px solid #E1E2E8;
     border-top: 1px solid #E1E2E8;
-    position: -webkit-sticky;
     position: sticky;
     top: 0%;
     width: 100%;
@@ -817,11 +804,7 @@ a:hover {
 
 .banner_control-left {
   z-index: 30;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   padding: 1.3rem 1.3rem;
   position: absolute;
@@ -837,11 +820,7 @@ a:hover {
 
 .banner_control-right {
   z-index: 30;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   padding: 1.3rem 1.3rem;
   position: absolute;
@@ -860,8 +839,6 @@ a:hover {
   padding: 1rem 2.5rem;
   color: white;
   border: none;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   margin-left: 8rem;
   cursor: pointer;
@@ -1107,8 +1084,6 @@ a:hover {
     padding: 0.5rem 0.5rem;
     color: white;
     border: none;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -1139,8 +1114,6 @@ a:hover {
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -1171,8 +1144,6 @@ a:hover {
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -1200,8 +1171,6 @@ a:hover {
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     margin-bottom: 1px;
@@ -1311,8 +1280,6 @@ a:hover {
   color: white;
   border: 1px solid white;
   padding: 1rem 2rem;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   margin-left: 2rem;
   margin-top: 1.5rem;
@@ -1340,4 +1307,6 @@ a:hover {
   font-size: 1.75rem;
   letter-spacing: 1px;
   padding: 0 0 0 2rem;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

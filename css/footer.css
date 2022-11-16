@@ -1,7 +1,7 @@
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?yhxok7");
-  src: url("../fonts/icomoon.eot?yhxok7#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?yhxok7") format("truetype"), url("../fonts/icomoon.woff?yhxok7") format("woff"), url("../fonts/icomoon.svg?yhxok7#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?eyslk1");
+  src: url("../fonts/icomoon.eot?eyslk1#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?eyslk1") format("truetype"), url("../fonts/icomoon.woff?eyslk1") format("woff"), url("../fonts/icomoon.svg?eyslk1#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -9,6 +9,7 @@
 [class^=icon-],
 [class*=" icon-"] {
   font-family: "icomoon" !important;
+  speak-as: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -16,6 +17,54 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-box:before {
+  content: "\e900";
+}
+
+.icon-phone:before {
+  content: "\e901";
+}
+
+.icon-star:before {
+  content: "\e902";
+}
+
+.icon-person:before {
+  content: "\e903";
+}
+
+.icon-right_arrow:before {
+  content: "\e904";
+}
+
+.icon-left_arrow:before {
+  content: "\e905";
+}
+
+.icon-card:before {
+  content: "\e906";
+}
+
+.icon-play:before {
+  content: "\e907";
+}
+
+.icon-widok_01:before {
+  content: "\e908";
+}
+
+.icon-widok_02:before {
+  content: "\e909";
+}
+
+.icon-wysylka:before {
+  content: "\e90a";
+}
+
+.icon-x:before {
+  content: "\e90b";
 }
 
 @font-face {
@@ -52,7 +101,7 @@
 }
 @font-face {
   font-family: Metropolis-Light;
-  src: url("../fonts/Metropolis-Light");
+  src: url("../fonts/Metropolis-Light.otf");
 }
 @font-face {
   font-family: Metropolis-LightItalic;
@@ -90,69 +139,13 @@
   font-family: Metropolis-ThinItalic;
   src: url("../fonts/Metropolis-ThinItalic");
 }
-.icon-box:before {
-  content: "\e900";
-}
-
-.icon-01:before {
-  content: "\e901";
-}
-
-.icon-02:before {
-  content: "\e902";
-}
-
-.icon-03:before {
-  content: "\e903";
-}
-
-.icon-04:before {
-  content: "\e904";
-}
-
-.icon-05:before {
-  content: "\e905";
-}
-
-.icon-06:before {
-  content: "\e906";
-}
-
-.icon-play:before {
-  content: "\e907";
-}
-
-.icon-widok_01:before {
-  content: "\e908";
-}
-
-.icon-widok_02:before {
-  content: "\e909";
-}
-
-.icon-wysylka:before {
-  content: "\e90a";
-}
-
-.icon-x:before {
-  content: "\e90b";
-}
-
 .footer-section a:hover {
-  color: rgb(16, 241, 46);
-}
-
-footer {
-  font-family: Metropolis-Regular;
-  position: relative;
-}
-footer a {
-  text-decoration: none;
+  color: #9bcb3b;
 }
 
 .footer {
   position: absolute;
-  bottom: 0;
+  bottom: 100px;
   width: 100%;
   background-color: #22262c;
   display: grid;
@@ -255,10 +248,28 @@ footer a {
     color: rgb(184, 180, 180);
   }
   .footer .footer__section a:hover {
-    color: rgb(16, 241, 46);
+    color: #9bcb3b;
   }
 }
 @media screen and (width < 860px) {
+  .footer {
+    grid: none;
+  }
+  .ArrowRotate span {
+    rotate: 180deg;
+    top: 20px;
+  }
+  .footer__section span {
+    position: absolute;
+    right: 0;
+    font-size: 40px;
+    transform: rotate(-180deg);
+  }
+  a {
+    z-index: 10;
+  }
+}
+@media screen and (width = 860px) {
   .footer {
     grid: none;
   }
@@ -303,7 +314,7 @@ footer a {
   display: none;
 }
 
-@media screen and (min-width: 862px) {
+@media screen and (min-width: 861px) {
   h3 span {
     display: none;
   }
