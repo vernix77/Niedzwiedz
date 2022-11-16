@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon.eot?eyslk1");
@@ -300,7 +299,17 @@
 
 .ShowPop li {
   display: flex;
-  animation: 1.5s linear both slide;
+  -webkit-animation: 1.5s linear both slide;
+          animation: 1.5s linear both slide;
+}
+
+@-webkit-keyframes slide {
+  from {
+    max-height: 0%;
+  }
+  to {
+    max-height: 100%;
+  }
 }
 
 @keyframes slide {
@@ -348,6 +357,8 @@
 }
 
 .header__icon--move {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -537,6 +548,7 @@ nav {
     display: flex;
     border-bottom: 1px solid #E1E2E8;
     border-top: 1px solid #E1E2E8;
+    position: -webkit-sticky;
     position: sticky;
     top: 0%;
     width: 100%;
@@ -805,7 +817,11 @@ a:hover {
 
 .banner_control-left {
   z-index: 30;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 1.3rem 1.3rem;
   position: absolute;
@@ -821,7 +837,11 @@ a:hover {
 
 .banner_control-right {
   z-index: 30;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 1.3rem 1.3rem;
   position: absolute;
@@ -840,17 +860,19 @@ a:hover {
   padding: 1rem 2.5rem;
   color: white;
   border: none;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   margin-left: 8rem;
   cursor: pointer;
   transition: 0.4s;
 }
 
-.sprawdź__dlaczego__my {
+.check__why__us {
   height: 595px;
   width: 100%;
 }
-.sprawdź__dlaczego__my .bg__dlaczego__my {
+.check__why__us .bg__why__us {
   background-image: url("../photos/img_07.jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -859,7 +881,7 @@ a:hover {
   height: 595px;
   width: 100%;
 }
-.sprawdź__dlaczego__my .bg__dlaczego__my .dlaczego__my {
+.check__why__us .bg__why__us .why__us {
   font-family: Metropolis-Bold;
   font-size: 44px;
   color: white;
@@ -867,7 +889,7 @@ a:hover {
   padding-top: 70px;
   padding-bottom: 20px;
 }
-.sprawdź__dlaczego__my .bg__dlaczego__my .linia__cz {
+.check__why__us .bg__why__us .line__red {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -875,14 +897,14 @@ a:hover {
   width: 100%;
   background-color: #e1e2e8;
 }
-.sprawdź__dlaczego__my .bg__dlaczego__my .linia__cz .linia__sz {
+.check__why__us .bg__why__us .line__red .line__grey {
   height: 3px;
   width: 60px;
   background-color: #f74137;
   border-radius: 25px;
 }
-.sprawdź__dlaczego__my .bg__dlaczego__my .dlaczego__my2 {
-  font-family: Metropolis_Regular;
+.check__why__us .bg__why__us .why__us2 {
+  font-family: Metropolis-Regular;
   font-size: 18px;
   color: white;
   text-align: center;
@@ -891,100 +913,100 @@ a:hover {
   padding-left: 448px;
   padding-right: 448px;
 }
-.sprawdź__dlaczego__my .bg__dlaczego__my .banery {
+.check__why__us .bg__why__us .banners {
   display: flex;
   flex-direction: row;
   justify-content: center;
   justify-content: space-evenly;
 }
-.sprawdź__dlaczego__my .bg__dlaczego__my .banery .szybka__wysyłka {
+.check__why__us .bg__why__us .banners .fast__shipping {
   height: 153px;
   width: 310px;
   padding-top: 0.8rem;
   border: 1px solid rgba(255, 255, 255, 0.5215686275);
 }
-.sprawdź__dlaczego__my .bg__dlaczego__my .banery .szybka__wysyłka .zdjęcie1 {
+.check__why__us .bg__why__us .banners .fast__shipping .picture1 {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 0.8rem;
 }
-.sprawdź__dlaczego__my .bg__dlaczego__my .banery .szybka__wysyłka .zdjęcie1 img {
+.check__why__us .bg__why__us .banners .fast__shipping .picture1 img {
   height: 4rem;
 }
-.sprawdź__dlaczego__my .bg__dlaczego__my .banery .szybka__wysyłka .paragraf1 {
+.check__why__us .bg__why__us .banners .fast__shipping .paragraph1 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: -2rem;
 }
-.sprawdź__dlaczego__my .bg__dlaczego__my .banery .szybka__wysyłka .paragraf1 p {
+.check__why__us .bg__why__us .banners .fast__shipping .paragraph1 p {
   font-family: Metropolis-Bold;
   font-size: 14px;
   color: white;
   margin-top: 3.4rem;
 }
-.sprawdź__dlaczego__my .bg__dlaczego__my .banery .szeroki__asortyment {
+.check__why__us .bg__why__us .banners .wide__range {
   height: 153px;
   width: 310px;
   padding-top: 0.8rem;
   border: 1px solid rgba(255, 255, 255, 0.5215686275);
 }
-.sprawdź__dlaczego__my .bg__dlaczego__my .banery .szeroki__asortyment .zdjęcie2 {
+.check__why__us .bg__why__us .banners .wide__range .picture2 {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 0.8rem;
 }
-.sprawdź__dlaczego__my .bg__dlaczego__my .banery .szeroki__asortyment .zdjęcie2 img {
+.check__why__us .bg__why__us .banners .wide__range .picture2 img {
   height: 4rem;
 }
-.sprawdź__dlaczego__my .bg__dlaczego__my .banery .szeroki__asortyment .paragraf2 {
+.check__why__us .bg__why__us .banners .wide__range .paragraph2 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: -2rem;
 }
-.sprawdź__dlaczego__my .bg__dlaczego__my .banery .szeroki__asortyment .paragraf2 p {
+.check__why__us .bg__why__us .banners .wide__range .paragraph2 p {
   font-family: Metropolis-Bold;
   font-size: 14px;
   color: white;
   margin-top: 3.4rem;
 }
-.sprawdź__dlaczego__my .bg__dlaczego__my .banery .bezpieczne__zwroty {
+.check__why__us .bg__why__us .banners .safe__return {
   height: 153px;
   width: 310px;
   padding-top: 0.2rem;
   border: 1px solid rgba(255, 255, 255, 0.5215686275);
 }
-.sprawdź__dlaczego__my .bg__dlaczego__my .banery .bezpieczne__zwroty .zdjęcie3 {
+.check__why__us .bg__why__us .banners .safe__return .picture3 {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 0.8rem;
 }
-.sprawdź__dlaczego__my .bg__dlaczego__my .banery .bezpieczne__zwroty .zdjęcie3 img {
+.check__why__us .bg__why__us .banners .safe__return .picture3 img {
   height: 4.6rem;
 }
-.sprawdź__dlaczego__my .bg__dlaczego__my .banery .bezpieczne__zwroty .paragraf3 {
+.check__why__us .bg__why__us .banners .safe__return .paragraph3 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: -2rem;
 }
-.sprawdź__dlaczego__my .bg__dlaczego__my .banery .bezpieczne__zwroty .paragraf3 p {
+.check__why__us .bg__why__us .banners .safe__return .paragraph3 p {
   font-family: Metropolis-Bold;
   font-size: 14px;
   color: white;
   margin-top: 3.4rem;
 }
-.sprawdź__dlaczego__my .bg__dlaczego__my .informacje__o__firmie {
+.check__why__us .bg__why__us .company__information {
   display: flex;
   justify-content: center;
   justify-items: center;
   padding-top: 2rem;
 }
-.sprawdź__dlaczego__my .bg__dlaczego__my .informacje__o__firmie .prosokąt__informacje__o__firmie {
+.check__why__us .bg__why__us .company__information .rectangle__company__information {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -995,20 +1017,21 @@ a:hover {
   cursor: pointer;
   transition: 0.5s;
 }
-.sprawdź__dlaczego__my .bg__dlaczego__my .informacje__o__firmie .prosokąt__informacje__o__firmie p {
+.check__why__us .bg__why__us .company__information .rectangle__company__information p {
   font-family: Metropolis-Bold;
   color: white;
 }
-.sprawdź__dlaczego__my .bg__dlaczego__my .informacje__o__firmie .prosokąt__informacje__o__firmie:hover {
+.check__why__us .bg__why__us .company__information .rectangle__company__information:hover {
   opacity: 1;
+  scale: 1.01;
 }
 
-.prostokąt__inspiracje {
+.rectangle__inspiration {
   display: flex;
   justify-content: center;
   padding-top: 2.77rem;
 }
-.prostokąt__inspiracje .zobacz__wszystkie__inspiracje {
+.rectangle__inspiration .see__all__inspirations {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1018,12 +1041,17 @@ a:hover {
   margin-bottom: 30px;
   background-color: #f74137;
   opacity: 0.94;
+  transition: 0.5s;
   cursor: pointer;
 }
-.prostokąt__inspiracje .zobacz__wszystkie__inspiracje p {
+.rectangle__inspiration .see__all__inspirations p {
   font-family: Metropolis-Bold;
   color: #ffffff;
   font-size: 14px;
+}
+.rectangle__inspiration .see__all__inspirations:hover {
+  opacity: 1;
+  scale: 1.01;
 }
 
 .main_banner-img button:hover {
@@ -1078,6 +1106,8 @@ a:hover {
     padding: 0.5rem 0.5rem;
     color: white;
     border: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -1108,6 +1138,8 @@ a:hover {
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -1138,6 +1170,8 @@ a:hover {
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -1165,6 +1199,8 @@ a:hover {
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     margin-bottom: 1px;
@@ -1274,6 +1310,8 @@ a:hover {
   color: white;
   border: 1px solid white;
   padding: 1rem 2rem;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   margin-left: 2rem;
   margin-top: 1.5rem;
@@ -1301,6 +1339,4 @@ a:hover {
   font-size: 1.75rem;
   letter-spacing: 1px;
   padding: 0 0 0 2rem;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

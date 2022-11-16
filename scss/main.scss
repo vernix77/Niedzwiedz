@@ -135,10 +135,10 @@ a:hover {
 	transition: 0.4s;
 }
 
-.sprawdź__dlaczego__my {
+.check__why__us {
 	height: 595px;
 	width: 100%;
-	.bg__dlaczego__my {
+	.bg__why__us {
 		background-image: url("../photos/img_07.jpg");
 		background-attachment: fixed;
 		background-size:cover;
@@ -146,7 +146,7 @@ a:hover {
 		background-repeat: no-repeat;
 		height: 595px;
 		width: 100%;
-		.dlaczego__my {
+		.why__us {
 			font-family: Metropolis-Bold;
 			font-size: 44px;
 			color: white;
@@ -154,14 +154,14 @@ a:hover {
 			padding-top: 70px;
 			padding-bottom: 20px;
 		}
-		.linia__cz {
+		.line__red {
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
 			height: 1px;
 			width: 100%;
 			background-color: #e1e2e8;
-			.linia__sz {
+			.line__grey {
 				height: 3px;
 				width: 60px;
 				background-color: #f74137;
@@ -169,8 +169,8 @@ a:hover {
 			}
 		}
 
-		.dlaczego__my2 {
-			font-family: Metropolis_Regular;
+		.why__us2 {
+			font-family: Metropolis-Regular;
 			font-size: 18px;
 			color: white;
 			text-align: center;
@@ -179,17 +179,17 @@ a:hover {
 			padding-left: 448px;
 			padding-right: 448px;
 		}
-		.banery {
+		.banners {
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
 			justify-content: space-evenly;
-			.szybka__wysyłka {
+			.fast__shipping {
 				height: 153px;
 				width: 310px;
 				padding-top: 0.8rem;
 				border: 1px solid #ffffff85;
-				.zdjęcie1 {
+				.picture1 {
 					display: flex;
 					justify-content: center;
 					align-items: center;
@@ -199,7 +199,7 @@ a:hover {
 						
 					}
 				}
-				.paragraf1 {
+				.paragraph1 {
 					display: flex;
 					justify-content: center;
 					align-items: center;
@@ -212,12 +212,12 @@ a:hover {
 					}
 				}
 			}
-			.szeroki__asortyment {
+			.wide__range {
 				height: 153px;
 				width: 310px;
 				padding-top: 0.8rem;
 				border: 1px solid #ffffff85;
-				.zdjęcie2 {
+				.picture2 {
 					display: flex;
 					justify-content: center;
 					align-items: center;
@@ -226,7 +226,7 @@ a:hover {
 						height: 4rem;
 					}
 				}
-				.paragraf2 {
+				.paragraph2 {
 					display: flex;
 					justify-content: center;
 					align-items: center;
@@ -239,12 +239,12 @@ a:hover {
 					}
 				}
 			}
-			.bezpieczne__zwroty {
+			.safe__return {
 				height: 153px;
 				width: 310px;
 				padding-top: 0.2rem;
 				border: 1px solid #ffffff85;
-				.zdjęcie3 {
+				.picture3 {
 					display: flex;
 					justify-content: center;
 					align-items: center;
@@ -253,7 +253,7 @@ a:hover {
 						height: 4.6rem;
 					}
 				}
-				.paragraf3 {
+				.paragraph3 {
 					display: flex;
 					justify-content: center;
 					align-items: center;
@@ -267,12 +267,13 @@ a:hover {
 				}
 			}
 		}
-		.informacje__o__firmie {
+		.company__information {
 			display: flex;
 			justify-content: center;
 			justify-items: center;
 			padding-top: 2rem;
-			.prosokąt__informacje__o__firmie {
+			
+			.rectangle__company__information {
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -287,18 +288,18 @@ a:hover {
 					color: white;
 				}
 			}
-			.prosokąt__informacje__o__firmie:hover {
-				// opacity: 1;
+			.rectangle__company__information:hover {
 				opacity: 1;
+				scale: 1.01;
 			}
 		}
 	}
 }
-.prostokąt__inspiracje {
+.rectangle__inspiration {
 	display: flex;
 	justify-content: center;
 	padding-top: 2.77rem;
-	.zobacz__wszystkie__inspiracje {
+	.see__all__inspirations {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -308,12 +309,17 @@ a:hover {
 		margin-bottom: 30px;
 		background-color: #f74137;
 		opacity: 0.94;
+		transition: .5s;
 		cursor: pointer;
 		p {
 			font-family: Metropolis-Bold;
 			color: #ffffff;
 			font-size: 14px;
 		}
+	}
+	.see__all__inspirations:hover{
+		opacity: 1;
+		scale: 1.01;
 	}
 }
 
