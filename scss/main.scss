@@ -176,19 +176,18 @@ a:hover {
 			text-align: center;
 			padding-top: 3.3rem;
 			padding-bottom: 0.99rem;
-			padding-left: 448px;
-			padding-right: 448px;
 		}
 		.banners {
 			display: flex;
 			flex-direction: row;
-			justify-content: center;
 			justify-content: space-evenly;
 			.fast__shipping {
 				height: 153px;
 				width: 310px;
 				padding-top: 0.8rem;
 				border: 1px solid #ffffff85;
+				margin-left: 10px;
+				margin-right: 10px;
 				.picture1 {
 					display: flex;
 					justify-content: center;
@@ -217,6 +216,7 @@ a:hover {
 				width: 310px;
 				padding-top: 0.8rem;
 				border: 1px solid #ffffff85;
+				margin-right: 10px;
 				.picture2 {
 					display: flex;
 					justify-content: center;
@@ -244,6 +244,7 @@ a:hover {
 				width: 310px;
 				padding-top: 0.2rem;
 				border: 1px solid #ffffff85;
+				margin-right: 10px;
 				.picture3 {
 					display: flex;
 					justify-content: center;

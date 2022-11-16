@@ -910,13 +910,10 @@ a:hover {
   text-align: center;
   padding-top: 3.3rem;
   padding-bottom: 0.99rem;
-  padding-left: 448px;
-  padding-right: 448px;
 }
 .check__why__us .bg__why__us .banners {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   justify-content: space-evenly;
 }
 .check__why__us .bg__why__us .banners .fast__shipping {
@@ -924,6 +921,8 @@ a:hover {
   width: 310px;
   padding-top: 0.8rem;
   border: 1px solid rgba(255, 255, 255, 0.5215686275);
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .check__why__us .bg__why__us .banners .fast__shipping .picture1 {
   display: flex;
@@ -951,6 +950,7 @@ a:hover {
   width: 310px;
   padding-top: 0.8rem;
   border: 1px solid rgba(255, 255, 255, 0.5215686275);
+  margin-right: 10px;
 }
 .check__why__us .bg__why__us .banners .wide__range .picture2 {
   display: flex;
@@ -978,6 +978,7 @@ a:hover {
   width: 310px;
   padding-top: 0.2rem;
   border: 1px solid rgba(255, 255, 255, 0.5215686275);
+  margin-right: 10px;
 }
 .check__why__us .bg__why__us .banners .safe__return .picture3 {
   display: flex;
