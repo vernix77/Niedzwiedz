@@ -15,8 +15,7 @@ html {
 
 body {
 	position: relative;
-	font-family: Metropolis-Bold;
-	background-color: #F2F3F4;
+	background-color: #f2f3f4;
 	color: c.$header_bg;
 	height: 300vh;
 }
@@ -57,7 +56,7 @@ a:hover {
 		margin: 0;
 		padding-left: 8rem;
 	}
-	button{
+	button {
 		font-family: Metropolis-Bold;
 	}
 }
@@ -135,13 +134,23 @@ a:hover {
 	transition: 0.4s;
 }
 
+.active__banner--one {
+	position: absolute;
+	display: none;
+}
+
+.active__banner--two {
+	position: absolute;
+	display: none;
+}
+
 .check__why__us {
 	height: 595px;
 	width: 100%;
 	.bg__why__us {
 		background-image: url("../photos/img_07.jpg");
 		background-attachment: fixed;
-		background-size:cover;
+		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
 		height: 595px;
@@ -195,7 +204,6 @@ a:hover {
 					padding-top: 0.8rem;
 					img {
 						height: 4rem;
-						
 					}
 				}
 				.paragraph1 {
@@ -273,7 +281,7 @@ a:hover {
 			justify-content: center;
 			justify-items: center;
 			padding-top: 2rem;
-			
+
 			.rectangle__company__information {
 				display: flex;
 				justify-content: center;
@@ -310,7 +318,7 @@ a:hover {
 		margin-bottom: 30px;
 		background-color: #f74137;
 		opacity: 0.94;
-		transition: .5s;
+		transition: 0.5s;
 		cursor: pointer;
 		p {
 			font-family: Metropolis-Bold;
@@ -318,7 +326,7 @@ a:hover {
 			font-size: 14px;
 		}
 	}
-	.see__all__inspirations:hover{
+	.see__all__inspirations:hover {
 		opacity: 1;
 		scale: 1.01;
 	}
@@ -338,6 +346,9 @@ a:hover {
 
 .see {
 	position: absolute;
+	opacity: 0;
+	transition: opacity 1s;
+	transition-timing-function: cubic-bezier(1s);
 	display: none;
 }
 
@@ -420,35 +431,35 @@ a:hover {
 }
 
 @media screen and (548px < width < 551px) {
-    .main_banner-img p:first-of-type {
-        font-family: Metropolis-Bold;
-        font-size: 1.5rem;
-    }
+	.main_banner-img p:first-of-type {
+		font-family: Metropolis-Bold;
+		font-size: 1.5rem;
+	}
 
-    .main_banner-img p:nth-of-type(2) {
-        font-family: Metropolis-Light;
-        font-size: 1.5rem;
-    }
-    .main_banner-img p:nth-of-type(3) {
-        font-family: Metropolis-Regular;
-        font-size: 0.5rem;
-        max-width: 20rem;
-        margin: 0.5rem 0;
-    }
-    .main_banner-img p {
-        margin: 0;
-        padding-left: 5rem;
-    }
-    .main_banner-img button {
-        background-color: #f74137;
-        padding: 0.3rem 0.3rem;
-        color: white;
-        border: none;
-        max-width: fit-content;
-        margin-left: 5rem;
-        cursor: pointer;
-        transition: 0.4s;
-    }
+	.main_banner-img p:nth-of-type(2) {
+		font-family: Metropolis-Light;
+		font-size: 1.5rem;
+	}
+	.main_banner-img p:nth-of-type(3) {
+		font-family: Metropolis-Regular;
+		font-size: 0.5rem;
+		max-width: 20rem;
+		margin: 0.5rem 0;
+	}
+	.main_banner-img p {
+		margin: 0;
+		padding-left: 5rem;
+	}
+	.main_banner-img button {
+		background-color: #f74137;
+		padding: 0.3rem 0.3rem;
+		color: white;
+		border: none;
+		max-width: fit-content;
+		margin-left: 5rem;
+		cursor: pointer;
+		transition: 0.4s;
+	}
 }
 @media screen and (width < 375px) {
 	.main_banner-img p:first-of-type {
@@ -479,7 +490,7 @@ a:hover {
 		transition: 0.4s;
 	}
 }
-.secondary__banner__section{
+.secondary__banner__section {
 	display: flex;
 	justify-content: space-around;
 }
@@ -495,7 +506,9 @@ a:hover {
 	overflow: hidden;
 	transition: 0.4s;
 }
-.secondary__banner__container__1,.secondary__banner__container__2,.secondary__banner__container__3 {
+.secondary__banner__container__1,
+.secondary__banner__container__2,
+.secondary__banner__container__3 {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -511,7 +524,7 @@ a:hover {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;	
+	height: 100%;
 	color: white;
 	display: flex;
 	flex-direction: column;
@@ -549,7 +562,7 @@ a:hover {
 	// background-size: cover;
 	background-position: bottom;
 	// // flex-direction: row;
-	// position: relative; 
+	// position: relative;
 	// justify-content: center;
 	// // background-size: cover;
 	width: 600px;
@@ -562,7 +575,7 @@ a:hover {
 	align-self: center;
 	flex-wrap: wrap;
 	// flex-direction: row;
-	position: relative; 
+	position: relative;
 	justify-content: center;
 	// background-size: cover;
 	width: 600px;
@@ -579,34 +592,34 @@ a:hover {
 	scale: 1.01;
 }
 .quick__helpers__option {
-	button{
-	background-color: transparent;
-	color: white;
-	border: 1px solid #ffff;
-	padding: 1rem 2rem;
-	max-width: fit-content;
-	margin-left: 2rem;
-	margin-top: 1.5rem;
-	transition: 0.5s;
-	cursor: pointer;
+	button {
+		background-color: transparent;
+		color: white;
+		border: 1px solid #ffff;
+		padding: 1rem 2rem;
+		max-width: fit-content;
+		margin-left: 2rem;
+		margin-top: 1.5rem;
+		transition: 0.5s;
+		cursor: pointer;
 	}
-	button{
+	button {
 		font-family: Metropolis-Bold;
 	}
-	button:hover{
+	button:hover {
 		background-color: #f74137;
 	}
-	p{
+	p {
 		padding-bottom: auto auto 5rem auto;
 		font-size: 1.5rem;
 	}
-	p:first-of-type{
+	p:first-of-type {
 		font-family: Metropolis-Bold;
 		letter-spacing: 0.5px;
 		font-size: 2rem;
 		padding: 0 0 0 2rem;
 	}
-	p:last-of-type{
+	p:last-of-type {
 		font-family: Metropolis-Light;
 		font-size: 1.75rem;
 		letter-spacing: 1px;
