@@ -68,18 +68,18 @@ a:hover {
 	}
 }
 
-.main_banner-img p:first-of-type {
+.main_banner-img .main_p {
 	font-family: Metropolis-Bold;
 	font-size: 2.5rem;
 }
 
-.main_banner-img p:nth-of-type(2) {
+.main_banner-img .main_p_second {
 	font-family: Metropolis-Light;
 	font-size: 2.5rem;
 }
 
-.main_banner-img p:nth-of-type(3) {
-	font-family: Metropolis-Regular;
+.main_banner-img .main_p_third {
+	font-family: Metropolis-Light;
 	font-size: 1.25rem;
 	max-width: 40rem;
 	margin: 1.5rem 0;
@@ -120,6 +120,19 @@ a:hover {
 	transition: 0.5s;
 	img {
 		width: 1rem;
+	}
+}
+
+.banner_control-left,
+.banner_control-right {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.icon-left_arrow,
+	.icon-right_arrow {
+		color: #323940;
 	}
 }
 
@@ -333,31 +346,33 @@ a:hover {
 }
 
 .main_banner-img button:hover {
-	scale: 1.01;
+	scale: 1.07;
 }
 
 .banner_control-left:hover {
 	background-color: #f2f3f460;
+	scale: 1.07;
+	transition: scale 0.3s;
 }
 
 .banner_control-right:hover {
 	background-color: #f2f3f460;
+	scale: 1.07;
+	transition: scale 0.3s;
 }
 
 .see {
 	position: absolute;
-	opacity: 0;
-	transition: opacity 1s;
-	transition-timing-function: cubic-bezier(1s);
-	display: none;
+	left: -110%;
+	transform: translateX(110%);
+	transition: 0.5s;
 }
 
 .saw {
 	position: absolute;
-	display: none;
-}
-
-@keyframes slide {
+	left: -110%;
+	transform: translateX(110%);
+	transition: 0.5s;
 }
 
 @media screen and (min-width: 992px) {
@@ -367,16 +382,16 @@ a:hover {
 }
 
 @media screen and (550px < width < 721px) {
-	.main_banner-img p:first-of-type {
+	.main_banner-img .main_p {
 		font-family: Metropolis-Bold;
 		font-size: 1.5rem;
 	}
 
-	.main_banner-img p:nth-of-type(2) {
+	.main_banner-img .main_p_second {
 		font-family: Metropolis-Light;
 		font-size: 1.5rem;
 	}
-	.main_banner-img p:nth-of-type(3) {
+	.main_banner-img .main_p_second {
 		font-family: Metropolis-Regular;
 		font-size: 0.75rem;
 		max-width: 20rem;
@@ -510,7 +525,7 @@ a:hover {
 .secondary__banner__container__2,
 .secondary__banner__container__3 {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	flex-direction: row;
 	min-height: 20rem;
 	position: relative;
