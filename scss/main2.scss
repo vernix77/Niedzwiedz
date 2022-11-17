@@ -1,0 +1,31 @@
+@use "./color" as c;
+@use "./fonts" as f;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	width: 100%;
+}
+
+body {
+	position: relative;
+	background-color: #ffffff;
+	color: c.$header_bg;
+	height: 300vh;
+}
+
+a {
+	text-decoration: none;
+	z-index: 10;
+	color: c.$main_color_text;
+	transition: color 0.3s;
+}
+
+a:hover {
+	color: c.$hover_text_color;
+	transition: color 0.5s;
+}
