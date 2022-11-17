@@ -529,7 +529,13 @@ a:hover {
   }
   .main_banner-img .main_p_second {
     font-family: Metropolis-Regular;
-    font-size: 0.75rem;
+    font-size: 1rem;
+    max-width: 20rem;
+    margin: 0.5rem 0;
+  }
+  .main_banner-img .main_p_third {
+    font-family: Metropolis-Regular;
+    font-size: 0.5rem;
     max-width: 20rem;
     margin: 0.5rem 0;
   }
@@ -546,6 +552,35 @@ a:hover {
     margin-left: 5rem;
     cursor: pointer;
     transition: 0.4s;
+  }
+}
+@media screen and (width < 500px) {
+  .main_banner-img .main_p {
+    font-family: Metropolis-Bold;
+    font-size: 1.5rem;
+  }
+  .main_banner-img .main_p_second {
+    font-family: Metropolis-Light;
+    font-size: 1.5rem;
+  }
+  .main_banner-img .main_p_second {
+    font-family: Metropolis-Regular;
+    font-size: 1rem;
+    max-width: 20rem;
+    margin: 0.5rem 0;
+  }
+  .main_banner-img .main_p_third {
+    font-family: Metropolis-Regular;
+    font-size: 0.5rem;
+    max-width: 20rem;
+    margin: 0.5rem 0;
+  }
+  .main_banner-img p {
+    margin: 0;
+    padding-left: 5rem;
+  }
+  .main_banner-img button {
+    display: none;
   }
 }
 @media screen and (500px < width < 549px) {

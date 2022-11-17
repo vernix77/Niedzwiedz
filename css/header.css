@@ -247,7 +247,7 @@
   padding: 0.1rem;
 }
 .header_item .cart__amount {
-  background-color: #9BCB3B;
+  background-color: #9bcb3b;
   position: absolute;
   top: 1.4rem;
   left: 2.8rem;
@@ -273,8 +273,8 @@
   width: 100%;
   height: 140px;
   background-color: #fff;
-  border-bottom: 1px solid #E1E2E8;
-  border-top: 1px solid #E1E2E8;
+  border-bottom: 1px solid #e1e2e8;
+  border-top: 1px solid #e1e2e8;
   opacity: 1;
   z-index: 1001;
 }
@@ -283,7 +283,7 @@
   position: relative;
   width: 100%;
   height: 80px;
-  border-bottom: 2px solid #E1E2E8;
+  border-bottom: 2px solid #e1e2e8;
   opacity: 1;
   z-index: 1002;
   background-color: #fff;
@@ -295,8 +295,8 @@ nav {
   display: flex;
   width: 100%;
   height: 60px;
-  border-top: 1px solid #E1E2E8;
-  border-bottom: 1px solid #E1E2E8;
+  border-top: 1px solid #e1e2e8;
+  border-bottom: 1px solid #e1e2e8;
   flex-wrap: wrap;
   background-color: #fff;
   z-index: 1002;
@@ -329,7 +329,7 @@ nav {
   .nav_logo {
     width: 100%;
     height: 80px;
-    border: 2px solid #E1E2E8;
+    border: 2px solid #e1e2e8;
     border: none;
     opacity: 1;
     z-index: 1001;
@@ -339,8 +339,8 @@ nav {
     display: flex;
     width: 100%;
     height: 60px;
-    border-top: 1px solid #E1E2E8;
-    border-bottom: 1px solid #E1E2E8;
+    border-top: 1px solid #e1e2e8;
+    border-bottom: 1px solid #e1e2e8;
     flex-wrap: nowrap;
     background-color: #fff;
     z-index: 1001;
@@ -367,8 +367,8 @@ nav {
     width: 100%;
     height: 140px;
     display: flex;
-    border-bottom: 1px solid #E1E2E8;
-    border-top: 1px solid #E1E2E8;
+    border-bottom: 1px solid #e1e2e8;
+    border-top: 1px solid #e1e2e8;
     position: sticky;
     top: 0%;
     width: 100%;
@@ -429,7 +429,7 @@ nav {
   }
   .header_item .icon-right_arrow {
     border-left: 1px solid #111111;
-    background-color: #9BCB3B;
+    background-color: #9bcb3b;
   }
 }
 @media screen and (890 < width) {
@@ -568,7 +568,7 @@ nav {
   width: 100%;
   height: 100vh;
   z-index: 999;
-  background-color: #E1E2E8;
+  background-color: #e1e2e8;
   transition: width 0.2s ease-in-out;
 }
 
