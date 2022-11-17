@@ -155,6 +155,12 @@ a:hover {
 	display: none;
 }
 
+@media screen and (width < 900px) {
+	.secondary__banner__section {
+		flex-wrap: wrap;
+	}
+}
+
 .check__why__us {
 	height: 595px;
 	width: 100%;
@@ -512,7 +518,7 @@ a:hover {
 	box-sizing: border-box;
 	flex-wrap: wrap;
 	grid-template-columns: 1fr 1fr 1fr;
-	padding: 0 1rem 1rem;
+	padding: 1rem 1rem 1rem;
 	/* width: 100%; */
 	gap: 1rem;
 	max-height: 20rem;
