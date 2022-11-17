@@ -165,7 +165,8 @@
   position: relative;
   padding-bottom: 2rem;
 }
-.footer .footer__section h3 .orange__mark {
+.footer .footer__section h3 p::after {
+  content: "";
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -195,12 +196,12 @@
   justify-content: space-between;
   align-items: center;
 }
-.footer__end .cr__text {
+.footer__end .footer__copyright--text {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.footer__end .fac__text {
+.footer__end .footer__company--text {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -208,6 +209,8 @@
 
 @media screen and (min-width: 992px) {
   .footer {
+    letter-spacing: 1px;
+    font-family: Metropolis-Regular;
     position: absolute;
     bottom: 40px;
     width: 100%;
@@ -229,7 +232,7 @@
     position: relative;
     padding-bottom: 2rem;
   }
-  .footer .footer__section h3 .orange__mark {
+  .footer .footer__section h3 p::after {
     position: absolute;
     left: 0;
     bottom: -1px;
@@ -255,15 +258,17 @@
   .footer {
     grid: none;
   }
-  .ArrowRotate span {
+  .ArrowRotate .icon-right_arrow {
     rotate: 180deg;
     top: 20px;
   }
-  .footer__section span {
+  .footer__section .icon-right_arrow {
     position: absolute;
     right: 0;
-    font-size: 40px;
-    transform: rotate(-180deg);
+    top: 0;
+    font-size: 20px;
+    transform: rotate(90deg);
+    transition: rotate 0.4s;
   }
   a {
     z-index: 10;
@@ -273,15 +278,17 @@
   .footer {
     grid: none;
   }
-  .ArrowRotate span {
+  .ArrowRotate .icon-right_arrow {
     rotate: 180deg;
     top: 20px;
   }
-  .footer__section span {
+  .footer__section .icon-right_arrow {
     position: absolute;
     right: 0;
-    font-size: 40px;
-    transform: rotate(-180deg);
+    top: 0;
+    font-size: 20px;
+    transform: rotate(90deg);
+    transition: rotate 0.4s;
   }
   a {
     z-index: 10;
@@ -310,12 +317,12 @@
     max-height: 100%;
   }
 }
-.footer__list span {
+.footer__list .icon-right_arrow {
   display: none;
 }
 
 @media screen and (min-width: 861px) {
-  h3 span {
+  h3 .icon-right_arrow {
     display: none;
   }
 }

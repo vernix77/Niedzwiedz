@@ -152,6 +152,7 @@
 }
 
 .header {
+  font-family: Metropolis-Bold;
   position: fixed;
   bottom: 0;
   display: flex;
