@@ -378,6 +378,7 @@ a:hover {
 	transform: translateX(110%);
 	transition: 0.5s;
 }
+// Main banner pierwsze zdjecie
 
 @media screen and (min-width: 992px) {
 	.main_banner {
@@ -393,7 +394,7 @@ a:hover {
 
 	.main_banner-img .main_p_second {
 		font-family: Metropolis-Light;
-		font-size: 1.5rem;
+		font-size: 2rem;
 	}
 	.main_banner-img .main_p_second {
 		font-family: Metropolis-Regular;
@@ -416,8 +417,73 @@ a:hover {
 		transition: 0.4s;
 	}
 }
+@media screen and (625px < width < 721px) {
+	.main_banner-img .main_p {
+		font-family: Metropolis-Bold;
+		font-size: 1.8rem;
+	}
 
-@media screen and (500px < width < 549px) {
+	.main_banner-img .main_p_second {
+		font-family: Metropolis-Light;
+		font-size: 1.5rem;
+		max-width: 20rem;
+		margin: 0.5rem 0;
+	}
+	.main_banner-img .main_p_third {
+		font-family: Metropolis-Light;
+		font-size: 0.7rem;
+		max-width: 20rem;
+		margin: 0.5rem 0;
+	}
+	.main_banner-img p {
+		margin: 0;
+		padding-left: 5rem;
+	}
+	.main_banner-img button {
+		background-color: #f74137;
+		padding: 0.5rem 0.5rem;
+		color: white;
+		border: none;
+		max-width: fit-content;
+		margin-left: 5rem;
+		cursor: pointer;
+		transition: 0.4s;
+	}
+}
+
+@media screen and (550px < width < 625px) {
+	.main_banner-img p:first-of-type {
+		font-family: Metropolis-Bold;
+		font-size: 1.5rem;
+	}
+
+	.main_banner-img p:nth-of-type(2) {
+		font-family: Metropolis-Light;
+		font-size: 1.5rem;
+	}
+	.main_banner-img p:nth-of-type(3) {
+		font-family: Metropolis-Regular;
+		font-size: 0.7rem;
+		max-width: 20rem;
+		margin: 0.5rem 0;
+	}
+	.main_banner-img p {
+		margin: 0;
+		padding-left: 5rem;
+	}
+	.main_banner-img button {
+		background-color: #f74137;
+		padding: 0.3rem 0.3rem;
+		color: white;
+		border: none;
+		max-width: fit-content;
+		margin-left: 5rem;
+		cursor: pointer;
+		transition: 0.4s;
+	}
+}
+
+@media screen and (550px < width < 550px) {
 	.main_banner-img p:first-of-type {
 		font-family: Metropolis-Bold;
 		font-size: 1.5rem;
@@ -449,7 +515,7 @@ a:hover {
 	}
 }
 
-@media screen and (548px < width < 551px) {
+@media screen and (width<550px) {
 	.main_banner-img p:first-of-type {
 		font-family: Metropolis-Bold;
 		font-size: 1.5rem;
@@ -461,7 +527,7 @@ a:hover {
 	}
 	.main_banner-img p:nth-of-type(3) {
 		font-family: Metropolis-Regular;
-		font-size: 0.5rem;
+		font-size: 0.7rem;
 		max-width: 20rem;
 		margin: 0.5rem 0;
 	}
@@ -482,7 +548,7 @@ a:hover {
 }
 @media screen and (width < 375px) {
 	.main_banner-img p:first-of-type {
-		font-size: 0px;
+		font-size: 1rem;
 	}
 
 	.main_banner-img p:nth-of-type(2) {
@@ -509,6 +575,204 @@ a:hover {
 		transition: 0.4s;
 	}
 }
+//Main banner koniec
+// Main banner drugie zdjecie
+@media screen and (min-width: 992px) {
+	.main_banner {
+		margin-top: 1.7rem;
+	}
+}
+
+@media screen and (550px < width < 721px) {
+	.main_banner-img .main_p {
+		font-family: Metropolis-Bold;
+		font-size: 1.5rem;
+	}
+
+	.main_banner-img .main_p_second {
+		font-family: Metropolis-Light;
+		font-size: 2rem;
+	}
+	.main_banner-img .main_p_second {
+		font-family: Metropolis-Regular;
+		font-size: 0.75rem;
+		max-width: 20rem;
+		margin: 0.5rem 0;
+	}
+	.main_banner-img p {
+		margin: 0;
+		padding-left: 5rem;
+	}
+	.main_banner-img button {
+		background-color: #f74137;
+		padding: 0.5rem 0.5rem;
+		color: white;
+		border: none;
+		max-width: fit-content;
+		margin-left: 5rem;
+		cursor: pointer;
+		transition: 0.4s;
+	}
+}
+@media screen and (625px < width < 721px) {
+	.main_banner-img .main_p {
+		font-family: Metropolis-Bold;
+		font-size: 1.8rem;
+	}
+
+	.main_banner-img .main_p_second {
+		font-family: Metropolis-Light;
+		font-size: 1.5rem;
+		max-width: 20rem;
+		margin: 0.5rem 0;
+	}
+	.main_banner-img .main_p_third {
+		font-family: Metropolis-Light;
+		font-size: 0.7rem;
+		max-width: 20rem;
+		margin: 0.5rem 0;
+	}
+	.main_banner-img p {
+		margin: 0;
+		padding-left: 5rem;
+	}
+	.main_banner-img button {
+		background-color: #f74137;
+		padding: 0.5rem 0.5rem;
+		color: white;
+		border: none;
+		max-width: fit-content;
+		margin-left: 5rem;
+		cursor: pointer;
+		transition: 0.4s;
+	}
+}
+
+@media screen and (550px < width < 625px) {
+	.main_banner-img p:nth-of-type(4) {
+		font-family: Metropolis-Bold;
+		font-size: 1.5rem;
+	}
+
+	.main_banner-img p:nth-of-type(5) {
+		font-family: Metropolis-Light;
+		font-size: 1.5rem;
+	}
+	.main_banner-img p:last-of-type {
+		font-family: Metropolis-Regular;
+		font-size: 0.7rem;
+		max-width: 20rem;
+		margin: 0.5rem 0;
+	}
+	.main_banner-img p {
+		margin: 0;
+		padding-left: 5rem;
+	}
+	.main_banner-img button {
+		background-color: #f74137;
+		padding: 0.3rem 0.3rem;
+		color: white;
+		border: none;
+		max-width: fit-content;
+		margin-left: 5rem;
+		cursor: pointer;
+		transition: 0.4s;
+	}
+}
+
+@media screen and (550px < width < 550px) {
+	.main_banner-img p:nth-of-type(4) {
+		font-family: Metropolis-Bold;
+		font-size: 1.5rem;
+	}
+
+	.main_banner-img p:nth-of-type(5) {
+		font-family: Metropolis-Light;
+		font-size: 1.5rem;
+	}
+	.main_banner-img p:last-of-type {
+		font-family: Metropolis-Regular;
+		font-size: 0.5rem;
+		max-width: 20rem;
+		margin: 0.5rem 0;
+	}
+	.main_banner-img p {
+		margin: 0;
+		padding-left: 5rem;
+	}
+	.main_banner-img button {
+		background-color: #f74137;
+		padding: 0.3rem 0.3rem;
+		color: white;
+		border: none;
+		max-width: fit-content;
+		margin-left: 5rem;
+		cursor: pointer;
+		transition: 0.4s;
+	}
+}
+
+@media screen and (width<550px) {
+	.main_banner-img p:nth-of-type(4) {
+		font-family: Metropolis-Bold;
+		font-size: 1.5rem;
+	}
+
+	.main_banner-img p:nth-of-type(5) {
+		font-family: Metropolis-Light;
+		font-size: 1.5rem;
+	}
+	.main_banner-img p:last-of-type {
+		font-family: Metropolis-Regular;
+		font-size: 0.7rem;
+		max-width: 20rem;
+		margin: 0.5rem 0;
+	}
+	.main_banner-img p {
+		margin: 0;
+		padding-left: 5rem;
+	}
+	.main_banner-img button {
+		background-color: #f74137;
+		padding: 0.3rem 0.3rem;
+		color: white;
+		border: none;
+		max-width: fit-content;
+		margin-left: 5rem;
+		cursor: pointer;
+		transition: 0.4s;
+	}
+}
+@media screen and (width < 375px) {
+	.main_banner-img p:nth-of-type(4) {
+		font-size: 1rem;
+	}
+
+	.main_banner-img p:nth-of-type(5) {
+		font-family: Metropolis-Light;
+		font-size: 0px;
+	}
+	.main_banner-img p:last-of-type {
+		font-size: 0px;
+	}
+	.main_banner-img p {
+		margin: 0;
+		padding-left: 5rem;
+	}
+	.main_banner-img button {
+		font-size: 15px;
+		background-color: #f74137;
+		padding: 0.3rem 0.3rem;
+		color: white;
+		border: none;
+		max-width: fit-content;
+		margin-left: 5rem;
+		margin-bottom: 1px;
+		cursor: pointer;
+		transition: 0.4s;
+	}
+}
+// Main banner koniec
 .secondary__banner__section {
 	display: flex;
 	justify-content: space-around;
