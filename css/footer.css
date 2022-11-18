@@ -307,17 +307,7 @@
 
 .ShowPop li {
   display: flex;
-  -webkit-animation: 1.5s linear both slide;
-          animation: 1.5s linear both slide;
-}
-
-@-webkit-keyframes slide {
-  from {
-    max-height: 0%;
-  }
-  to {
-    max-height: 100%;
-  }
+  animation: 1.5s linear both slide;
 }
 
 @keyframes slide {
@@ -336,4 +326,6 @@
   h3 .icon-right_arrow {
     display: none;
   }
-}/*# sourceMappingURL=footer.css.map */
+}
+
+/*# sourceMappingURL=footer.css.map */

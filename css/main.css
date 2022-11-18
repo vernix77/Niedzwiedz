@@ -231,11 +231,7 @@ a:hover {
 
 .banner_control-left {
   z-index: 30;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   padding: 1.3rem 1.3rem;
   position: absolute;
@@ -251,11 +247,7 @@ a:hover {
 
 .banner_control-right {
   z-index: 30;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   padding: 1.3rem 1.3rem;
   position: absolute;
@@ -289,8 +281,6 @@ a:hover {
   padding: 1rem 2.5rem;
   color: white;
   border: none;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   margin-left: 8rem;
   cursor: pointer;
@@ -312,193 +302,6 @@ a:hover {
     flex-wrap: wrap;
   }
 }
-.check__why__us {
-  height: 595px;
-  width: 100%;
-}
-.check__why__us .bg__why__us {
-  background-image: url("../photos/img_07.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 595px;
-  width: 100%;
-}
-.check__why__us .bg__why__us .why__us {
-  font-family: Metropolis-Bold;
-  font-size: 44px;
-  color: white;
-  text-align: center;
-  padding-top: 70px;
-  padding-bottom: 20px;
-}
-.check__why__us .bg__why__us .line__red {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 1px;
-  width: 100%;
-  background-color: #e1e2e8;
-}
-.check__why__us .bg__why__us .line__red .line__grey {
-  height: 3px;
-  width: 60px;
-  background-color: #f74137;
-  border-radius: 25px;
-}
-.check__why__us .bg__why__us .why__us2 {
-  font-family: Metropolis-Regular;
-  font-size: 18px;
-  color: white;
-  text-align: center;
-  padding-top: 3.3rem;
-  padding-bottom: 0.99rem;
-}
-.check__why__us .bg__why__us .banners {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.check__why__us .bg__why__us .banners .fast__shipping {
-  height: 153px;
-  width: 310px;
-  padding-top: 0.8rem;
-  border: 1px solid rgba(255, 255, 255, 0.5215686275);
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.check__why__us .bg__why__us .banners .fast__shipping .picture1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 0.8rem;
-}
-.check__why__us .bg__why__us .banners .fast__shipping .picture1 img {
-  height: 4rem;
-}
-.check__why__us .bg__why__us .banners .fast__shipping .paragraph1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -2rem;
-}
-.check__why__us .bg__why__us .banners .fast__shipping .paragraph1 p {
-  font-family: Metropolis-Bold;
-  font-size: 14px;
-  color: white;
-  margin-top: 3.4rem;
-}
-.check__why__us .bg__why__us .banners .wide__range {
-  height: 153px;
-  width: 310px;
-  padding-top: 0.8rem;
-  border: 1px solid rgba(255, 255, 255, 0.5215686275);
-  margin-right: 10px;
-}
-.check__why__us .bg__why__us .banners .wide__range .picture2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 0.8rem;
-}
-.check__why__us .bg__why__us .banners .wide__range .picture2 img {
-  height: 4rem;
-}
-.check__why__us .bg__why__us .banners .wide__range .paragraph2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -2rem;
-}
-.check__why__us .bg__why__us .banners .wide__range .paragraph2 p {
-  font-family: Metropolis-Bold;
-  font-size: 14px;
-  color: white;
-  margin-top: 3.4rem;
-}
-.check__why__us .bg__why__us .banners .safe__return {
-  height: 153px;
-  width: 310px;
-  padding-top: 0.2rem;
-  border: 1px solid rgba(255, 255, 255, 0.5215686275);
-  margin-right: 10px;
-}
-.check__why__us .bg__why__us .banners .safe__return .picture3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 0.8rem;
-}
-.check__why__us .bg__why__us .banners .safe__return .picture3 img {
-  height: 4.6rem;
-}
-.check__why__us .bg__why__us .banners .safe__return .paragraph3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -2rem;
-}
-.check__why__us .bg__why__us .banners .safe__return .paragraph3 p {
-  font-family: Metropolis-Bold;
-  font-size: 14px;
-  color: white;
-  margin-top: 3.4rem;
-}
-.check__why__us .bg__why__us .company__information {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  padding-top: 2rem;
-}
-.check__why__us .bg__why__us .company__information .rectangle__company__information {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 55px;
-  width: 246px;
-  background-color: #f74137;
-  opacity: 0.94;
-  cursor: pointer;
-  transition: 0.5s;
-}
-.check__why__us .bg__why__us .company__information .rectangle__company__information p {
-  font-family: Metropolis-Bold;
-  color: white;
-}
-.check__why__us .bg__why__us .company__information .rectangle__company__information:hover {
-  opacity: 1;
-  scale: 1.01;
-}
-
-.rectangle__inspiration {
-  display: flex;
-  justify-content: center;
-  padding-top: 2.77rem;
-}
-.rectangle__inspiration .see__all__inspirations {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 55px;
-  width: 318px;
-  margin-bottom: 30px;
-  background-color: #f74137;
-  opacity: 0.94;
-  transition: 0.5s;
-  cursor: pointer;
-}
-.rectangle__inspiration .see__all__inspirations p {
-  font-family: Metropolis-Bold;
-  color: #ffffff;
-  font-size: 14px;
-}
-.rectangle__inspiration .see__all__inspirations:hover {
-  opacity: 1;
-  scale: 1.01;
-}
-
 .main_banner-img button:hover {
   scale: 1.07;
 }
@@ -558,8 +361,6 @@ a:hover {
     padding: 0.5rem 0.5rem;
     color: white;
     border: none;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -592,8 +393,6 @@ a:hover {
     padding: 0.5rem 0.5rem;
     color: white;
     border: none;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -624,15 +423,13 @@ a:hover {
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
     transition: 0.4s;
   }
 }
-@media screen and (550px < width < 550px) {
+@media screen and (549px < width < 551px) {
   .main_banner-img p:first-of-type {
     font-family: Metropolis-Bold;
     font-size: 1.5rem;
@@ -656,8 +453,6 @@ a:hover {
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -688,8 +483,6 @@ a:hover {
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -717,8 +510,6 @@ a:hover {
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     margin-bottom: 1px;
@@ -755,8 +546,6 @@ a:hover {
     padding: 0.5rem 0.5rem;
     color: white;
     border: none;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -789,8 +578,6 @@ a:hover {
     padding: 0.5rem 0.5rem;
     color: white;
     border: none;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -821,8 +608,6 @@ a:hover {
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -853,8 +638,6 @@ a:hover {
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -885,8 +668,6 @@ a:hover {
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -914,8 +695,6 @@ a:hover {
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     margin-bottom: 1px;
@@ -1011,15 +790,15 @@ a:hover {
 }
 
 .secondary__banner__container__1:hover {
-  scale: 1.01;
+  scale: 1.05;
 }
 
 .secondary__banner__container__2:hover {
-  scale: 1.01;
+  scale: 1.05;
 }
 
 .secondary__banner__container__3:hover {
-  scale: 1.01;
+  scale: 1.05;
 }
 
 .quick__helpers__option button {
@@ -1027,8 +806,6 @@ a:hover {
   color: white;
   border: 1px solid white;
   padding: 1rem 2rem;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   margin-left: 2rem;
   margin-top: 1.5rem;
@@ -1075,8 +852,10 @@ a:hover {
   flex-direction: column;
   align-items: center;
 }
-
-.orange__markup {
+.recomendations h1::after {
+  content: "";
+  position: absolute;
+  top: 7%;
   width: 3rem;
   height: 0.2rem;
   background-color: #f74137;
@@ -1091,9 +870,8 @@ a:hover {
 }
 
 .recomendations__products-prod {
+  transform: translateY(0%);
   background-color: white;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   padding: 1rem 1.5rem 4rem;
   display: flex;
@@ -1101,18 +879,30 @@ a:hover {
   align-items: center;
   gap: 2rem;
   cursor: pointer;
-  transition: 0.4s;
+  transition: transform 0.5s ease-in-out, color 0.5s;
 }
 
 .recomendations__products-prod:hover {
   color: #9bcb3b;
+}
+.recomendations__products-prod:hover .recomendations__products-prod-info,
+.recomendations__products-prod:hover .recomendations__products-prod-price {
+  transform: translateY(-120%);
+  transition: transform 0.5s ease-in-out;
 }
 
 .recomendations__products-prod:hover {
   scale: 1.01;
 }
 
+.recomendations__products-prod-price {
+  transform: translateY(0%);
+  transition: transform 0.5s ease-in-out;
+}
+
 .recomendations__products-prod-info {
+  transform: translateY(0%);
+  transition: transform 0.5s ease-in-out;
   text-align: center;
 }
 .recomendations__products-prod-info p {
@@ -1157,6 +947,7 @@ a:hover {
 }
 
 .why__us {
+  position: relative;
   background: url("../photos/img_07.jpg");
   min-height: 35rem;
   width: 100%;
@@ -1176,7 +967,7 @@ a:hover {
   align-items: center;
 }
 
-.why__us-cover > h1 {
+.why__us-cover h1 {
   font-family: metropolis-bold;
   margin-top: 4rem;
   display: flex;
@@ -1184,9 +975,20 @@ a:hover {
   border-bottom: 1px solid rgb(155, 155, 155);
   width: 100%;
   align-items: center;
+  padding-bottom: 1rem;
+}
+.why__us-cover h1::after {
+  position: absolute;
+  top: 5.45rem;
+  content: " ";
+  width: 3rem;
+  height: 0.2rem;
+  background-color: #f74137;
+  margin-top: 1rem;
 }
 
 .why__us-cover > p {
+  padding: 1rem;
   max-width: 55rem;
   text-align: center;
 }
@@ -1197,6 +999,11 @@ a:hover {
   gap: 1rem;
 }
 
+@media screen and (width < 820px) {
+  .advantages__container {
+    grid-template-columns: 1fr;
+  }
+}
 .advantages__op {
   border: 1px solid rgb(171, 171, 171);
   padding: 2rem;
@@ -1221,4 +1028,6 @@ a:hover {
   .why__us-cover {
     grid: none;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
