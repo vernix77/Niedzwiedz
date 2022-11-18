@@ -31,72 +31,143 @@ a:hover {
 }
 main{
 	.section__1{
+		padding-left: 28.33px;
 		.paragraphs{
+			color: black;
 			.paragraph__1{
-
+				font-size: 44px;
+				padding-bottom: .1rem;
+				padding-top: 1rem;
 			}
 			.paragraph__2{
-
 			}
 		}
 		.expand{
+			display: flex;
+			flex-direction: row;
+			justify-content: end;
+			align-items:center;
+			padding-top: 1rem;
+			padding-right: 7%;
 			div{
-
+				background-color: #E1E2E8;
+				width: 100%;
+				height: 1px;
 			}
 			p{
-
+				font-weight: bold;
+				color: black;
+				padding-left: 10px;
+				cursor: pointer;
 			}
+			p:hover{
+				opacity: 0.8;
+			}
+			
 		}
-		.types__of__light__bulbs{
-			.light__bulb1{
-				.photo1{
-				}
-				.p{
-				}
+		.bulbs{
+			display: flex;
+			// justify-content: space-between;
+			padding-bottom: 45px;
+			padding-top: 15px;
+			.bulb{
+				position: relative;
+				height:80px;
+				width:246.68px;
+				border:	solid #E1E2E8 1px;
+				margin-right: 8px;
+				cursor: pointer;
 			}
-			.light__bulb2{
-				.photo2{
-				}
-				.p{
-				}
+			img{
+				position: absolute;
+				height:100%;
+				width:66px;
+				border-right: solid #E1E2E8 1px;
 			}
-			.light__bulb3{
-				.photo3{
-				}
-				.p{
-				}
+			.red__line{
+				position: absolute;
+				top: 98%;
+				height: 2px;
+				width: 65px;
+				background-color: #fffffe;
+				transition: .5s;
 			}
-			.light__bulb4{
-				.photo4{
-				}
-				.p{
-				}
+			img:hover + .red__line{
+				background-color: #F74137;
 			}
-			.light__bulb5{
-				.photo5{
-				}
-				.p{
-				}
+			p{
+				position: absolute;
+				top: 40%;
+				left: 40%;
+				padding-left: 10px;
+				color:black;
 			}
-			.light__bulb6{
-				.photo6{
-				}
-				.p{
-				}
+			p:hover{
+				opacity: 0.8;
 			}
 		}
 		.photo{
-			.paragraphs2{
-				.paragraph__1{
-
+			position: relative;
+			background-image: url('/photos/banner.jpg');
+			background-size: cover;
+			height: 360px;
+			width: 100%;
+			padding-bottom: 45px;
+			.items__photos{
+				background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+				height: 115%;
+				position: relative;
+				padding-left: 54px;
+				padding-top: 93px;
+				.paragraphs2{
+					padding-top: 6px;
+					font-size: 44px;
+					.paragraph__1{
+						font-weight: bold;
+					}
+					.paragraph__2{
+						padding-bottom: 23.5px;
+					}
 				}
-				.paragraph__2{
-
+				.see__more{
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 55px;
+					width: 200px;
+					background-color: #F74137;
+					opacity: 0.96;
+					cursor: pointer;
+					.paragraph__see__more{
+						font-weight: bold;
+					}
 				}
-			}
-			.see__more{
-				
+				.see__more:hover{
+					opacity: 1;
+				}
+
 			}
 		}
+	}
+}
+
+@media screen and (991px > width) {
+	.section__1{
+		position: absolute;
+		top: 11.8%;
+	}
+	.photo{
+		background-position: center;
+	}
+}
+
+
+@media screen and (991px > width) {
+	.section__1{
+		position: absolute;
+		top: 11.8%;
+	}
+	.photo{
+		background-position: center;
 	}
 }
