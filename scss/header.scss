@@ -340,6 +340,7 @@ nav {
 		}
 	}
 }
+
 @media screen and (991px > width) {
 	.nav2 {
 		position: absolute;
@@ -533,5 +534,14 @@ nav {
 	}
 	.active--menu {
 		width: 120%;
+	}
+}
+
+.header {
+	.icon-right_arrow {
+		color: white;
+	}
+	a:hover {
+		color: c.$hover_text_color;
 	}
 }
