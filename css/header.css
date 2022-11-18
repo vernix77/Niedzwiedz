@@ -564,6 +564,9 @@ nav {
   }
 }
 @media screen and (width < 600px) {
+  .header_item .header_basket .header_basket-box {
+    display: none;
+  }
   .header img {
     display: none;
   }
@@ -667,6 +670,12 @@ nav {
   .active--menu {
     width: 120%;
   }
+}
+.header .icon-right_arrow {
+  color: white;
+}
+.header a:hover {
+  color: #9bcb3b;
 }
 
 /*# sourceMappingURL=header.css.map */

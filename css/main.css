@@ -154,7 +154,7 @@ body {
   position: relative;
   background-color: #f2f3f4;
   color: #111111;
-  height: 600vh;
+  height: auto;
 }
 
 a {
@@ -840,7 +840,8 @@ a:hover {
   box-sizing: border-box;
   width: 100%;
 }
-.recomendations h1 {
+.recomendations h2 {
+  position: relative;
   padding-top: 20px;
   font-family: Metropolis-Bold;
   width: 100%;
@@ -852,10 +853,10 @@ a:hover {
   flex-direction: column;
   align-items: center;
 }
-.recomendations h1::after {
+.recomendations h2::after {
   content: "";
   position: absolute;
-  top: 7%;
+  bottom: 0;
   width: 3rem;
   height: 0.2rem;
   background-color: #f74137;
@@ -954,6 +955,7 @@ a:hover {
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: Metropolis-Regular;
   color: white;
   display: flex;
 }
@@ -967,19 +969,21 @@ a:hover {
   align-items: center;
 }
 
-.why__us-cover h1 {
+.why__us-cover h2 {
+  position: relative;
   font-family: metropolis-bold;
   margin-top: 4rem;
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid rgb(155, 155, 155);
   width: 100%;
+  font-size: 44px;
   align-items: center;
   padding-bottom: 1rem;
 }
-.why__us-cover h1::after {
+.why__us-cover h2::after {
   position: absolute;
-  top: 5.45rem;
+  bottom: 0;
   content: " ";
   width: 3rem;
   height: 0.2rem;
@@ -991,6 +995,7 @@ a:hover {
   padding: 1rem;
   max-width: 55rem;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 .advantages__container {
@@ -1012,10 +1017,11 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
-
-.advantages__op > p {
+.advantages__op p {
   margin: 0;
   margin-top: 1.5rem;
+  font-size: 18px;
+  font-family: Metropolis-Light;
 }
 
 @media screen and (width < 700px) {
@@ -1027,6 +1033,22 @@ a:hover {
 @media screen and (width < 825px) {
   .why__us-cover {
     grid: none;
+  }
+  .why__us-cover > h2 {
+    font-size: 36px;
+  }
+}
+@media screen and (width < 425px) {
+  .why__us-cover > h2 {
+    font-size: 28px;
+  }
+}
+@media screen and (1200px < width) {
+  .advantages__op > p {
+    font-size: 18px;
+  }
+  .why_us > h2 {
+    font-size: 44px;
   }
 }
 
