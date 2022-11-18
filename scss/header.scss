@@ -438,6 +438,9 @@ nav {
 }
 
 @media screen and (width < 600px) {
+	.header_item .header_basket .header_basket-box {
+		display: none;
+	}
 	.header {
 		img {
 			display: none;
