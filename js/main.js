@@ -1,7 +1,7 @@
-const arrow_left = document.querySelector(".banner_control-left");
-const arrow_right = document.querySelector(".banner_control-right");
-const main_img = document.querySelector(".main_img");
-const main_img_second = document.querySelector(".main_img_second");
+const arrow_left = document.querySelector(".banner__control-left");
+const arrow_right = document.querySelector(".banner__control-right");
+const main_img = document.querySelector(".main__img");
+const main_img_second = document.querySelector(".main__img__second");
 const one = document.querySelectorAll(".one");
 const two = document.querySelectorAll(".two");
 

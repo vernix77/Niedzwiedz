@@ -1,8 +1,8 @@
-const burgerbtn = document.querySelector(".header_menu");
-const hamburger = document.querySelector(".nav_items");
+const burgerbtn = document.querySelector(".header__menu");
+const hamburger = document.querySelector(".nav__items");
 const menuWrapper = document.querySelector(".menu__wrapper");
-const Logo = document.querySelector(".header_logo-mobile");
-const LogoBGC = document.querySelector(".nav_logo-second");
+const Logo = document.querySelector(".header__logo-mobile");
+const LogoBGC = document.querySelector(".nav__logo-second");
 const WindowSize1 = window.matchMedia("(max-width: 600px)");
 
 function Menu() {
