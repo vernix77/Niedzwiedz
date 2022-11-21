@@ -5,6 +5,12 @@
 	color: c.$hover_text_color;
 }
 
+.footer__space {
+	position: relative;
+	bottom: 0;
+	height: 97.5px;
+}
+
 .footer {
 	font-family: Metropolis-Regular;
 	position: relative;
@@ -21,6 +27,7 @@
 		flex-direction: column;
 		margin-right: 4rem;
 		h3 {
+			font-family: Metropolis-Bold;
 			width: 100%;
 			border-bottom: 1px solid c.$h3_border_color;
 			position: relative;
@@ -49,7 +56,7 @@
 }
 .footer__end {
 	position: relative;
-	bottom: 0;
+	bottom: 0px;
 	width: 100%;
 	height: 50px;
 	background-color: white;
@@ -120,6 +127,9 @@
 			height: 50px;
 		}
 	}
+	.footer__space {
+		display: none;
+	}
 }
 
 @media screen and (width < 860px) {
@@ -142,7 +152,7 @@
 		z-index: 10;
 	}
 	.footer__end {
-		height: 97.5px;
+		height: 50px;
 	}
 }
 
@@ -166,7 +176,7 @@
 		z-index: 10;
 	}
 	.footer__end {
-		height: 97.5px;
+		height: 50px;
 	}
 }
 
@@ -203,5 +213,14 @@
 @media screen and (min-width: 861px) {
 	h3 .icon-right_arrow {
 		display: none;
+	}
+}
+
+@media screen and (width < 450px) {
+	.footer__space {
+		height: 100px;
+	}
+	.footer__end {
+		height: 70px;
 	}
 }
