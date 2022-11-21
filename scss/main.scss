@@ -167,13 +167,13 @@ a:hover {
 }
 
 .banner__control-left:hover {
-	background-color: #f2f3f460;
+	background-color: c.$other_white;
 	scale: 1.07;
 	transition: scale 0.3s;
 }
 
 .banner__control-right:hover {
-	background-color: #f2f3f460;
+	background-color: c.$other_white;
 	scale: 1.07;
 	transition: scale 0.3s;
 }
@@ -182,14 +182,12 @@ a:hover {
 	position: absolute;
 	left: -110%;
 	transform: translateX(110%);
-	transition: 0.5s;
 }
 
 .saw {
 	position: absolute;
 	left: -110%;
 	transform: translateX(110%);
-	transition: 0.5s;
 }
 // Main banner pierwsze zdjecie
 
