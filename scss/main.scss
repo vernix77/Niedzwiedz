@@ -833,7 +833,7 @@ a:hover {
 	scale: 1.01;
 }
 
-.why__us {
+.advantages__why--us {
 	position: relative;
 	background: url("../photos/img_07.jpg");
 	min-height: 35rem;
@@ -845,7 +845,7 @@ a:hover {
 	color: white;
 	display: flex;
 }
-.why__us-cover {
+.advantages__why--us-cover {
 	background: rgba(0, 0, 0, 0.35);
 	width: 100%;
 	min-height: 35rem;
@@ -854,7 +854,7 @@ a:hover {
 	align-items: center;
 }
 
-.why__us-cover {
+.advantages__why--us-cover {
 	h2 {
 		position: relative;
 		font-family: metropolis-bold;
@@ -878,7 +878,7 @@ a:hover {
 	}
 }
 
-.why__us-cover > p {
+.advantages__why--us-cover > p {
 	padding: 1rem;
 	max-width: 55rem;
 	text-align: center;
@@ -920,16 +920,16 @@ a:hover {
 }
 
 @media screen and (width < 825px) {
-	.why__us-cover {
+	.advantages__why--us-cover {
 		grid: none;
 	}
-	.why__us-cover > h2 {
+	.advantages__why--us-cover > h2 {
 		font-size: 36px;
 	}
 }
 
 @media screen and (width < 425px) {
-	.why__us-cover > h2 {
+	.advantages__why--us-cover > h2 {
 		font-size: 28px;
 	}
 }
@@ -938,7 +938,7 @@ a:hover {
 	.advantages__op > p {
 		font-size: 18px;
 	}
-	.why_us > h2 {
+	.advantages__why--us > h2 {
 		font-size: 44px;
 	}
 }
