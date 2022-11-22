@@ -71,18 +71,8 @@
 	width: 100%;
 	display: flex;
 	align-items: center;
-	// justify-content: space-evenly;
 	flex-wrap: nowrap;
 	text-transform: uppercase;
-	// .header__logo {
-	// 	position: relative;
-	// 	opacity: 0;
-	// 	display: flex;
-	// 	justify-content: left;
-	// 	align-items: left;
-	// 	margin: 2rem;
-	// 	z-index: 1001;
-	// }
 	.header__accont {
 		padding-right: 1rem;
 	}
@@ -157,7 +147,13 @@
 		background-color: #9bcb3b;
 	}
 }
-
+.header__basket-box__hidden p {
+	font-family: Metropolis-Bold;
+	display: inline;
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+}
 .nav__logo {
 	position: relative;
 	width: 100%;
@@ -207,7 +203,7 @@ nav {
 	}
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1014px) {
 	.menu__wrapper {
 		position: absolute;
 	}
@@ -285,7 +281,7 @@ nav {
 				display: flex;
 				justify-content: center;
 				padding-top: 1.6rem;
-				padding-left: 1rem;
+				// padding-left: 1rem;
 				padding-right: 0.5rem;
 				align-items: center;
 			}
@@ -344,6 +340,16 @@ nav {
 		font-family: Metropolis-Light;
 		font-size: 12px;
 	}
+	.header__item .header__basket-box .header__basket-box__hidden {
+		padding: 0;
+	}
+	.header__item .header__basket-box .header__basket-box__hidden p {
+		font-family: Metropolis-Light;
+		font-size: 15px;
+	}
+	.header__item .header__basket-box .header__basket-box__hidden i {
+		font-size: 2rem;
+	}
 }
 
 @media screen and (500px < width < 549px) {
@@ -375,8 +381,13 @@ nav {
 		display: none;
 		width: 0px;
 	}
+	.header__item .header__basket-box .header__basket-box__hidden i{
+		padding: 0;
+	}
+	.header__item .icon-card {
+		padding: 0 1.5rem;
+	}
 }
-
 @media screen and (width < 600px) {
 	.header {
 		img {
@@ -385,16 +396,21 @@ nav {
 	}
 	.header__item {
 		font-family: Metropolis-Light;
+		justify-content: space-around;
 		font-size: 11px;
+		padding: 0;
 	}
+
 	.nav__item {
 		font-family: Metropolis-Light;
 		flex-wrap: nowrap;
 	}
 	.header__item {
 		font-size: 0px;
+		justify-items: center;
+		align-items: center;
 		margin: 0;
-		padding: 0;
+		padding: 0 0 0 5rem;
 		.header__icon {
 			border: none;
 			color: c.$main_color_text;
@@ -421,25 +437,71 @@ nav {
 		}
 	}
 }
-
-@media screen and (width < 600px) {
-	.header__item .header__basket .header__basket-box {
-		display: none;
+@media screen and ( 370px < width < 600px) {
+	.header__item .header__basket-box .header__basket-box__hidden i{
+		display: inline;
+		font-family: Metropolis-Light;
+		font-size: 15px;
+		width: 10rem;
 	}
+	.header__item .header__basket-box .header__basket-box__hidden p {
+		display: inline;
+		width: 5rem;
+		font-family: Metropolis-Light;
+		font-size: 15px;
+		justify-content: space-around;
+	}
+}
+@media screen and (width < 600px) {
 	.header {
 		img {
 			display: none;
 		}
 	}
+	.header .icon-widok_01:before {
+		padding-left: 1rem;
+	}
+	.header__item .header__basket-box .icon-card:before {
+		font-size: 2rem;
+		display: flex;
+		padding: 0 1rem 0 1rem;
+	}
+	.header__item .header__basket-box {
+		padding: 1rem 4em 1rem 5rem;
+		width: 5rem;
+	}
 }
-
-@media screen and (width < 992px) {
-	.cart__amount,
-	.header__item__logo {
+@media screen and (width < 370px){
+	.header__item .header__basket-box .header__basket-box__hidden p {
+		display: none;
+	}
+}
+@media screen and (width > 1014px) {
+	.header__basket-box .header__basket-box__hidden {
+		display: none;
+		padding: 0;
+	}
+}
+@media screen and (width < 1014px) {
+	.cart__amount, .header__item__logo {
 		display: none;
 	}
 	.header__item {
-		justify-content: space-around;
+		justify-content: space-between;
+		padding: 0 2rem 0 1rem;
+	}
+	.header__item .header__basket-box {
+		padding: 1rem 3.5rem 1rem 5rem;
+	}
+	.header__item .icon-card {
+		border: none;
+	}
+	.header__item .header__basket-box .price,
+	.your__basket {
+		display: none;
+	}
+	.header__item .header__box-left .icon-card {
+		display: none;
 	}
 }
 
@@ -504,9 +566,10 @@ nav {
 
 .header .icon-right_arrow {
 	color: white;
+	border-left: none;
 }
 
-@media screen and (width > 990px) {
+@media screen and (width > 1014px) {
 	.header__item a {
 		align-items: left;
 		padding-left: 0;
