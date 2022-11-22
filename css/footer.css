@@ -143,8 +143,13 @@
   color: #9bcb3b;
 }
 
+.footer__space {
+  position: relative;
+  bottom: 0;
+  height: 97.5px;
+}
+
 .footer {
-  font-family: Metropolis-Regular;
   position: relative;
   bottom: 0;
   width: 100%;
@@ -161,10 +166,14 @@
   margin-right: 4rem;
 }
 .footer .footer__section h3 {
+  font-family: Metropolis-Bold;
   width: 100%;
   border-bottom: 1px solid #777777;
   position: relative;
   padding-bottom: 2rem;
+}
+.footer .footer__section h3 p {
+  font-family: Metropolis-Light;
 }
 .footer .footer__section h3 p::after {
   content: "";
@@ -188,7 +197,7 @@
 
 .footer__end {
   position: relative;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
   height: 50px;
   background-color: white;
@@ -259,6 +268,9 @@
   .footer .footer__end {
     height: 50px;
   }
+  .footer__space {
+    display: none;
+  }
 }
 @media screen and (width < 860px) {
   .footer {
@@ -280,7 +292,7 @@
     z-index: 10;
   }
   .footer__end {
-    height: 97.5px;
+    height: 50px;
   }
 }
 @media screen and (width = 860px) {
@@ -303,7 +315,7 @@
     z-index: 10;
   }
   .footer__end {
-    height: 97.5px;
+    height: 50px;
   }
 }
 .footer__list {
@@ -337,6 +349,17 @@
   h3 .icon-right_arrow {
     display: none;
   }
+}
+@media screen and (width < 450px) {
+  .footer__space {
+    height: 100px;
+  }
+  .footer__end {
+    height: 70px;
+  }
+}
+.footer ul {
+  font-family: Metropolis-Light;
 }
 
 /*# sourceMappingURL=footer.css.map */
