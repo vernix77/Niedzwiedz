@@ -239,6 +239,13 @@ main {
 			color: #323940;
 		}
 	}
+	.bulbs__view{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		background-color: #ffffff;
+		color: #111111;
+	}
 }
 
 @media screen and (991px > width) {
