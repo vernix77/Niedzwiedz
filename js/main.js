@@ -79,6 +79,10 @@ function handleTouchMove(event) {
 
 //products arrows
 
+function sleep(ms) {
+	return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 (() => {
 	"use strict";
 
@@ -120,6 +124,11 @@ function handleTouchMove(event) {
 			buttonLeft.classList.remove("--js__arrowfixer");
 			buttonRight.classList.remove("--js__arrowfixer");
 			updateButtons();
+			// slideerItems.forEach((x) => (x.style.animation = "ProducsAnimation .5s"));
+			slideerItems.forEach((x) => x.classList.add("js__ProducsAnimation"));
+			sleep(500).then(() => {
+				slideerItems.forEach((x) => x.classList.remove("js__ProducsAnimation"));
+			});
 		}
 
 		if (window.innerWidth < 767) {

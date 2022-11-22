@@ -736,13 +736,32 @@ a:hover {
 }
 
 // .g {
-// 	background-color: white;
+// 	background-color: red;
 // }
 
 // .gg {
-// 	background-color: rgb(231, 224, 224);
+// 	background-color: blue;
 // }
 
 .--js__arrowfixer {
 	visibility: hidden;
+}
+
+.js__ProducsAnimation {
+	animation: ProducsAnimation 0.5s;
+}
+
+@keyframes ProducsAnimation {
+	0% {
+		scale: 1;
+		transition: scale 0.3s;
+	}
+	50% {
+		scale: 1.05;
+		transition: scale 0.3s;
+	}
+	100% {
+		scale: 1;
+		transition: scale 0.3s;
+	}
 }
