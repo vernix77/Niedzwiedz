@@ -37,36 +37,48 @@ a:hover {
 	padding: 1rem;
 	margin: auto;
 	margin-top: 5rem;
-	min-height: 20rem;
-}
-
-.main__banner-img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+	height: 80vh;
 	width: 100%;
-	height: 100%;
-	min-height: 20rem;
-	color: white;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	flex-wrap: wrap;
-	p {
-		margin: 0;
-		padding-left: 8rem;
-	}
-	button {
-		font-family: Metropolis-Bold;
-		animation: fade_main 0.7s reverse;
-	}
-}
+	min-height: 475px;
+	max-height: 600px;
 
-.banner__container {
-	position: relative;
+	.main__banner-img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+		width: 100%;
+		height: 100%;
+		min-height: 30rem;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex-wrap: wrap;
+		p {
+			margin: 0;
+			padding-left: 8rem;
+		}
+		button {
+			font-family: Metropolis-Bold;
+			animation: fade_main 0.7s reverse;
+		}
+	}
+
+	.banner__container {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+	}
 	img {
-		max-width: 100%;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		overflow: hidden;
 	}
 }
 
@@ -217,195 +229,6 @@ a:hover {
 	}
 }
 
-@media screen and (550px < width < 721px) {
-	.main__banner-img .main__p {
-		font-family: Metropolis-Bold;
-		font-size: 1.5rem;
-	}
-
-	.main__banner-img .main__p__second {
-		font-family: Metropolis-Light;
-		font-size: 2rem;
-	}
-	.main__banner-img .main__p__second {
-		font-family: Metropolis-Regular;
-		font-size: 0.75rem;
-		max-width: 20rem;
-		margin: 0.5rem 0;
-	}
-	.main__banner-img p {
-		margin: 0;
-		padding-left: 5rem;
-	}
-	.main__banner-img button {
-		background-color: #f74137;
-		padding: 0.5rem 0.5rem;
-		color: white;
-		border: none;
-		max-width: fit-content;
-		margin-left: 5rem;
-		cursor: pointer;
-		transition: 0.4s;
-	}
-}
-@media screen and (625px < width < 721px) {
-	.main__banner-img .main__p {
-		font-family: Metropolis-Bold;
-		font-size: 1.8rem;
-	}
-
-	.main__banner-img .main__p__second {
-		font-family: Metropolis-Light;
-		font-size: 1.5rem;
-		max-width: 20rem;
-		margin: 0.5rem 0;
-	}
-	.main__banner-img .main__p__third {
-		font-family: Metropolis-Light;
-		font-size: 0.7rem;
-		max-width: 20rem;
-		margin: 0.5rem 0;
-	}
-	.main__banner-img p {
-		margin: 0;
-		padding-left: 5rem;
-	}
-	.main__banner-img button {
-		background-color: #f74137;
-		padding: 0.5rem 0.5rem;
-		color: white;
-		border: none;
-		max-width: fit-content;
-		margin-left: 5rem;
-		cursor: pointer;
-		transition: 0.4s;
-	}
-}
-
-@media screen and (550px < width < 625px) {
-	.main__banner-img p:first-of-type {
-		font-family: Metropolis-Bold;
-		font-size: 1.5rem;
-	}
-
-	.main__banner-img p:nth-of-type(2) {
-		font-family: Metropolis-Light;
-		font-size: 1.5rem;
-	}
-	.main__banner-img p:nth-of-type(3) {
-		font-family: Metropolis-Regular;
-		font-size: 0.7rem;
-		max-width: 20rem;
-		margin: 0.5rem 0;
-	}
-	.main__banner-img p {
-		margin: 0;
-		padding-left: 5rem;
-	}
-	.main__banner-img button {
-		background-color: #f74137;
-		padding: 0.3rem 0.3rem;
-		color: white;
-		border: none;
-		max-width: fit-content;
-		margin-left: 5rem;
-		cursor: pointer;
-		transition: 0.4s;
-	}
-}
-
-@media screen and (549px < width < 551px) {
-	.main__banner-img p:first-of-type {
-		font-family: Metropolis-Bold;
-		font-size: 1.5rem;
-	}
-
-	.main__banner-img p:nth-of-type(2) {
-		font-family: Metropolis-Light;
-		font-size: 1.5rem;
-	}
-	.main__banner-img p:nth-of-type(3) {
-		font-family: Metropolis-Regular;
-		font-size: 0.5rem;
-		max-width: 20rem;
-		margin: 0.5rem 0;
-	}
-	.main__banner-img p {
-		margin: 0;
-		padding-left: 5rem;
-	}
-	.main__banner-img button {
-		background-color: #f74137;
-		padding: 0.3rem 0.3rem;
-		color: white;
-		border: none;
-		max-width: fit-content;
-		margin-left: 5rem;
-		cursor: pointer;
-		transition: 0.4s;
-	}
-}
-
-@media screen and (width<550px) {
-	.main__banner-img p:first-of-type {
-		font-family: Metropolis-Bold;
-		font-size: 1.5rem;
-	}
-
-	.main__banner-img p:nth-of-type(2) {
-		font-family: Metropolis-Light;
-		font-size: 1.5rem;
-	}
-	.main__banner-img p:nth-of-type(3) {
-		font-family: Metropolis-Regular;
-		font-size: 0.7rem;
-		max-width: 20rem;
-		margin: 0.5rem 0;
-	}
-	.main__banner-img p {
-		margin: 0;
-		padding-left: 5rem;
-	}
-	.main__banner-img button {
-		background-color: #f74137;
-		padding: 0.3rem 0.3rem;
-		color: white;
-		border: none;
-		max-width: fit-content;
-		margin-left: 5rem;
-		cursor: pointer;
-		transition: 0.4s;
-	}
-}
-@media screen and (width < 375px) {
-	.main__banner-img p:first-of-type {
-		font-size: 1rem;
-	}
-
-	.main__banner-img p:nth-of-type(2) {
-		font-family: Metropolis-Light;
-		font-size: 0px;
-	}
-	.main__banner-img p:nth-of-type(3) {
-		font-size: 0px;
-	}
-	.main__banner-img p {
-		margin: 0;
-		padding-left: 5rem;
-	}
-	.main__banner-img button {
-		font-size: 15px;
-		background-color: #f74137;
-		padding: 0.3rem 0.3rem;
-		color: white;
-		border: none;
-		max-width: fit-content;
-		margin-left: 5rem;
-		margin-bottom: 1px;
-		cursor: pointer;
-		transition: 0.4s;
-	}
-}
 //Main banner koniec
 // Main banner drugie zdjecie
 @media screen and (min-width: 992px) {
@@ -414,197 +237,13 @@ a:hover {
 	}
 }
 
-@media screen and (550px < width < 721px) {
-	.main__banner-img .main__p {
-		font-family: Metropolis-Bold;
-		font-size: 1.5rem;
-	}
-
-	.main__banner-img .main__p__second {
-		font-family: Metropolis-Light;
-		font-size: 2rem;
-	}
-	.main__banner-img .main__p__second {
-		font-family: Metropolis-Regular;
-		font-size: 0.75rem;
-		max-width: 20rem;
-		margin: 0.5rem 0;
-	}
-	.main__banner-img p {
-		margin: 0;
-		padding-left: 5rem;
-	}
-	.main__banner-img button {
-		background-color: #f74137;
-		padding: 0.5rem 0.5rem;
-		color: white;
-		border: none;
-		max-width: fit-content;
-		margin-left: 5rem;
-		cursor: pointer;
-		transition: 0.4s;
-	}
-}
-@media screen and (625px < width < 721px) {
-	.main__banner-img .main__p {
-		font-family: Metropolis-Bold;
-		font-size: 1.8rem;
-	}
-
-	.main__banner-img .main__p__second {
-		font-family: Metropolis-Light;
-		font-size: 1.5rem;
-		max-width: 20rem;
-		margin: 0.5rem 0;
-	}
-	.main__banner-img .main__p__third {
-		font-family: Metropolis-Light;
-		font-size: 0.7rem;
-		max-width: 20rem;
-		margin: 0.5rem 0;
-	}
-	.main__banner-img p {
-		margin: 0;
-		padding-left: 5rem;
-	}
-	.main__banner-img button {
-		background-color: #f74137;
-		padding: 0.5rem 0.5rem;
-		color: white;
-		border: none;
-		max-width: fit-content;
-		margin-left: 5rem;
-		cursor: pointer;
-		transition: 0.4s;
-	}
-}
-
-@media screen and (550px < width < 625px) {
-	.main__banner-img p:nth-of-type(4) {
-		font-family: Metropolis-Bold;
-		font-size: 1.5rem;
-	}
-
-	.main__banner-img p:nth-of-type(5) {
-		font-family: Metropolis-Light;
-		font-size: 1.5rem;
-	}
-	.main__banner-img p:last-of-type {
-		font-family: Metropolis-Regular;
-		font-size: 0.7rem;
-		max-width: 20rem;
-		margin: 0.5rem 0;
-	}
-	.main__banner-img p {
-		margin: 0;
-		padding-left: 5rem;
-	}
-	.main__banner-img button {
-		background-color: #f74137;
-		padding: 0.3rem 0.3rem;
-		color: white;
-		border: none;
-		max-width: fit-content;
-		margin-left: 5rem;
-		cursor: pointer;
-		transition: 0.4s;
-	}
-}
-
-@media screen and (550px < width < 550px) {
-	.main__banner-img p:nth-of-type(4) {
-		font-family: Metropolis-Bold;
-		font-size: 1.5rem;
-	}
-
-	.main__banner-img p:nth-of-type(5) {
-		font-family: Metropolis-Light;
-		font-size: 1.5rem;
-	}
-	.main__banner-img p:last-of-type {
-		font-family: Metropolis-Regular;
-		font-size: 0.5rem;
-		max-width: 20rem;
-		margin: 0.5rem 0;
-	}
-	.main__banner-img p {
-		margin: 0;
-		padding-left: 5rem;
-	}
-	.main__banner-img button {
-		background-color: #f74137;
-		padding: 0.3rem 0.3rem;
-		color: white;
-		border: none;
-		max-width: fit-content;
-		margin-left: 5rem;
-		cursor: pointer;
-		transition: 0.4s;
-	}
-}
-
-@media screen and (width<550px) {
-	.main__banner-img p:nth-of-type(4) {
-		font-family: Metropolis-Bold;
-		font-size: 1.5rem;
-	}
-
-	.main__banner-img p:nth-of-type(5) {
-		font-family: Metropolis-Light;
-		font-size: 1.5rem;
-	}
-	.main__banner-img p:last-of-type {
-		font-family: Metropolis-Regular;
-		font-size: 0.7rem;
-		max-width: 20rem;
-		margin: 0.5rem 0;
-	}
-	.main__banner-img p {
-		margin: 0;
-		padding-left: 5rem;
-	}
-	.main__banner-img button {
-		background-color: #f74137;
-		padding: 0.3rem 0.3rem;
-		color: white;
-		border: none;
-		max-width: fit-content;
-		margin-left: 5rem;
-		cursor: pointer;
-		transition: 0.4s;
-	}
-}
-@media screen and (width < 375px) {
-	.main__banner-img p:nth-of-type(4) {
-		font-size: 1rem;
-	}
-
-	.main__banner-img p:nth-of-type(5) {
-		font-family: Metropolis-Light;
-		font-size: 0px;
-	}
-	.main__banner-img p:last-of-type {
-		font-size: 0px;
-	}
-	.main__banner-img p {
-		margin: 0;
-		padding-left: 5rem;
-	}
-	.main__banner-img button {
-		font-size: 15px;
-		background-color: #f74137;
-		padding: 0.3rem 0.3rem;
-		color: white;
-		border: none;
-		max-width: fit-content;
-		margin-left: 5rem;
-		margin-bottom: 1px;
-		cursor: pointer;
-		transition: 0.4s;
-	}
-}
-
 @media screen and (width < 768px) {
+	.main__banner .main__banner-img p {
+		padding-left: 2rem;
+	}
+	.main__banner-img button {
+		margin-left: 2rem;
+	}
 	.banner__control-left {
 		display: none;
 	}
