@@ -1,4 +1,3 @@
-
 // main banner
 
 const arrow_left = document.querySelector(".banner__control-left");
@@ -78,39 +77,110 @@ function handleTouchMove(event) {
 	}
 }
 
-// slajder produktowy
+//products arrows
 
-const counterProduct = document.querySelectorAll(
-	".recomendations__products-prod-couter-input"
-);
-const counterMinusProduct = document.querySelectorAll(
-	".recomendations__products-prod-minus"
-);
-const counterPlusProduct = document.querySelectorAll(
-	".recomendations__products-prod-plus"
-);
+(() => {
+	"use strict";
 
-let count = 1;
+	const slideer = document.querySelector(".recomendations__products"),
+		slideerItems = document.querySelectorAll(".recomendations__products-prod"),
+		buttonLeft = document.querySelector(".recomendations__control-left"),
+		buttonRight = document.querySelector(".recomendations__control-right");
 
-updateProducts();
+	let currentScrollPosition = 0,
+		tileWidth = slideerItems[0].offsetWidth,
+		slideerStyle = window.getComputedStyle(slideer),
+		gap = parseInt(slideerStyle.getPropertyValue("gap"), 10);
 
-for (let i = 0, len = counterPlusProduct.length; i < len; i++) {
-	counterPlusProduct[i].addEventListener("click", () => {
-		counterProduct[i].value++;
-	});
-}
-
-for (let i = 0, len = counterMinusProduct.length; i < len; i++) {
-	counterMinusProduct[i].addEventListener("click", () => {
-		if (counterProduct[i].value > 1) {
-			count = counterProduct[i].value--;
-		}
-	});
-}
-
-function updateProducts() {
-	for (let i = 0, len = counterProduct.length; i < len; i++) {
-		counterProduct[i].value++;
+	//cant execute function with parameter in eventListener ;/
+	function scrollLeft() {
+		scrollProducts("left");
 	}
-}
 
+	function scrollRight() {
+		scrollProducts("right");
+	}
+
+	function scrollProducts(direction) {
+		let maxScrollPosition =
+			slideerItems.length * tileWidth +
+			(slideerItems.length - 1) * gap -
+			slideer.offsetWidth;
+
+		let newScrollPosition;
+
+		//update
+		tileWidth = slideerItems[0].offsetWidth;
+		slideerStyle = window.getComputedStyle(slideer);
+		gap = parseInt(slideerStyle.getPropertyValue("gap"), 10);
+
+		if (window.innerWidth > 767) {
+			buttonLeft.style.display = "flex";
+			buttonRight.style.display = "flex";
+			updateButtons();
+		}
+
+		if (window.innerWidth < 767) {
+			buttonLeft.style.display = "none";
+			buttonRight.style.display = "none";
+		}
+
+		updateButtons();
+
+		setTimeout(() => {
+			if (direction === "left") {
+				newScrollPosition = currentScrollPosition - tileWidth - gap;
+
+				if (newScrollPosition <= 0) {
+					newScrollPosition = 0;
+					buttonLeft.style.opacity = "0";
+
+					setTimeout(() => {
+						buttonLeft.style.display = "none";
+					}, 300);
+				}
+			} else {
+				newScrollPosition = currentScrollPosition + tileWidth + gap;
+
+				if (newScrollPosition >= maxScrollPosition) {
+					newScrollPosition = maxScrollPosition;
+					buttonRight.style.opacity = "0";
+
+					setTimeout(() => {
+						buttonRight.style.display = "none";
+					}, 300);
+				}
+			}
+
+			currentScrollPosition = newScrollPosition;
+			slideer.scrollTo(newScrollPosition, 0);
+		}, 2);
+	}
+
+	buttonLeft.addEventListener("click", scrollLeft);
+	buttonRight.addEventListener("click", scrollRight);
+
+	function updateButtons() {
+		if (
+			slideer.offsetWidth <
+			slideerItems.length * tileWidth + (slideerItems.length - 1) * gap
+		) {
+			setTimeout(() => {
+				buttonLeft.style.opacity = "1";
+				buttonRight.style.opacity = "1";
+			}, 1);
+		} else {
+			setTimeout(() => {
+				buttonLeft.style.opacity = "0";
+				buttonRight.style.opacity = "0";
+			}, 1);
+		}
+	}
+	updateButtons();
+
+	setTimeout(() => {
+		buttonLeft.style.opacity = "0";
+	}, 3);
+
+	window.addEventListener("resize", updateButtons);
+})();
