@@ -30,8 +30,11 @@ a:hover {
 	transition: color 0.5s;
 }
 main{
+	padding-left: 28.33px;
+	padding-right: 28.33px;
+	padding-bottom: 100px;
 	.section__1{
-		padding-left: 28.33px;
+		padding-bottom: 45px;
 		.paragraphs{
 			color: black;
 			.paragraph__1{
@@ -147,6 +150,59 @@ main{
 				}
 
 			}
+		}
+	}
+	.section__2{
+		// position: relative;
+		display: flex;
+		align-items: center;
+		height: 55px;
+		width: 100%;
+		background-color: #F8F8F8;
+		.view{
+			display: flex;
+			// flex-direction: row;
+			// align-items: center;
+			.icon-widok_01{
+				align-self: center;
+				padding-right: 30px;
+				padding-left: 15px;
+				cursor: pointer;
+				transition: .5s;
+			}
+			.icon-widok_02{
+				align-self: center;
+				font-size: 17px;
+				cursor: pointer;
+				transition: .5s;
+			}
+			.icon-widok_01:hover{
+				opacity: .8;
+			}
+			.icon-widok_02:hover{
+				opacity: .8;
+			}
+			.select__1{
+				height: 40px;
+				width: 170px;
+			}
+			.select__2{
+				height: 40px;
+				width: 85px;
+			}
+			select{
+				border: none;
+			}
+		}
+		p{
+			color: #111111;
+			font-weight: bold;
+			padding-right: 10px;
+			padding-left: 10px;
+			align-self: center;
+		}
+		i{
+			color: #323940;
 		}
 	}
 }

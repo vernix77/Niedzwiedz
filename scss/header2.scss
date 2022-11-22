@@ -1,6 +1,12 @@
 @use "./color" as c;
 @use "./fonts" as f;
 
+.header_basket-box {
+	ul {
+		list-style-type: none;
+	}
+}
+
 .header_contact {
 	z-index: 100;
 }
@@ -57,6 +63,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		padding-left: 0;
 		margin: 2rem;
 		z-index: 1001;
 	}
@@ -71,17 +78,21 @@
 			display: flex;
 			justify-content: center;
 			padding-top: 1.6rem;
+			padding-bottom: 1.2rem;
 			align-items: center;
+			width: 12rem;
 			font-size: 14px;
 			background-color: #ffffff;
-			p {
+			.your_basket {
 				display: flex;
 				justify-content: center;
 				align-items: center;
 				color: #161616;
+				padding-bottom: 0.2rem;
 			}
 			.price {
 				color: #a3a3a3;
+				text-align: left;
 			}
 		}
 	}
@@ -197,6 +208,7 @@ nav {
 		padding-left: 6px;
 	}
 }
+
 .nav_items {
 	width: 100%;
 	display: flex;
@@ -325,6 +337,7 @@ nav {
 		.icon-right_arrow {
 			border-left: 1px solid c.$main_color_text;
 			background-color: c.$basket_color;
+			color: white;
 		}
 	}
 }
@@ -332,6 +345,10 @@ nav {
 	.nav2{
 		position: absolute;
 		top: 9%;
+	}
+	footer {
+		position: absolute;
+		top: 100%;
 	}
 }
 @media screen and (890 < width) {
@@ -356,6 +373,7 @@ nav {
 		top: 5.3%;
 	}
 }
+
 
 @media screen and (550px < width < 721px) {
 	.header_item .icon {
@@ -396,7 +414,7 @@ nav {
 		flex-wrap: nowrap;
 	}
 }
- 
+
 @media screen and (width > 600px) {
 	.header_menu {
 		display: none;
@@ -408,6 +426,14 @@ nav {
 }
 
 @media screen and (width < 600px) {
+	.header_item .header_basket .header_basket-box {
+		display: none;
+	}
+	.header {
+		img {
+			display: none;
+		}
+	}
 	.header_item {
 		font-family: Metropolis-Light;
 		font-size: 11px;
@@ -465,9 +491,12 @@ nav {
 	.nav_item {
 		display: flex;
 		font-size: 15px;
-		letter-spacing: 1px;
 		flex-wrap: wrap;
 		padding: 10px 0px;
+		letter-spacing: 1px;
+		word-spacing: 1.5px;
+		border-bottom: 2px solid c.$h3_border_color;
+		margin-bottom: 30px;
 	}
 }
 
@@ -508,3 +537,14 @@ nav {
 		width: 120%;
 	}
 }
+
+.header {
+	.icon-right_arrow {
+		color: white;
+	}
+	a:hover {
+		color: c.$hover_text_color;
+	}
+}
+
+
