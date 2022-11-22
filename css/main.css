@@ -169,7 +169,7 @@ a:hover {
   transition: color 0.5s;
 }
 
-.main_banner {
+.main__banner {
   display: flex;
   justify-content: center;
   padding: 1rem;
@@ -177,7 +177,7 @@ a:hover {
   margin-top: 5rem;
 }
 
-.main_banner-img {
+.main__banner-img {
   position: absolute;
   top: 0;
   left: 0;
@@ -190,48 +190,52 @@ a:hover {
   justify-content: center;
   flex-wrap: wrap;
 }
-.main_banner-img p {
+.main__banner-img p {
   margin: 0;
   padding-left: 8rem;
 }
-.main_banner-img button {
+.main__banner-img button {
   font-family: Metropolis-Bold;
 }
 
-.banner_container {
+.banner__container {
   position: relative;
 }
-.banner_container img {
+.banner__container img {
   max-width: 100%;
 }
 
-.main_banner-img .main_p {
+.main__banner-img .main__p {
   font-family: Metropolis-Bold;
   font-size: 2.5rem;
 }
 
-.main_banner-img .main_p_second {
+.main__banner-img .main__p__second {
   font-family: Metropolis-Light;
   font-size: 2.5rem;
 }
 
-.main_banner-img .main_p_third {
+.main__banner-img .main__p__third {
   font-family: Metropolis-Light;
   font-size: 1.25rem;
   max-width: 40rem;
   margin: 1.5rem 0;
 }
 
-.main_banner-img-second {
+.main__banner-img-second {
   background-image: url(../photos/img_08.png);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: cover;
 }
 
-.banner_control-left {
+.banner__control-left {
   z-index: 30;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 1.3rem 1.3rem;
   position: absolute;
@@ -241,13 +245,17 @@ a:hover {
   margin: auto 0;
   transition: 0.5s;
 }
-.banner_control-left img {
+.banner__control-left img {
   width: 1rem;
 }
 
-.banner_control-right {
+.banner__control-right {
   z-index: 30;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 1.3rem 1.3rem;
   position: absolute;
@@ -257,30 +265,32 @@ a:hover {
   margin: auto 0 auto auto;
   transition: 0.5s;
 }
-.banner_control-right img {
+.banner__control-right img {
   width: 1rem;
 }
 
-.banner_control-left,
-.banner_control-right {
+.banner__control-left,
+.banner__control-right {
   width: 50px;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.banner_control-left .icon-left_arrow,
-.banner_control-left .icon-right_arrow,
-.banner_control-right .icon-left_arrow,
-.banner_control-right .icon-right_arrow {
+.banner__control-left .icon-left_arrow,
+.banner__control-left .icon-right_arrow,
+.banner__control-right .icon-left_arrow,
+.banner__control-right .icon-right_arrow {
   color: #323940;
 }
 
-.main_banner-img button {
+.main__banner-img button {
   background-color: #f74137;
   padding: 1rem 2.5rem;
   color: white;
   border: none;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   margin-left: 8rem;
   cursor: pointer;
@@ -302,18 +312,18 @@ a:hover {
     flex-wrap: wrap;
   }
 }
-.main_banner-img button:hover {
+.main__banner-img button:hover {
   scale: 1.07;
 }
 
-.banner_control-left:hover {
-  background-color: rgba(242, 243, 244, 0.3764705882);
+.banner__control-left:hover {
+  background-color: #F8F8F8;
   scale: 1.07;
   transition: scale 0.3s;
 }
 
-.banner_control-right:hover {
-  background-color: rgba(242, 243, 244, 0.3764705882);
+.banner__control-right:hover {
+  background-color: #F8F8F8;
   scale: 1.07;
   transition: scale 0.3s;
 }
@@ -322,45 +332,45 @@ a:hover {
   position: absolute;
   left: -110%;
   transform: translateX(110%);
-  transition: 0.5s;
 }
 
 .saw {
   position: absolute;
   left: -110%;
   transform: translateX(110%);
-  transition: 0.5s;
 }
 
 @media screen and (min-width: 992px) {
-  .main_banner {
+  .main__banner {
     margin-top: 1.7rem;
   }
 }
 @media screen and (550px < width < 721px) {
-  .main_banner-img .main_p {
+  .main__banner-img .main__p {
     font-family: Metropolis-Bold;
     font-size: 1.5rem;
   }
-  .main_banner-img .main_p_second {
+  .main__banner-img .main__p__second {
     font-family: Metropolis-Light;
     font-size: 2rem;
   }
-  .main_banner-img .main_p_second {
+  .main__banner-img .main__p__second {
     font-family: Metropolis-Regular;
     font-size: 0.75rem;
     max-width: 20rem;
     margin: 0.5rem 0;
   }
-  .main_banner-img p {
+  .main__banner-img p {
     margin: 0;
     padding-left: 5rem;
   }
-  .main_banner-img button {
+  .main__banner-img button {
     background-color: #f74137;
     padding: 0.5rem 0.5rem;
     color: white;
     border: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -368,31 +378,33 @@ a:hover {
   }
 }
 @media screen and (625px < width < 721px) {
-  .main_banner-img .main_p {
+  .main__banner-img .main__p {
     font-family: Metropolis-Bold;
     font-size: 1.8rem;
   }
-  .main_banner-img .main_p_second {
+  .main__banner-img .main__p__second {
     font-family: Metropolis-Light;
     font-size: 1.5rem;
     max-width: 20rem;
     margin: 0.5rem 0;
   }
-  .main_banner-img .main_p_third {
+  .main__banner-img .main__p__third {
     font-family: Metropolis-Light;
     font-size: 0.7rem;
     max-width: 20rem;
     margin: 0.5rem 0;
   }
-  .main_banner-img p {
+  .main__banner-img p {
     margin: 0;
     padding-left: 5rem;
   }
-  .main_banner-img button {
+  .main__banner-img button {
     background-color: #f74137;
     padding: 0.5rem 0.5rem;
     color: white;
     border: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -400,29 +412,31 @@ a:hover {
   }
 }
 @media screen and (550px < width < 625px) {
-  .main_banner-img p:first-of-type {
+  .main__banner-img p:first-of-type {
     font-family: Metropolis-Bold;
     font-size: 1.5rem;
   }
-  .main_banner-img p:nth-of-type(2) {
+  .main__banner-img p:nth-of-type(2) {
     font-family: Metropolis-Light;
     font-size: 1.5rem;
   }
-  .main_banner-img p:nth-of-type(3) {
+  .main__banner-img p:nth-of-type(3) {
     font-family: Metropolis-Regular;
     font-size: 0.7rem;
     max-width: 20rem;
     margin: 0.5rem 0;
   }
-  .main_banner-img p {
+  .main__banner-img p {
     margin: 0;
     padding-left: 5rem;
   }
-  .main_banner-img button {
+  .main__banner-img button {
     background-color: #f74137;
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -430,29 +444,31 @@ a:hover {
   }
 }
 @media screen and (549px < width < 551px) {
-  .main_banner-img p:first-of-type {
+  .main__banner-img p:first-of-type {
     font-family: Metropolis-Bold;
     font-size: 1.5rem;
   }
-  .main_banner-img p:nth-of-type(2) {
+  .main__banner-img p:nth-of-type(2) {
     font-family: Metropolis-Light;
     font-size: 1.5rem;
   }
-  .main_banner-img p:nth-of-type(3) {
+  .main__banner-img p:nth-of-type(3) {
     font-family: Metropolis-Regular;
     font-size: 0.5rem;
     max-width: 20rem;
     margin: 0.5rem 0;
   }
-  .main_banner-img p {
+  .main__banner-img p {
     margin: 0;
     padding-left: 5rem;
   }
-  .main_banner-img button {
+  .main__banner-img button {
     background-color: #f74137;
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -460,29 +476,31 @@ a:hover {
   }
 }
 @media screen and (width < 550px) {
-  .main_banner-img p:first-of-type {
+  .main__banner-img p:first-of-type {
     font-family: Metropolis-Bold;
     font-size: 1.5rem;
   }
-  .main_banner-img p:nth-of-type(2) {
+  .main__banner-img p:nth-of-type(2) {
     font-family: Metropolis-Light;
     font-size: 1.5rem;
   }
-  .main_banner-img p:nth-of-type(3) {
+  .main__banner-img p:nth-of-type(3) {
     font-family: Metropolis-Regular;
     font-size: 0.7rem;
     max-width: 20rem;
     margin: 0.5rem 0;
   }
-  .main_banner-img p {
+  .main__banner-img p {
     margin: 0;
     padding-left: 5rem;
   }
-  .main_banner-img button {
+  .main__banner-img button {
     background-color: #f74137;
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -490,26 +508,28 @@ a:hover {
   }
 }
 @media screen and (width < 375px) {
-  .main_banner-img p:first-of-type {
+  .main__banner-img p:first-of-type {
     font-size: 1rem;
   }
-  .main_banner-img p:nth-of-type(2) {
+  .main__banner-img p:nth-of-type(2) {
     font-family: Metropolis-Light;
     font-size: 0px;
   }
-  .main_banner-img p:nth-of-type(3) {
+  .main__banner-img p:nth-of-type(3) {
     font-size: 0px;
   }
-  .main_banner-img p {
+  .main__banner-img p {
     margin: 0;
     padding-left: 5rem;
   }
-  .main_banner-img button {
+  .main__banner-img button {
     font-size: 15px;
     background-color: #f74137;
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     margin-bottom: 1px;
@@ -518,34 +538,36 @@ a:hover {
   }
 }
 @media screen and (min-width: 992px) {
-  .main_banner {
+  .main__banner {
     margin-top: 1.7rem;
   }
 }
 @media screen and (550px < width < 721px) {
-  .main_banner-img .main_p {
+  .main__banner-img .main__p {
     font-family: Metropolis-Bold;
     font-size: 1.5rem;
   }
-  .main_banner-img .main_p_second {
+  .main__banner-img .main__p__second {
     font-family: Metropolis-Light;
     font-size: 2rem;
   }
-  .main_banner-img .main_p_second {
+  .main__banner-img .main__p__second {
     font-family: Metropolis-Regular;
     font-size: 0.75rem;
     max-width: 20rem;
     margin: 0.5rem 0;
   }
-  .main_banner-img p {
+  .main__banner-img p {
     margin: 0;
     padding-left: 5rem;
   }
-  .main_banner-img button {
+  .main__banner-img button {
     background-color: #f74137;
     padding: 0.5rem 0.5rem;
     color: white;
     border: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -553,31 +575,33 @@ a:hover {
   }
 }
 @media screen and (625px < width < 721px) {
-  .main_banner-img .main_p {
+  .main__banner-img .main__p {
     font-family: Metropolis-Bold;
     font-size: 1.8rem;
   }
-  .main_banner-img .main_p_second {
+  .main__banner-img .main__p__second {
     font-family: Metropolis-Light;
     font-size: 1.5rem;
     max-width: 20rem;
     margin: 0.5rem 0;
   }
-  .main_banner-img .main_p_third {
+  .main__banner-img .main__p__third {
     font-family: Metropolis-Light;
     font-size: 0.7rem;
     max-width: 20rem;
     margin: 0.5rem 0;
   }
-  .main_banner-img p {
+  .main__banner-img p {
     margin: 0;
     padding-left: 5rem;
   }
-  .main_banner-img button {
+  .main__banner-img button {
     background-color: #f74137;
     padding: 0.5rem 0.5rem;
     color: white;
     border: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -585,29 +609,31 @@ a:hover {
   }
 }
 @media screen and (550px < width < 625px) {
-  .main_banner-img p:nth-of-type(4) {
+  .main__banner-img p:nth-of-type(4) {
     font-family: Metropolis-Bold;
     font-size: 1.5rem;
   }
-  .main_banner-img p:nth-of-type(5) {
+  .main__banner-img p:nth-of-type(5) {
     font-family: Metropolis-Light;
     font-size: 1.5rem;
   }
-  .main_banner-img p:last-of-type {
+  .main__banner-img p:last-of-type {
     font-family: Metropolis-Regular;
     font-size: 0.7rem;
     max-width: 20rem;
     margin: 0.5rem 0;
   }
-  .main_banner-img p {
+  .main__banner-img p {
     margin: 0;
     padding-left: 5rem;
   }
-  .main_banner-img button {
+  .main__banner-img button {
     background-color: #f74137;
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -615,29 +641,31 @@ a:hover {
   }
 }
 @media screen and (550px < width < 550px) {
-  .main_banner-img p:nth-of-type(4) {
+  .main__banner-img p:nth-of-type(4) {
     font-family: Metropolis-Bold;
     font-size: 1.5rem;
   }
-  .main_banner-img p:nth-of-type(5) {
+  .main__banner-img p:nth-of-type(5) {
     font-family: Metropolis-Light;
     font-size: 1.5rem;
   }
-  .main_banner-img p:last-of-type {
+  .main__banner-img p:last-of-type {
     font-family: Metropolis-Regular;
     font-size: 0.5rem;
     max-width: 20rem;
     margin: 0.5rem 0;
   }
-  .main_banner-img p {
+  .main__banner-img p {
     margin: 0;
     padding-left: 5rem;
   }
-  .main_banner-img button {
+  .main__banner-img button {
     background-color: #f74137;
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -645,29 +673,31 @@ a:hover {
   }
 }
 @media screen and (width < 550px) {
-  .main_banner-img p:nth-of-type(4) {
+  .main__banner-img p:nth-of-type(4) {
     font-family: Metropolis-Bold;
     font-size: 1.5rem;
   }
-  .main_banner-img p:nth-of-type(5) {
+  .main__banner-img p:nth-of-type(5) {
     font-family: Metropolis-Light;
     font-size: 1.5rem;
   }
-  .main_banner-img p:last-of-type {
+  .main__banner-img p:last-of-type {
     font-family: Metropolis-Regular;
     font-size: 0.7rem;
     max-width: 20rem;
     margin: 0.5rem 0;
   }
-  .main_banner-img p {
+  .main__banner-img p {
     margin: 0;
     padding-left: 5rem;
   }
-  .main_banner-img button {
+  .main__banner-img button {
     background-color: #f74137;
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     cursor: pointer;
@@ -675,26 +705,28 @@ a:hover {
   }
 }
 @media screen and (width < 375px) {
-  .main_banner-img p:nth-of-type(4) {
+  .main__banner-img p:nth-of-type(4) {
     font-size: 1rem;
   }
-  .main_banner-img p:nth-of-type(5) {
+  .main__banner-img p:nth-of-type(5) {
     font-family: Metropolis-Light;
     font-size: 0px;
   }
-  .main_banner-img p:last-of-type {
+  .main__banner-img p:last-of-type {
     font-size: 0px;
   }
-  .main_banner-img p {
+  .main__banner-img p {
     margin: 0;
     padding-left: 5rem;
   }
-  .main_banner-img button {
+  .main__banner-img button {
     font-size: 15px;
     background-color: #f74137;
     padding: 0.3rem 0.3rem;
     color: white;
     border: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 5rem;
     margin-bottom: 1px;
@@ -806,6 +838,8 @@ a:hover {
   color: white;
   border: 1px solid white;
   padding: 1rem 2rem;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   margin-left: 2rem;
   margin-top: 1.5rem;
@@ -873,6 +907,8 @@ a:hover {
 .recomendations__products-prod {
   transform: translateY(0%);
   background-color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 1rem 1.5rem 4rem;
   display: flex;
@@ -947,7 +983,7 @@ a:hover {
   scale: 1.01;
 }
 
-.why__us {
+.why__us__advantages {
   position: relative;
   background: url("../photos/img_07.jpg");
   min-height: 35rem;
@@ -960,7 +996,7 @@ a:hover {
   display: flex;
 }
 
-.why__us-cover {
+.why__us__advantages__cover {
   background: rgba(0, 0, 0, 0.35);
   width: 100%;
   min-height: 35rem;
@@ -969,7 +1005,7 @@ a:hover {
   align-items: center;
 }
 
-.why__us-cover h2 {
+.why__us__advantages__cover h2 {
   position: relative;
   font-family: metropolis-bold;
   margin-top: 4rem;
@@ -981,7 +1017,7 @@ a:hover {
   align-items: center;
   padding-bottom: 1rem;
 }
-.why__us-cover h2::after {
+.why__us__advantages__cover h2::after {
   position: absolute;
   bottom: 0;
   content: " ";
@@ -991,25 +1027,25 @@ a:hover {
   margin-top: 1rem;
 }
 
-.why__us-cover > p {
+.why__us__advantages__cover > p {
   padding: 1rem;
   max-width: 55rem;
   text-align: center;
   letter-spacing: 1px;
 }
 
-.advantages__container {
+.why__us__advantages__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
 }
 
 @media screen and (width < 820px) {
-  .advantages__container {
+  .why__us__advantages__container {
     grid-template-columns: 1fr;
   }
 }
-.advantages__op {
+.why__us__advantages__op {
   border: 1px solid rgb(171, 171, 171);
   padding: 2rem;
   display: flex;
@@ -1017,7 +1053,7 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
-.advantages__op p {
+.why__us__advantages__op p {
   margin: 0;
   margin-top: 1.5rem;
   font-size: 18px;
@@ -1025,31 +1061,75 @@ a:hover {
 }
 
 @media screen and (width < 700px) {
-  .advantages__op {
+  .why__us__advantages__op {
     grid: none;
     /* grid-template-columns: 1tr 1tr 1tr; */
   }
 }
 @media screen and (width < 825px) {
-  .why__us-cover {
+  .why__us__advantages__cover {
     grid: none;
   }
-  .why__us-cover > h2 {
+  .why__us__advantages__cover > h2 {
     font-size: 36px;
   }
 }
 @media screen and (width < 425px) {
-  .why__us-cover > h2 {
+  .why__us__advantages__cover > h2 {
     font-size: 28px;
   }
 }
 @media screen and (1200px < width) {
-  .advantages__op > p {
+  .why__us__advantages__op > p {
     font-size: 18px;
   }
-  .why_us > h2 {
+  .why__us__advantages > h2 {
     font-size: 44px;
   }
 }
+.recomendations__products-prod-card {
+  display: flex;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
 
-/*# sourceMappingURL=main.css.map */
+.recomendations__products-prod-couter-input {
+  max-width: 3rem;
+}
+
+.recomendations__products-prod-minus,
+.recomendations__products-prod-couter,
+.recomendations__products-prod-plus {
+  padding: 0.5rem;
+  border: 1px solid #E1E2E8;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color: #F8F8F8;
+}
+
+.recomendations__products-prod-minus,
+.recomendations__products-prod-plus {
+  background-color: #F8F8F8;
+}
+
+.recomendations__products-prod-couter {
+  padding: 0.5rem 1rem;
+  background-color: white;
+}
+
+.recomendations__products-prod-card-icon {
+  margin-left: 0.5rem;
+  padding: 0.6rem;
+  background-color: #9BCB3B;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  color: white;
+}
+
+.recomendations__products-prod:hover > .recomendations__products-prod-card {
+  opacity: 1;
+  transition: opacity 0.4s;
+  color: black;
+}/*# sourceMappingURL=main.css.map */

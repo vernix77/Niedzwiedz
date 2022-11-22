@@ -168,8 +168,13 @@ a:hover {
   transition: color 0.5s;
 }
 
-main .section__1 {
+main {
   padding-left: 28.33px;
+  padding-right: 28.33px;
+  padding-bottom: 100px;
+}
+main .section__1 {
+  padding-bottom: 45px;
 }
 main .section__1 .paragraphs {
   color: black;
@@ -281,6 +286,56 @@ main .section__1 .photo .items__photos .see__more .paragraph__see__more {
 }
 main .section__1 .photo .items__photos .see__more:hover {
   opacity: 1;
+}
+main .section__2 {
+  display: flex;
+  align-items: center;
+  height: 55px;
+  width: 100%;
+  background-color: #F8F8F8;
+}
+main .section__2 .view {
+  display: flex;
+}
+main .section__2 .view .icon-widok_01 {
+  align-self: center;
+  padding-right: 30px;
+  padding-left: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+main .section__2 .view .icon-widok_02 {
+  align-self: center;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+main .section__2 .view .icon-widok_01:hover {
+  opacity: 0.8;
+}
+main .section__2 .view .icon-widok_02:hover {
+  opacity: 0.8;
+}
+main .section__2 .view .select__1 {
+  height: 40px;
+  width: 170px;
+}
+main .section__2 .view .select__2 {
+  height: 40px;
+  width: 85px;
+}
+main .section__2 .view select {
+  border: none;
+}
+main .section__2 p {
+  color: #111111;
+  font-weight: bold;
+  padding-right: 10px;
+  padding-left: 10px;
+  align-self: center;
+}
+main .section__2 i {
+  color: #323940;
 }
 
 @media screen and (991px > width) {
