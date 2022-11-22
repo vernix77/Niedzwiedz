@@ -12,6 +12,7 @@
 }
 
 .footer {
+	font-family: Metropolis-Regular;
 	position: relative;
 	bottom: 0;
 	width: 100%;
@@ -31,9 +32,6 @@
 			border-bottom: 1px solid c.$h3_border_color;
 			position: relative;
 			padding-bottom: 2rem;
-			p {
-				font-family: Metropolis-Light;
-			}
 			p::after {
 				content: "";
 				position: absolute;
@@ -225,8 +223,4 @@
 	.footer__end {
 		height: 70px;
 	}
-}
-
-.footer ul {
-	font-family: Metropolis-Light;
 }
