@@ -1,3 +1,6 @@
+
+// main banner
+
 const arrow_left = document.querySelector(".banner__control-left");
 const arrow_right = document.querySelector(".banner__control-right");
 const main_img = document.querySelector(".main__img");
@@ -110,3 +113,4 @@ function updateProducts() {
 		counterProduct[i].value++;
 	}
 }
+
