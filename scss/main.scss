@@ -672,9 +672,11 @@ a:hover {
 	}
 	.recomendations__control-left {
 		opacity: 1;
+		display: none;
 	}
 	.recomendations__control-right {
 		opacity: 1;
+		display: none;
 	}
 }
 .recomendations__control-left {
@@ -733,10 +735,14 @@ a:hover {
 	transition: scale 0.3s;
 }
 
-.g {
-	background-color: red;
-}
+// .g {
+// 	background-color: white;
+// }
 
-.gg {
-	background-color: blue;
+// .gg {
+// 	background-color: rgb(231, 224, 224);
+// }
+
+.--js__arrowfixer {
+	visibility: hidden;
 }

@@ -117,12 +117,16 @@ function handleTouchMove(event) {
 		if (window.innerWidth > 767) {
 			buttonLeft.style.display = "flex";
 			buttonRight.style.display = "flex";
+			buttonLeft.classList.remove("--js__arrowfixer");
+			buttonRight.classList.remove("--js__arrowfixer");
 			updateButtons();
 		}
 
 		if (window.innerWidth < 767) {
 			buttonLeft.style.display = "none";
 			buttonRight.style.display = "none";
+			buttonLeft.classList.add("--js__arrowfixer");
+			buttonRight.classList.add("--js__arrowfixer");
 		}
 
 		updateButtons();
@@ -134,9 +138,11 @@ function handleTouchMove(event) {
 				if (newScrollPosition <= 0) {
 					newScrollPosition = 0;
 					buttonLeft.style.opacity = "0";
+					buttonLeft.classList.add("--js__arrowfixer");
 
 					setTimeout(() => {
 						buttonLeft.style.display = "none";
+						buttonLeft.classList.add("--js__arrowfixer");
 					}, 300);
 				}
 			} else {
@@ -145,9 +151,11 @@ function handleTouchMove(event) {
 				if (newScrollPosition >= maxScrollPosition) {
 					newScrollPosition = maxScrollPosition;
 					buttonRight.style.opacity = "0";
+					buttonRight.classList.add("--js__arrowfixer");
 
 					setTimeout(() => {
 						buttonRight.style.display = "none";
+						buttonRight.classList.add("--js__arrowfixer");
 					}, 300);
 				}
 			}
@@ -173,6 +181,8 @@ function handleTouchMove(event) {
 			setTimeout(() => {
 				buttonLeft.style.opacity = "0";
 				buttonRight.style.opacity = "0";
+				buttonLeft.classList.remove("--js__arrowfixer");
+				buttonRight.classList.remove("--js__arrowfixer");
 			}, 1);
 		}
 	}
@@ -180,7 +190,27 @@ function handleTouchMove(event) {
 
 	setTimeout(() => {
 		buttonLeft.style.opacity = "0";
+		buttonLeft.classList.remove("--js__arrowfixer");
 	}, 3);
 
 	window.addEventListener("resize", updateButtons);
+
+	const WindowSizeFixing = window.matchMedia("(max-width: 767px)");
+
+	function ArrowFixer() {
+		if (WindowSizeFixing.matches) {
+			buttonLeft.style.display = "none";
+			buttonRight.style.display = "none";
+			buttonLeft.style.opacity = "0";
+			buttonRight.style.opacity = "0";
+		} else {
+			buttonLeft.style.display = "Flex";
+			buttonRight.style.display = "flex";
+			buttonLeft.style.opacity = "1";
+			buttonRight.style.opacity = "1";
+		}
+	}
+
+	ArrowFixer(WindowSizeFixing);
+	WindowSizeFixing.addListener(ArrowFixer);
 })();
