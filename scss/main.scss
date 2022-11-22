@@ -765,3 +765,16 @@ a:hover {
 		transition: scale 0.3s;
 	}
 }
+
+.container {
+	width: 100%;
+}
+
+@media screen and (width > 1920px) {
+	.container {
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 1920px;
+	}
+}
