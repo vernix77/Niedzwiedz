@@ -12,7 +12,7 @@ html {
 }
 
 body {
-	font-family: Metropolis-MediumItalic;
+	font-family: Metropolis-Regular, Metropolis-Light;
 	position: relative;
 	background-color: #f2f3f4;
 	color: c.$main_color_text;
@@ -57,6 +57,7 @@ a:hover {
 	}
 	button {
 		font-family: Metropolis-Bold;
+		animation: fade_main 0.7s reverse;
 	}
 }
 
@@ -70,11 +71,13 @@ a:hover {
 .main__banner-img .main__p {
 	font-family: Metropolis-Bold;
 	font-size: 2.5rem;
+	animation: fade_main 0.7s reverse;
 }
 
 .main__banner-img .main__p__second {
 	font-family: Metropolis-Light;
 	font-size: 2.5rem;
+	animation: fade_main 0.7s reverse;
 }
 
 .main__banner-img .main__p__third {
@@ -82,6 +85,7 @@ a:hover {
 	font-size: 1.25rem;
 	max-width: 40rem;
 	margin: 1.5rem 0;
+	animation: fade_main 0.7s reverse;
 }
 
 .main__banner-img-second {
@@ -148,11 +152,13 @@ a:hover {
 
 .active__banner--one {
 	position: absolute;
+	left: 0;
 	display: none;
 }
 
 .active__banner--two {
 	position: absolute;
+	left: 0;
 	display: none;
 }
 
@@ -180,15 +186,27 @@ a:hover {
 
 .see {
 	position: absolute;
-	left: -110%;
-	transform: translateX(110%);
+	left: 0;
+	opacity: 0;
+	animation: fade_main 1s;
 }
 
 .saw {
 	position: absolute;
-	left: -110%;
-	transform: translateX(110%);
+	left: 0;
+	opacity: 0;
+	animation: fade_main 1s;
 }
+
+@keyframes fade_main {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
 // Main banner pierwsze zdjecie
 
 @media screen and (min-width: 992px) {
@@ -583,6 +601,16 @@ a:hover {
 		transition: 0.4s;
 	}
 }
+
+@media screen and (width < 768px) {
+	.banner__control-left {
+		display: none;
+	}
+	.banner__control-right {
+		display: none;
+	}
+}
+
 // Main banner koniec
 .secondary__banner__section {
 	display: flex;
@@ -770,7 +798,6 @@ a:hover {
 }
 
 .recomendations__products-prod:hover {
-	color: c.$hover_text_color;
 	.recomendations__products-prod-info,
 	.recomendations__products-prod-price {
 		transform: translateY(-120%);
