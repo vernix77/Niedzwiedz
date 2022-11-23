@@ -486,7 +486,10 @@ nav {
 	.header__item .header__basket-box .icon-card:before{
 		font-size: 2rem;
     	display: flex;
-    	padding: 0 2rem 0 1rem;
+    	padding: 0 2.3rem 0 1rem;
+	}
+	.header .icon-widok_01:before{
+		padding: 0;
 	}
 }
 @media screen and (width > 1014px) {
