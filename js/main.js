@@ -6,16 +6,41 @@ const main_img = document.querySelector(".main__img");
 const main_img_second = document.querySelector(".main__img__second");
 const one = document.querySelectorAll(".one");
 const two = document.querySelectorAll(".two");
+const dots1 = document.querySelector(".banner__dots--first");
+const dots2 = document.querySelector(".banner__dots--second");
 
 function PhotoSwap() {
 	main_img.classList.toggle("see");
 	main_img_second.classList.toggle("saw");
+	dots1.classList.toggle("js__banner--dots");
+	dots2.classList.toggle("js__banner--dots");
 	one.forEach((x) => x.classList.toggle("active__banner--one"));
 	two.forEach((x) => x.classList.toggle("active__banner--two"));
 }
 
 arrow_left.addEventListener("click", PhotoSwap);
 arrow_right.addEventListener("click", PhotoSwap);
+
+function PhotoDotsSwap1() {
+	main_img.classList.remove("see");
+	main_img_second.classList.add("saw");
+	dots1.classList.add("js__banner--dots");
+	dots2.classList.remove("js__banner--dots");
+	one.forEach((x) => x.classList.remove("active__banner--one"));
+	two.forEach((x) => x.classList.add("active__banner--two"));
+}
+
+function PhotoDotsSwap2() {
+	main_img.classList.add("see");
+	main_img_second.classList.remove("saw");
+	dots1.classList.remove("js__banner--dots");
+	dots2.classList.add("js__banner--dots");
+	one.forEach((x) => x.classList.add("active__banner--one"));
+	two.forEach((x) => x.classList.remove("active__banner--two"));
+}
+
+dots1.addEventListener("click", PhotoDotsSwap1);
+dots2.addEventListener("click", PhotoDotsSwap2);
 
 //swipe
 const slider = document.querySelector(".main__banner");

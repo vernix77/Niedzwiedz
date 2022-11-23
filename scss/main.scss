@@ -85,12 +85,14 @@ a:hover {
 .main__banner-img .main__p {
 	font-family: Metropolis-Bold;
 	font-size: 2.5rem;
+	padding-bottom: 0.7rem;
 	animation: fade_main 0.7s reverse;
 }
 
 .main__banner-img .main__p__second {
 	font-family: Metropolis-Light;
 	font-size: 2.5rem;
+	padding-bottom: 1.4rem;
 	animation: fade_main 0.7s reverse;
 }
 
@@ -99,6 +101,7 @@ a:hover {
 	font-size: 1.25rem;
 	max-width: 40rem;
 	margin: 1.5rem 0;
+	padding-bottom: 1.4rem;
 	animation: fade_main 0.7s reverse;
 }
 
@@ -138,6 +141,48 @@ a:hover {
 	img {
 		width: 1rem;
 	}
+}
+
+.banner__dots {
+	z-index: 30;
+	width: fit-content;
+	height: fit-content;
+	padding: 1.3rem 1.3rem;
+	position: absolute;
+	inset: 0;
+	display: flex;
+	margin: auto auto 0 auto;
+	transition: color 0.5s;
+	.banner__dots--first,
+	.banner__dots--second {
+		width: 2rem;
+		height: 2rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		background-color: c.$main_slide_color_dot_default;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+	.js__banner--dots {
+		background-color: c.$main_slide_color_dot_selected;
+	}
+}
+
+@media screen and (width > 768px) {
+	.banner__dots--first:hover,
+	.banner__dots--second:hover {
+		background-color: c.$main_slide_color_dot_hover;
+	}
+}
+
+.banner__dots--first {
+	margin-right: 0.5rem;
+}
+
+.banner__dots--second {
+	margin-left: 0.5rem;
 }
 
 .banner__control-left,
