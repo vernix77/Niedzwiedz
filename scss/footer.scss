@@ -5,6 +5,11 @@
 	color: c.$hover_text_color;
 }
 
+.footer__container {
+	width: 100%;
+	background-color: c.$footer_bgc;
+}
+
 .footer__space {
 	position: relative;
 	bottom: 0;
@@ -56,6 +61,13 @@
 		}
 	}
 }
+.footer__end__container {
+	width: 100%;
+	border-bottom: 1px solid c.$h3_border_color;
+	border-top: 1px solid c.$h3_border_color;
+	background-color: white;
+}
+
 .footer__end {
 	position: relative;
 	bottom: 0px;
