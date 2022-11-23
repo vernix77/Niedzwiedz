@@ -329,7 +329,7 @@ a:hover {
 	width: 100%;
 	height: 400px;
 }
-.quick__helpers__option {
+.secondary__banner__quick__helpers__option {
 	background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
 	position: absolute;
 	top: 0;
@@ -343,7 +343,7 @@ a:hover {
 	flex-wrap: wrap;
 	padding: 0 0 2rem;
 }
-.quick__helpers__option > p {
+.secondary__banner__quick__helpers__option > p {
 	margin: 0;
 	padding-bottom: 01rem;
 	padding-left: 2rem;
@@ -396,7 +396,7 @@ a:hover {
 .secondary__banner__container__3:hover {
 	scale: 1.05;
 }
-.quick__helpers__option {
+.secondary__banner__quick__helpers__option {
 	button {
 		background-color: transparent;
 		color: white;
@@ -430,6 +430,70 @@ a:hover {
 		letter-spacing: 1px;
 		padding: 0 0 0 2rem;
 	}
+}
+
+@media screen and ( 899px < width < 1020px) {
+    .secondary__banner__quick__helpers__option p:first-of-type {
+        font-family: Metropolis-Bold;
+        font-size: 1.5rem;
+        letter-spacing: 0.5px;
+        flex-wrap: wrap;
+    }
+    .secondary__banner__quick__helpers__option p:last-of-type{
+        font-family: Metropolis-Light;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and ( 600px < width < 899px) {
+    .secondary__banner__quick__helpers__option p:first-of-type {
+        font-family: Metropolis-Bold;
+        font-size: 2rem;
+        letter-spacing: 0.5px;
+        flex-wrap: wrap;
+    }
+    .secondary__banner__quick__helpers__option p:last-of-type {
+        font-family: Metropolis-Light;
+        font-size: 1.75rem;
+        letter-spacing: 1px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (width < 601px) {
+    .secondary__banner__quick__helpers__option p:first-of-type {
+        font-family: Metropolis-Bold;
+        font-size: 1.5rem;
+        letter-spacing: 0.5px;
+        flex-wrap: wrap;
+    }
+    .secondary__banner__quick__helpers__option p:last-of-type{
+    font-family: Metropolis-Light;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    flex-wrap: wrap;
+    }
+}
+@media screen and (width < 420px) {
+    .secondary__banner__quick__helpers__option p:first-of-type {
+        font-family: Metropolis-Bold;
+        font-size: 1.2rem;
+        letter-spacing: 0.5px;
+        flex-wrap: wrap;
+    }
+    .secondary__banner__quick__helpers__option p:last-of-type{
+    font-family: Metropolis-Light;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    flex-wrap: wrap;
+    }
+    .secondary__banner__quick__helpers__option button{
+        font-size: 0.5rem;
+        padding: 0.75rem 2rem;
+        margin-top: 1rem;
+    }
 }
 
 .recomendations {
