@@ -748,7 +748,7 @@ a:hover {
 	inset: 0;
 	background-color: c.$arrow_color;
 	cursor: pointer;
-	margin: auto 0 auto auto;
+	margin: auto 1px auto auto;
 	transition: 0.5s;
 	img {
 		width: 1rem;
@@ -770,13 +770,13 @@ a:hover {
 
 .recomendations__control-left:hover {
 	background-color: c.$red;
-	scale: 1.07;
+	scale: 1.05;
 	transition: scale 0.3s;
 }
 
 .recomendations__control-right:hover {
 	background-color: c.$red;
-	scale: 1.07;
+	scale: 1.05;
 	transition: scale 0.3s;
 }
 
