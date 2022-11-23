@@ -15,7 +15,7 @@ body {
 	position: relative;
 	background-color: #ffffff;
 	color: c.$header_bg;
-	height: 300vh;
+	height: 700vh;
 }
 
 a {
@@ -157,9 +157,12 @@ main {
 		align-items: center;
 		height: 55px;
 		width: 100%;
-		background-color: #f8f8f8;
-		.view {
+		.view__1 {
 			display: flex;
+			align-items: center;
+			height: 55px;
+			width: 100%;
+			background-color: #f8f8f8;
 			// flex-direction: row;
 			// align-items: center;
 			.paragraph__view {
@@ -184,9 +187,85 @@ main {
 			.icon-widok_02:hover {
 				opacity: 0.8;
 			}
-			.position {
+			.position__right {
 				display: flex;
-				padding-left: 520px;
+				padding-left: 32rem;
+				.paragraph__sort {
+					padding-right: 15px;
+					padding-left: 35px;
+				}
+				form {
+					align-self: center;
+				}
+				.select__1 {
+					height: 40px;
+					width: 170px;
+				}
+				.paragraph__quantity {
+					padding-right: 15px;
+					padding-left: 35px;
+				}
+				.select__2 {
+					height: 40px;
+					width: 85px;
+				}
+				select {
+					border: none;
+				}
+				.squares {
+					display: flex;
+					align-self: center;
+					padding-left: 35px;
+					cursor: pointer;
+					.square {
+						display: flex;
+						justify-content: center;
+						height: 40px;
+						align-items: center;
+						width: 40px;
+						background-color: #ffffff;
+						margin-right: 5px;
+						transition: 1s;
+					}
+					.square:hover {
+						background-color: #f74137;
+					}
+				}
+			}
+		}
+		.view__2 {
+			display: flex;
+			align-items: center;
+			height: 55px;
+			width: 100%;
+			background-color: #f8f8f8;
+			// flex-direction: row;
+			// align-items: center;
+			.paragraph__view {
+				padding: 15px;
+			}
+			.icon-widok_01 {
+				align-self: center;
+				padding-right: 30px;
+				padding-left: 15px;
+				cursor: pointer;
+				transition: 0.5s;
+			}
+			.icon-widok_02 {
+				align-self: center;
+				font-size: 17px;
+				cursor: pointer;
+				transition: 0.5s;
+			}
+			.icon-widok_01:hover {
+				opacity: 0.8;
+			}
+			.icon-widok_02:hover {
+				opacity: 0.8;
+			}
+			.position__right {
+				display: flex;
+				padding-left: 32rem;
 				.paragraph__sort {
 					padding-right: 15px;
 					padding-left: 35px;
@@ -251,7 +330,7 @@ main {
 @media screen and (991px > width) {
 	.section__1 {
 		position: absolute;
-		top: 11.8%;
+		top: 2.8%;
 	}
 	.photo {
 		background-position: center;
@@ -264,6 +343,26 @@ main {
 			flex: 1 1 0;
 			min-width: 300px;
 		}
+	}
+	.bulbs__view{
+		position: absolute;
+		top: 28%;
+	}
+	.view__1{
+		position: relative;
+		top: 78rem;
+	}
+	.view__2{
+		position: relative;
+		top: 488rem;
+	}
+	footer{
+		position: absolute;
+		top: 163.5%;
+	}
+	.bulbs__view{
+		position: absolute;
+		left: 20%;
 	}
 }
 
