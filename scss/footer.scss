@@ -36,6 +36,8 @@
 			border-bottom: 1px solid c.$h3_border_color;
 			position: relative;
 			padding-bottom: 2rem;
+			font-size: 14px;
+			letter-spacing: -0.28px;
 			p {
 				font-family: Metropolis-Regular;
 			}
@@ -56,7 +58,8 @@
 			gap: 2rem;
 			padding: 0;
 			margin-top: 1.5rem;
-			font-size: 0.8rem;
+			font-size: 14px;
+			letter-spacing: -0.28px;
 			color: rgb(184, 180, 180);
 		}
 	}
@@ -78,6 +81,9 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	font-size: 14px;
+	letter-spacing: -0.28px;
+
 	.footer__copyright--text {
 		margin-left: 1rem;
 		display: flex;
@@ -109,11 +115,14 @@
 			display: flex;
 			flex-direction: column;
 			margin-right: 4rem;
+			margin-top: 0.3rem;
 			h3 {
-				width: 100%;
+				width: 120%;
 				border-bottom: 1px solid c.$h3_border_color;
 				position: relative;
-				padding-bottom: 2rem;
+				padding-bottom: 1.1rem;
+				font-size: 14px;
+				letter-spacing: -0.28px;
 				p::after {
 					position: absolute;
 					left: 0;
@@ -125,13 +134,17 @@
 					background-color: orangered;
 				}
 			}
+			ul {
+				padding-top: 3.1rem;
+			}
 			a {
 				display: grid;
 				gap: 2rem;
 				padding: 0;
-				margin-top: 1.5rem;
-				font-size: 0.8rem;
+				margin-top: 2rem;
+				font-size: 14px;
 				color: rgb(184, 180, 180);
+				letter-spacing: -0.28px;
 			}
 			a:hover {
 				color: c.$hover_text_color;
