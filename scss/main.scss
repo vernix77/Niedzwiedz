@@ -386,6 +386,8 @@ a:hover {
 	justify-content: center;
 	// background-size: cover;
 	transition: 0.4s;
+	// max-width: 300px;
+	// overflow: hidden;
 }
 .secondary__banner__container__1:hover {
 	scale: 1.05;
@@ -432,68 +434,68 @@ a:hover {
 	}
 }
 
-@media screen and ( 899px < width < 1020px) {
-    .secondary__banner__quick__helpers__option p:first-of-type {
-        font-family: Metropolis-Bold;
-        font-size: 1.5rem;
-        letter-spacing: 0.5px;
-        flex-wrap: wrap;
-    }
-    .secondary__banner__quick__helpers__option p:last-of-type{
-        font-family: Metropolis-Light;
-        font-size: 1.2rem;
-        letter-spacing: 1px;
-        flex-wrap: wrap;
-    }
+@media screen and (899px < width < 1020px) {
+	.secondary__banner__quick__helpers__option p:first-of-type {
+		font-family: Metropolis-Bold;
+		font-size: 1.5rem;
+		letter-spacing: 0.5px;
+		flex-wrap: wrap;
+	}
+	.secondary__banner__quick__helpers__option p:last-of-type {
+		font-family: Metropolis-Light;
+		font-size: 1.2rem;
+		letter-spacing: 1px;
+		flex-wrap: wrap;
+	}
 }
 
-@media screen and ( 600px < width < 899px) {
-    .secondary__banner__quick__helpers__option p:first-of-type {
-        font-family: Metropolis-Bold;
-        font-size: 2rem;
-        letter-spacing: 0.5px;
-        flex-wrap: wrap;
-    }
-    .secondary__banner__quick__helpers__option p:last-of-type {
-        font-family: Metropolis-Light;
-        font-size: 1.75rem;
-        letter-spacing: 1px;
-        flex-wrap: wrap;
-    }
+@media screen and (600px < width < 899px) {
+	.secondary__banner__quick__helpers__option p:first-of-type {
+		font-family: Metropolis-Bold;
+		font-size: 2rem;
+		letter-spacing: 0.5px;
+		flex-wrap: wrap;
+	}
+	.secondary__banner__quick__helpers__option p:last-of-type {
+		font-family: Metropolis-Light;
+		font-size: 1.75rem;
+		letter-spacing: 1px;
+		flex-wrap: wrap;
+	}
 }
 
 @media screen and (width < 601px) {
-    .secondary__banner__quick__helpers__option p:first-of-type {
-        font-family: Metropolis-Bold;
-        font-size: 1.5rem;
-        letter-spacing: 0.5px;
-        flex-wrap: wrap;
-    }
-    .secondary__banner__quick__helpers__option p:last-of-type{
-    font-family: Metropolis-Light;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    flex-wrap: wrap;
-    }
+	.secondary__banner__quick__helpers__option p:first-of-type {
+		font-family: Metropolis-Bold;
+		font-size: 1.5rem;
+		letter-spacing: 0.5px;
+		flex-wrap: wrap;
+	}
+	.secondary__banner__quick__helpers__option p:last-of-type {
+		font-family: Metropolis-Light;
+		font-size: 1.2rem;
+		letter-spacing: 1px;
+		flex-wrap: wrap;
+	}
 }
 @media screen and (width < 420px) {
-    .secondary__banner__quick__helpers__option p:first-of-type {
-        font-family: Metropolis-Bold;
-        font-size: 1.2rem;
-        letter-spacing: 0.5px;
-        flex-wrap: wrap;
-    }
-    .secondary__banner__quick__helpers__option p:last-of-type{
-    font-family: Metropolis-Light;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    flex-wrap: wrap;
-    }
-    .secondary__banner__quick__helpers__option button{
-        font-size: 0.5rem;
-        padding: 0.75rem 2rem;
-        margin-top: 1rem;
-    }
+	.secondary__banner__quick__helpers__option p:first-of-type {
+		font-family: Metropolis-Bold;
+		font-size: 1.2rem;
+		letter-spacing: 0.5px;
+		flex-wrap: wrap;
+	}
+	.secondary__banner__quick__helpers__option p:last-of-type {
+		font-family: Metropolis-Light;
+		font-size: 1rem;
+		letter-spacing: 1px;
+		flex-wrap: wrap;
+	}
+	.secondary__banner__quick__helpers__option button {
+		font-size: 0.5rem;
+		padding: 0.75rem 2rem;
+		margin-top: 1rem;
+	}
 }
 
 .recomendations {
@@ -528,6 +530,7 @@ a:hover {
 	padding: 1rem;
 	display: flex;
 	overflow-x: auto;
+	justify-content: center;
 	gap: 1rem;
 }
 

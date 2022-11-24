@@ -13,17 +13,26 @@ header {
 	z-index: 100;
 	justify-content: right;
 	padding: 0 1rem 0 1rem;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
 }
 .header__favorite {
 	z-index: 100;
 	justify-content: right;
 	padding: 0 1rem 0 1rem;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
 }
 .header__accont {
 	z-index: 100;
 	padding-left: 0;
 	justify-content: right;
 	padding: 0 1rem 0 1rem;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
 }
 .header {
 	font-family: Metropolis-Bold;
@@ -53,7 +62,7 @@ header {
 	margin: 1rem;
 }
 .header__logo-mobile {
-	margin: 1rem;
+	margin-top: 0.5rem;
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -92,7 +101,7 @@ header {
 		padding-top: 1.6rem;
 		padding-bottom: 1.2rem;
 		align-items: center;
-		width: 12rem;
+		width: 8rem;
 		font-size: 14px;
 		background-color: #ffffff;
 		p {
@@ -156,6 +165,7 @@ header {
 	display: inline;
 	font-size: 16px;
 	padding: 0;
+	padding-left: 0.25rem;
 	margin: 0;
 }
 .nav__logo {
@@ -171,7 +181,7 @@ header {
 .nav__logo-second {
 	position: relative;
 	width: 100%;
-	height: 80px;
+	height: 70px;
 	border-bottom: 2px solid c.$line_color;
 	opacity: 1;
 	z-index: 1002;
@@ -202,7 +212,7 @@ nav {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin-top: 0.7rem;
+		margin-top: 0.3rem;
 		padding: 0 1rem;
 		width: auto;
 	}
@@ -222,7 +232,7 @@ nav {
 		border: none;
 		opacity: 1;
 		z-index: 1001;
-	}   
+	}
 	nav {
 		position: relative;
 		display: flex;
@@ -269,7 +279,6 @@ nav {
 		flex-wrap: nowrap;
 		background-color: c.$header_bg;
 	}
-
 	.header__item {
 		z-index: 2000;
 		width: 100%;
@@ -318,6 +327,16 @@ nav {
 		}
 	}
 }
+@media screen and (width = 1014px) {
+	.header__basket-box__hidden {
+		display: none;
+	}
+}
+@media screen and (width < 1014px) {
+	.nav__items .nav__item {
+		margin-top: 0.7rem;
+	}
+}
 @media screen and (1520px > width > 1250px) {
 	.nav__items {
 		padding: 0 0 0 4rem;
@@ -334,35 +353,35 @@ nav {
 }
 @media screen and (1701px > width > 1651px) {
 	.nav__items {
-		padding: 0 0rem 0 6rem;
+		padding: 0.4rem 0rem 0 6rem;
 		justify-content: space-between;
 		width: 100rem;
 	}
 }
 @media screen and (1801px > width > 1700px) {
 	.nav__items {
-		padding: 0 0rem 0 3rem;
+		padding: 0.4rem 0rem 0 3rem;
 		justify-content: space-between;
 		width: 105rem;
 	}
 }
 @media screen and (1901px > width > 1800px) {
 	.nav__items {
-		padding: 0 0rem 0 3.5rem;
+		padding: 0.4rem 0rem 0 3.5rem;
 		justify-content: space-between;
 		width: 110rem;
 	}
 }
 @media screen and (width > 1900px) {
 	.nav__items {
-		padding: 0 0rem 0 3.5rem;
+		padding: 0.4rem 0rem 0 3.5rem;
 		justify-content: space-between;
 		width: 115rem;
 	}
 }
 @media screen and (890px > width) {
 	.nav__items {
-		padding: 0.2rem;
+		padding: 0.5rem;
 		font-family: Metropolis-Regular;
 		font-size: 15px;
 		.nav__item {
@@ -397,7 +416,6 @@ nav {
 		font-size: 2rem;
 	}
 	.header__item .header__basket-box .header__basket-box__hidden p {
-		padding-top: 1rem;
 		font-family: Metropolis-Light;
 	}
 	.header__item .icon-card {
@@ -439,9 +457,6 @@ nav {
 		justify-content: center;
 		align-items: center;
 		padding: 0;
-	}
-	.header__item .header__basket-box .header__basket-box__hidden p {
-		padding-top: 1rem;
 	}
 	.header__item .icon-card {
 		padding: 0 1.5rem;
@@ -518,7 +533,7 @@ nav {
 		}
 	}
 	.header .icon-widok_01:before {
-		padding-left: 1rem;
+		padding-left: 0.5rem;
 	}
 	.header__item .header__basket-box .icon-card:before {
 		font-size: 2rem;
@@ -531,10 +546,13 @@ nav {
 	}
 }
 @media screen and (310px < width < 340px) {
+	.header__item .header__basket-box {
+		width: 0.1rem;
+	}
 	.header__item .header__basket-box .icon-card:before {
 		font-size: 2rem;
 		display: flex;
-		padding: 0 2.3rem 0 1rem;
+		padding: 0 2rem 0 1rem;
 	}
 	.header .icon-widok_01:before {
 		padding: 0;
@@ -556,7 +574,8 @@ nav {
 		padding: 0 2rem 0 1rem;
 	}
 	.header__item .header__basket-box {
-		padding: 1rem 3.5rem 1rem 5rem;
+		padding: 1rem 0rem 1rem 4.5rem;
+		height: 1rem;
 	}
 	.header__item .icon-card {
 		border: none;
@@ -593,11 +612,12 @@ nav {
 
 .js__logo--fixed {
 	position: fixed;
+	top: 0;
 }
 
 .menu__wrapper {
 	position: fixed;
-	top: 80px;
+	top: 60px;
 	left: -30%;
 	width: 100%;
 	height: 100vh;
