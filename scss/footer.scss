@@ -53,11 +53,14 @@
 				background-color: orangered;
 			}
 		}
+		ul {
+			padding-top: 3.1rem;
+		}
 		a {
 			display: grid;
 			gap: 2rem;
 			padding: 0;
-			margin-top: 1.5rem;
+			margin: 0 0 2rem;
 			font-size: 14px;
 			letter-spacing: -0.28px;
 			color: rgb(184, 180, 180);
@@ -85,16 +88,21 @@
 	letter-spacing: -0.28px;
 
 	.footer__copyright--text {
-		margin-left: 1rem;
+		margin-left: 2rem;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		text-align: left;
 	}
 	.footer__company--text {
-		margin-right: 1rem;
+		margin-right: 2rem;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		text-align: right;
+		a {
+			padding: 0.25rem;
+		}
 	}
 }
 
@@ -141,7 +149,7 @@
 				display: grid;
 				gap: 2rem;
 				padding: 0;
-				margin-top: 2rem;
+				margin: 0 0 2rem;
 				font-size: 14px;
 				color: rgb(184, 180, 180);
 				letter-spacing: -0.28px;
