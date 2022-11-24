@@ -13,17 +13,26 @@ header {
 	z-index: 100;
 	justify-content: right;
 	padding: 0 1rem 0 1rem;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
 }
 .header__favorite {
 	z-index: 100;
 	justify-content: right;
 	padding: 0 1rem 0 1rem;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
 }
 .header__accont {
 	z-index: 100;
 	padding-left: 0;
 	justify-content: right;
 	padding: 0 1rem 0 1rem;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
 }
 .header {
 	font-family: Metropolis-Bold;
@@ -156,6 +165,7 @@ header {
 	display: inline;
 	font-size: 16px;
 	padding: 0;
+	padding-left: 0.25rem;
 	margin: 0;
 }
 .nav__logo {
@@ -406,7 +416,6 @@ nav {
 		font-size: 2rem;
 	}
 	.header__item .header__basket-box .header__basket-box__hidden p {
-		padding-top: 1rem;
 		font-family: Metropolis-Light;
 	}
 	.header__item .icon-card {
@@ -448,9 +457,6 @@ nav {
 		justify-content: center;
 		align-items: center;
 		padding: 0;
-	}
-	.header__item .header__basket-box .header__basket-box__hidden p {
-		padding-top: 1rem;
 	}
 	.header__item .icon-card {
 		padding: 0 1.5rem;
