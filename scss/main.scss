@@ -671,7 +671,9 @@ a:hover {
 	padding: 1rem;
 	max-width: 55rem;
 	text-align: center;
+	letter-spacing: -0.36px;
 	letter-spacing: 1px;
+	font-size: 18px;
 }
 
 .why__us__advantages__container {
@@ -682,7 +684,9 @@ a:hover {
 
 @media screen and (width < 820px) {
 	.why__us__advantages__container {
+		display: grid;
 		grid-template-columns: 1fr;
+		gap: 1rem;
 	}
 }
 
