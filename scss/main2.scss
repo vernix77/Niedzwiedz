@@ -15,7 +15,7 @@ body {
 	position: relative;
 	background-color: #ffffff;
 	color: c.$header_bg;
-	height: 700vh;
+	height:400vh;
 }
 
 a {
@@ -189,7 +189,7 @@ main {
 			}
 			.position__right {
 				display: flex;
-				padding-left: 32rem;
+				margin-left: auto;
 				.paragraph__sort {
 					padding-right: 15px;
 					padding-left: 35px;
@@ -265,7 +265,7 @@ main {
 			}
 			.position__right {
 				display: flex;
-				padding-left: 32rem;
+				margin-left: auto;
 				.paragraph__sort {
 					padding-right: 15px;
 					padding-left: 35px;
@@ -318,11 +318,12 @@ main {
 			color: #323940;
 		}
 	}
-	.bulbs__view{
+	.section__3{
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		background-color: #ffffff;
+		// background-color: #f8f8f8;
+		// gap: 3px;
 		color: #111111;
 	}
 }
@@ -330,42 +331,87 @@ main {
 @media screen and (991px > width) {
 	.section__1 {
 		position: absolute;
-		top: 2.8%;
+		top: 7.8%;
+	}
+	.nav2{
+		position: absolute;
+		top: 5.3%;
 	}
 	.photo {
 		background-position: center;
 	}
 	.bulbs {
 		display: flex;
-		gap: 10px;
 		flex-wrap: wrap;
+		// gap: 1px;
 		.bulb {
 			flex: 1 1 0;
 			min-width: 300px;
 		}
 	}
-	.bulbs__view{
+	.section__3{
 		position: absolute;
-		top: 28%;
+		top: 40%;
 	}
 	.view__1{
 		position: relative;
-		top: 78rem;
+		top: 57rem;
 	}
 	.view__2{
 		position: relative;
-		top: 488rem;
+		top: 190rem;
 	}
 	footer{
 		position: absolute;
-		top: 163.5%;
+		top: 123%;
 	}
-	.bulbs__view{
-		position: absolute;
-		left: 20%;
+	.section__3{
+		// position: absolute;
+		// left: 20%;
 	}
 }
-
+@media screen and (width < 953px){
+	// .section__1 {
+	// 	position: absolute;
+	// 	top: 7.8%;
+	// }
+	// .nav2{
+	// 	position: absolute;
+	// 	top: 5.3%;
+	// }
+	// .photo {
+	// 	background-position: center;
+	// }
+	// .bulbs {
+	// 	display: flex;
+	// 	flex-wrap: wrap;
+	// 	// gap: 1px;
+	// 	.bulb {
+	// 		flex: 1 1 0;
+	// 		min-width: 300px;
+	// 	}
+	// }
+	// .section__3{
+	// 	position: absolute;
+	// 	top: 40%;
+	// }
+	.section__3{
+		position: relative;
+		top: 70rem;
+	}
+	// .view__2{
+	// 	position: relative;
+	// 	top: 190rem;
+	// }
+	// footer{
+	// 	position: absolute;
+	// 	top: 123%;
+	// }
+	.section__3{
+		// position: absolute;
+		// left: 20%;
+	}
+}
 // @media screen and (991px > width) {
 // 	.section__1{
 // 		position: absolute;
