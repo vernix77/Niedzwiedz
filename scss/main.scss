@@ -221,12 +221,6 @@ a:hover {
 	display: none;
 }
 
-@media screen and (width < 900px) {
-	.secondary__banner__section {
-		flex-wrap: wrap;
-	}
-}
-
 .main__banner-img button:hover {
 	scale: 1.07;
 }
@@ -308,8 +302,8 @@ a:hover {
 	justify-content: center;
 	flex-wrap: wrap;
 	grid-template-columns: 1fr 1fr 1fr;
-	padding: 1rem 1rem 1rem;
-	gap: 1rem;
+	padding: 0rem 1rem 1rem 1rem;
+	// gap: 1rem;
 	width: 100%;
 	max-height: 20rem;
 	overflow: hidden;
@@ -350,20 +344,22 @@ a:hover {
 }
 .secondary__banner__container__1 {
 	background-image: url("../photos/img_02.jpg");
-	background-position: right;
+	// background-position: right;
 	display: flex;
-	align-self: center;
-	flex-wrap: wrap;
+	// align-self: center;
+	// flex-wrap: wrap;
 	// flex-direction: row;
 	position: relative;
-	justify-content: center;
+	// justify-content: center;
+	align-self: center;
 	// background-size: cover;
+	overflow: hidden;
 	transition: 0.4s;
 }
 .secondary__banner__container__2 {
 	background-image: url("../photos/img_03.jpg");
 	position: relative;
-	// display: flex;
+	display: flex;
 	// align-self: center;
 	// flex-wrap: wrap;
 	// background-attachment: fixed;
@@ -383,7 +379,7 @@ a:hover {
 	flex-wrap: wrap;
 	// flex-direction: row;
 	position: relative;
-	justify-content: center;
+	// justify-content: center;
 	// background-size: cover;
 	transition: 0.4s;
 	// max-width: 300px;
@@ -398,6 +394,24 @@ a:hover {
 .secondary__banner__container__3:hover {
 	scale: 1.05;
 }
+@media screen and (width < 900px) {
+	.secondary__banner__section {
+		flex-wrap: wrap;
+	}
+	.secondary__banner__container__1{
+		margin-top: 1.2rem;
+		height: 430px;
+	}
+	.secondary__banner__container__2{
+		margin-top: 1.2rem;
+		height: 430px;
+	}
+	.secondary__banner__container__3{
+		margin-top: 1.2rem;
+		height: 430px;
+	}
+}
+
 .secondary__banner__quick__helpers__option {
 	button {
 		background-color: transparent;
