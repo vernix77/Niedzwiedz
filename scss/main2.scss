@@ -371,10 +371,14 @@ main {
 	}
 }
 @media screen and (width < 953px){
-	// .section__1 {
-	// 	position: absolute;
-	// 	top: 7.8%;
-	// }
+	.view__1 {
+		position: absolute;
+		top: 40%;
+	}
+	.view__2 {
+		position: absolute;
+		top: 167%;
+	}
 	// .nav2{
 	// 	position: absolute;
 	// 	top: 5.3%;
@@ -397,16 +401,16 @@ main {
 	// }
 	.section__3{
 		position: relative;
-		top: 70rem;
+		top: 65rem;
 	}
 	// .view__2{
 	// 	position: relative;
 	// 	top: 190rem;
 	// }
-	// footer{
-	// 	position: absolute;
-	// 	top: 123%;
-	// }
+	footer{
+		position: absolute;
+		top: 170%;
+	}
 	.section__3{
 		// position: absolute;
 		// left: 20%;
